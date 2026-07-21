@@ -164,6 +164,13 @@
       background: linear-gradient(to bottom, var(--accent), transparent);
       animation: pulse 2s 1.5s infinite;
     }
+    .hero-social {
+      position: absolute; right: 5vw; bottom: 8.5rem;
+      display: flex; flex-direction: column; align-items: center; gap: 1rem;
+      opacity: 0; animation: fadeIn 1s 1.5s forwards;
+    }
+    .hero-social a { color: rgba(244,242,238,.32); transition: color .2s, transform .2s; display: flex; }
+    .hero-social a:hover { color: var(--accent); transform: translateY(-2px); }
 
     /* ── PROBLEMA ── */
     .problema {
@@ -238,6 +245,9 @@
       text-decoration: none; transition: opacity .2s, transform .2s;
     }
     .mapa-btn:hover { opacity: .87; transform: translateY(-1px); }
+    .mapa-social { display: flex; align-items: center; gap: 1.1rem; margin-top: 1.2rem; }
+    .mapa-social a { color: rgba(244,242,238,.4); transition: color .2s, transform .2s; display: flex; }
+    .mapa-social a:hover { color: var(--accent); transform: translateY(-1px); }
     .mapa-note {
       margin-top: 1rem; font-size: .7rem; font-weight: 300;
       letter-spacing: .08em; color: rgba(138,158,174,.5);
@@ -324,13 +334,13 @@
     .story-item { flex: 1; text-align: center; padding: 2rem 1rem; }
     .story-verb {
       font-family: var(--serif); font-size: 1.05rem; font-style: italic;
-      font-weight: 300; color: var(--accent); margin-bottom: .4rem;
+      font-weight: 400; color: var(--mid); margin-bottom: .4rem;
     }
     .story-label {
-      font-size: .62rem; font-weight: 400; letter-spacing: .18em;
-      text-transform: uppercase; color: rgba(10,22,40,.3);
+      font-size: .62rem; font-weight: 500; letter-spacing: .18em;
+      text-transform: uppercase; color: rgba(10,22,40,.55);
     }
-    .story-sep { color: rgba(10,22,40,.15); font-size: 1rem; }
+    .story-sep { color: rgba(10,22,40,.3); font-size: 1rem; }
 
     /* ── PARA QUEM ── */
     .paraquem {
@@ -530,6 +540,8 @@
       color: rgba(244,242,238,.22); text-decoration: none; transition: color .2s;
     }
     .f-links a:hover { color: rgba(244,242,238,.55); }
+    .redes-icon { color: rgba(244,242,238,.55); transition: color .2s, transform .2s; }
+    .redes-icon:hover { color: var(--accent); transform: translateY(-2px); }
 
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
@@ -570,6 +582,7 @@
       .principios { grid-template-columns: 1fr; }
       .hero-bg-letter { display: none; }
       .scroll-hint { display: none; }
+      .hero-social { display: none; }
       nav { padding: 1.2rem 5vw; }
       .nav-cta { padding: .55rem 1rem; font-size: .65rem; }
       .hero { padding: 0 5vw 8vh; }
@@ -710,8 +723,8 @@
     <ul class="nav-links">
       <li><a href="#problema">O diagnóstico</a></li>
       <li><a href="#processo">O processo</a></li>
-      <li><a href="#blog">Leituras</a></li>
       <li><a href="#sobre">O fundador</a></li>
+      <li><a href="#redes">Acompanhe</a></li>
     </ul>
     <a href="#agendar" class="nav-cta">Agendar o Mapa</a>
   </nav>
@@ -735,6 +748,11 @@
       </div>
     </div>
     <div class="hero-bg-letter">R</div>
+    <div class="hero-social">
+      <a href="https://www.instagram.com/feliperoliv/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.linkedin.com/in/felipe-rodrigues-oliveira/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="7.6" cy="7.3" r="0.9" fill="currentColor" stroke="none"/><line x1="7.6" y1="10.3" x2="7.6" y2="16.5"/><line x1="11.6" y1="10.3" x2="11.6" y2="16.5"/><path d="M11.6 13.2a2.2 2.2 0 0 1 4.4 0v3.3"/></svg></a>
+      <a href="https://www.tiktok.com/@feliperoliv" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13.8 3.8v10.6a3.2 3.2 0 1 1-3.2-3.2c.28 0 .55.03.8.09V8.2a5.6 5.6 0 1 0 4.8 5.55v-4a5.9 5.9 0 0 0 3.4 1.08V7.7a3.9 3.9 0 0 1-3.9-3.9z"/></svg></a>
+    </div>
     <div class="scroll-hint">
       <div class="scroll-bar"></div>
       <span>Rolar</span>
@@ -747,7 +765,7 @@
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
         <div>
           <div class="drawer-trigger-label">O diagnóstico</div>
-          <div class="drawer-trigger-title">Faltou estrutura de decisão,<br><em>não informação.</em></div>
+          <div class="drawer-trigger-title">Faltou direção,<br><em>não informação.</em></div>
         </div>
         <div class="drawer-icon">+</div>
       </button>
@@ -776,11 +794,16 @@
       <div class="drawer-body">
         <div class="mapa-inner" style="padding-top:0">
           <div class="mapa-left">
-            <p class="mapa-desc">Uma sessão diagnóstica conduzida por Felipe. O objetivo é nomear o padrão de decisão financeira que governa a vida da pessoa. O que ela já sente mas não consegue segurar com as mãos.</p>
+            <p class="mapa-desc">Uma sessão diagnóstica conduzida por Felipe. O objetivo é nomear o padrão que dirige a sua vida financeira. Aquilo que você já sente mas não consegue segurar com as mãos.</p>
             <p class="mapa-desc">É uma conversa estruturada que entrega clareza sobre como você decide. Sem formulário, sem julgamento, sem número.</p>
             <div class="mapa-cta-block">
               <a href="#agendar" class="mapa-btn">Descubra seu mapa financeiro</a>
-              <p class="mapa-note">R$&nbsp;350 · Online · Presencial na região de Campinas mediante agendamento prévio.</p>
+              <div class="mapa-social">
+                <a href="https://www.instagram.com/feliperoliv/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
+                <a href="https://www.linkedin.com/in/felipe-rodrigues-oliveira/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="7.6" cy="7.3" r="0.9" fill="currentColor" stroke="none"/><line x1="7.6" y1="10.3" x2="7.6" y2="16.5"/><line x1="11.6" y1="10.3" x2="11.6" y2="16.5"/><path d="M11.6 13.2a2.2 2.2 0 0 1 4.4 0v3.3"/></svg></a>
+                <a href="https://www.tiktok.com/@feliperoliv" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13.8 3.8v10.6a3.2 3.2 0 1 1-3.2-3.2c.28 0 .55.03.8.09V8.2a5.6 5.6 0 1 0 4.8 5.55v-4a5.9 5.9 0 0 0 3.4 1.08V7.7a3.9 3.9 0 0 1-3.9-3.9z"/></svg></a>
+              </div>
+              <p class="mapa-note">R$&nbsp;199 · Online · Presencial na região de Campinas mediante agendamento prévio.</p>
             </div>
           </div>
           <div class="mapa-right">
@@ -792,9 +815,10 @@
               <div class="mapa-card-detail">A sessão identifica um dos quatro perfis de comportamento financeiro que operam na vida de quem ganha bem. Cada perfil é uma força que trouxe a pessoa até aqui, e a mesma força tem um ponto onde passa a limitar. O diagnóstico nomeia os dois e aponta o que a Bússola Financeira resolve a partir dali.</div>
               <div class="mapa-card-divider"></div>
               <div style="display:flex;align-items:baseline;gap:.6rem;margin-top:.5rem">
-                <span style="font-family:var(--serif);font-size:2rem;font-weight:300;color:var(--base)">R$&nbsp;350</span>
+                <span style="font-family:var(--serif);font-size:2rem;font-weight:300;color:var(--base)">R$&nbsp;199</span>
                 <span style="font-size:.68rem;font-weight:300;letter-spacing:.08em;color:rgba(138,158,174,.5)">sessão única · online</span>
               </div>
+              <a href="perfis.html" style="display:inline-block;margin-top:1.6rem;font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--base);background:rgba(244,242,238,.08);border:1px solid rgba(244,242,238,.25);padding:.75rem 1.4rem;text-decoration:none;transition:background .2s,border-color .2s;">Conheça os quatro perfis →</a>
             </div>
           </div>
         </div>
@@ -818,6 +842,7 @@
       <div class="drawer-body">
         <p class="pb">Noventa minutos para achar o padrão que comanda as suas decisões com dinheiro. A sessão tem três tempos: primeiro a sua história financeira, para entender o contexto. Depois o diagnóstico em si, conduzido como conversa, sem teste nem formulário. E por fim o ponto exato onde o seu perfil trava, que é onde o trabalho de verdade começa.</p>
         <p class="step-continuidade" style="padding-top:0;border:none;margin-top:0">Porta de entrada do processo. Disponível para agendamento.</p>
+        <a href="perfis.html" style="display:inline-block;margin-top:1.4rem;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);border:1px solid rgba(10,22,40,.15);padding:.7rem 1.3rem;text-decoration:none;transition:background .2s,border-color .2s;">Conheça os quatro perfis →</a>
       </div>
     </div>
     <div class="drawer r d1">
@@ -909,7 +934,7 @@
       </div>
       <div class="faq-item r d1">
         <div class="faq-q">O Regnumm oferece consultoria de investimentos?</div>
-        <div class="faq-a">Não. O Regnumm não oferece consultoria de investimentos, não indica produtos financeiros e não tem remuneração atrelada a nenhum produto do mercado. O trabalho é anterior a isso: estrutura de decisão financeira pessoal e governança. Quem chega buscando indicação de fundo ou estratégia de alocação está no lugar errado.</div>
+        <div class="faq-a">Não. O Regnumm não oferece consultoria de investimentos, não indica produtos financeiros e não tem remuneração atrelada a nenhum produto do mercado. O trabalho é anterior a isso: direção financeira pessoal e governança. Quem chega buscando indicação de fundo ou estratégia de alocação está no lugar errado.</div>
       </div>
       <div class="faq-item r d1">
         <div class="faq-q">Qual a diferença para uma assessoria ou corretora?</div>
@@ -925,7 +950,7 @@
       </div>
       <div class="faq-item r d3">
         <div class="faq-q">Qual é a diferença entre o Regnumm e um planejador financeiro?</div>
-        <div class="faq-a">Planejadores financeiros trabalham com projeções, produtos e alocação de ativos. O Regnumm trabalha com o padrão de decisão que governa a vida financeira da pessoa, o nível anterior ao produto. O foco é governança, não carteira.</div>
+        <div class="faq-a">Planejadores financeiros trabalham com projeções, produtos e alocação de ativos. O Regnumm trabalha com o padrão que dirige a vida financeira da pessoa, o nível anterior ao produto. O foco é governança, não carteira.</div>
       </div>
     </div>
   </section>
@@ -970,9 +995,9 @@
       <p class="sec-label r">Um caso real</p>
       <h2 class="r d1" style="font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3vw,3rem);line-height:1.18;color:var(--anchor);margin-bottom:2rem;">O processo completo.<br><em style="font-style:italic;color:var(--mid)">Do diagnóstico à governança.</em></h2>
       <div class="r d2" style="font-size:.97rem;font-weight:300;line-height:1.88;color:#3a4a5c;margin-bottom:1.6rem;">
-        <p style="margin-bottom:1.4rem">Um profissional liberal, renda acima da média, chegou ao Mapa com uma queixa que parecia simples. Ganhava bem, gastava bem, e no fim do mês o saldo não contava nenhuma das duas histórias. O diagnóstico achou o padrão rápido: ele decidia pelo clima do momento, não por critério. Cada escolha fazia sentido sozinha. Juntas, não levavam a lugar nenhum.</p>
-        <p style="margin-bottom:1.4rem">Nas quatro sessões da Bússola, o gargalo apareceu. Não faltava disciplina nem renda. Faltava um sistema de decisão. O que ele tinha eram boas intenções, e intenção não sobrevive a um mês difícil. Por isso o problema voltava sempre que parecia resolvido. Na quarta sessão ele assinou a própria Constituição Financeira, com os princípios e as regras escritos com as palavras dele, não com as minhas.</p>
-        <p>Seis meses depois, na Arquitetura, ele operava o sistema quase sozinho. A renda era a mesma do começo. O que tinha mudado era quem estava no comando da decisão.</p>
+        <p style="margin-bottom:1.4rem">A renda dele foi a mesma do começo ao fim do processo. O que mudou foi a direção, e direção virou resultado material. Um profissional liberal chegou ao Mapa com uma queixa comum: ganhava bem, gastava bem, e o saldo do mês não contava nenhuma das duas histórias. O diagnóstico achou o padrão rápido: ele decidia pelo clima do momento. Cada escolha fazia sentido sozinha. Juntas, não levavam a lugar nenhum.</p>
+        <p style="margin-bottom:1.4rem">Nas quatro sessões da Bússola, o gargalo apareceu. Não faltava disciplina nem renda. Faltava direção própria. O que ele tinha eram boas intenções, e intenção não sobrevive a um mês difícil. Por isso o problema voltava sempre que parecia resolvido. Na quarta sessão ele assinou a própria Constituição Financeira, com os princípios e as regras escritos com as palavras dele, não com as minhas.</p>
+        <p>Seis meses de Arquitetura depois, o retrato era outro. Uma reserva que não existia virou meses de respiro. Um financiamento que ia drenar anos de renda foi barrado antes da assinatura. Uma formação, paga com critério em vez de impulso, abriu uma frente de renda nova. Nada disso veio de ganhar mais. Veio de saber para onde ir com o que já entrava.</p>
       </div>
       <div class="r d3" style="border-left:2px solid var(--accent);padding:1.6rem 2rem;background:rgba(201,185,154,.07);margin-top:2rem;">
         <p style="font-family:var(--serif);font-size:1.25rem;font-weight:400;font-style:italic;line-height:1.6;color:var(--anchor)">"O problema não era quanto eu ganhava. Era que eu nunca tinha parado pra entender como eu decidia."</p>
@@ -1010,50 +1035,38 @@
         </div>
         <button class="captura-btn" onclick="enviarCaptura()">Continuar pelo WhatsApp</button>
       </div>
-      <p class="captura-note r d4">R$&nbsp;350 · Sessão única de 90 minutos · Online</p>
+      <p class="captura-note r d4">R$&nbsp;199 · Sessão única de 90 minutos · Online</p>
     </div>
   </section>
 
   </main>
 
   <!-- BLOG -->
-  <section class="blog" id="blog">
-    <div class="blog-header">
-      <p class="sec-label r">Leituras</p>
-      <h2 class="blog-h r d1" style="margin-top:1rem">Padrões que <em>observo.</em></h2>
-      <p class="blog-intro r d2">Textos sobre comportamento financeiro, decisão e os padrões que aparecem em quem ganha bem mas sente que algo escapa. Sem fórmula, sem promessa.</p>
-    </div>
-    <div class="blog-grid">
-      <a href="#" class="blog-card r">
-        <div class="blog-card-tag">Comportamento</div>
-        <div class="blog-card-title">Quem ganha bem e ainda assim não acumula</div>
-        <div class="blog-card-excerpt">O silêncio específico de quem cruzou um patamar de renda e percebeu que o dinheiro não acompanhou. Não é falta de disciplina. É outra coisa.</div>
-        <div class="blog-card-more">Ler →</div>
-      </a>
-      <a href="#" class="blog-card r d1">
-        <div class="blog-card-tag">Decisão</div>
-        <div class="blog-card-title">O plano que funciona no papel e trava na vida real</div>
-        <div class="blog-card-excerpt">A planilha estava perfeita e durou três semanas. O problema não era o plano. Era a ausência de critério para a segunda decisão difícil.</div>
-        <div class="blog-card-more">Ler →</div>
-      </a>
-      <a href="#" class="blog-card r d2">
-        <div class="blog-card-tag">Estrutura</div>
-        <div class="blog-card-title">Por que mais renda não resolveu o problema</div>
-        <div class="blog-card-excerpt">A renda dobrou e a sensação de aperto continuou. Isso não é coincidência. É o padrão de decisão operando com mais zeros.</div>
-        <div class="blog-card-more">Ler →</div>
-      </a>
-    </div>
-  </section>
-
   <!-- CTA FINAL -->
   <section class="cta-sec">
     <div class="cta-grain"></div>
     <div class="cta-inner">
       <p class="cta-pre r">O primeiro passo é entender o que está sendo construído</p>
       <h2 class="cta-h r d1">Faça o <em>Mapa<br>Financeiro.</em></h2>
-      <p class="cta-sub r d2">90 minutos com Felipe. Você sai sabendo qual padrão de decisão está guiando e travando sua vida financeira. Sem julgamento. Sem número. Sem compromisso com o que vem depois.</p>
+      <p class="cta-sub r d2">90 minutos com Felipe. Você sai sabendo qual padrão está dirigindo a sua vida financeira, e o ponto exato onde ele trava. Sem julgamento. Sem número. Sem compromisso com o que vem depois.</p>
       <a href="#agendar" class="cta-btn r d3">Descubra seu mapa financeiro</a>
-      <p class="cta-note r d4">R$&nbsp;350 · Online · Agendamento via WhatsApp</p>
+      <p class="cta-note r d4">R$&nbsp;199 · Online · Agendamento via WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- REDES SOCIAIS -->
+  <section id="redes" style="padding:6vh 5vw;background:var(--mid);text-align:center;">
+    <p style="font-family:'DM Sans',sans-serif;font-size:.62rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:1.6rem;">Acompanhe o Regnumm</p>
+    <div style="display:flex;justify-content:center;align-items:center;gap:2.2rem;">
+      <a href="https://www.instagram.com/feliperoliv/" target="_blank" rel="noopener" aria-label="Instagram" class="redes-icon" style="display:flex;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/felipe-rodrigues-oliveira/" target="_blank" rel="noopener" aria-label="LinkedIn" class="redes-icon" style="display:flex;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="7.6" cy="7.3" r="0.9" fill="currentColor" stroke="none"/><line x1="7.6" y1="10.3" x2="7.6" y2="16.5"/><line x1="11.6" y1="10.3" x2="11.6" y2="16.5"/><path d="M11.6 13.2a2.2 2.2 0 0 1 4.4 0v3.3"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@feliperoliv" target="_blank" rel="noopener" aria-label="TikTok" class="redes-icon" style="display:flex;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M13.8 3.8v10.6a3.2 3.2 0 1 1-3.2-3.2c.28 0 .55.03.8.09V8.2a5.6 5.6 0 1 0 4.8 5.55v-4a5.9 5.9 0 0 0 3.4 1.08V7.7a3.9 3.9 0 0 1-3.9-3.9z"/></svg>
+      </a>
     </div>
   </section>
 
@@ -1072,10 +1085,7 @@
     <ul class="f-links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#processo">O processo</a></li>
-      <li><a href="#blog">Leituras</a></li>
-      <li><a href="https://www.linkedin.com/in/felipe-rodrigues-oliveira/" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/feliperoliv/" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/@feliperoliv" target="_blank" rel="noopener">TikTok</a></li>
+      <li><a href="#redes">Acompanhe</a></li>
       <li><a href="https://wa.me/5519982578517?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20o%20Mapa%20Financeiro." target="_blank" rel="noopener">WhatsApp</a></li>
     </ul>
   </footer>
