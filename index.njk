@@ -1,0 +1,150 @@
+---
+layout: base.njk
+permalink: /index.html
+canonical: /
+redirecionarAncoras: true
+seoTitulo: "Regnumm — Governança Financeira Pessoal | Regnum"
+seoDescricao: "Regnumm (Regnum): uma abordagem comportamental de organização financeira pessoal para quem ganha bem mas não acumula. Em vez de planilha ou produto, trabalha o padrão de decisão e a direção financeira da pessoa. Diagnóstico (Mapa Financeiro), governança (Bússola) e acompanhamento sem conflito de interesse (Arquitetura)."
+ogTitulo: "Regnumm — Governança Financeira Pessoal"
+ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Diagnóstico e estrutura de decisão financeira pessoal com Felipe Rodrigues Oliveira."
+---
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="grain"></div>
+    <div class="hero-line"></div>
+    <div class="hero-inner">
+      <h1 class="hero-headline">
+        <em>Descubra, desbrave<br>e construa um reino.</em>
+      </h1>
+      <p class="hero-subtitle">O que você está construindo é reconhecidamente seu?</p>
+      <p class="hero-sub">
+        Quem ganha bem e não acumula já tentou planilha, já cortou gasto, já aumentou a renda. O problema voltou. Porque o que faltava nunca foi mais dinheiro. Era uma direção que fosse sua.
+      </p>
+      <div class="hero-actions">
+        <a href="{{ site.linkTeste }}" class="btn-primary" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'hero'})">Descobrir o meu perfil</a>
+        <a href="/processo/" class="btn-ghost">Como funciona</a>
+      </div>
+    </div>
+    <div class="hero-bg-letter">R</div>
+    <div class="hero-social">
+      {% set tamanho = 16 %}{% include "redes-icones.njk" %}
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-bar"></div>
+      <span>Rolar</span>
+    </div>
+  </section>
+
+  <!-- A JORNADA -->
+  <section class="jornada" id="jornada">
+    <div class="jornada-inner r">
+      {% set jornadaOrigem = 'home' %}{% include "jornada.njk" %}
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="faixa faixa-mid faixa-alta faixa-textura" id="paraquem">
+    <div class="grain grain-suave"></div>
+    <div class="faixa-conteudo r">
+      <h2 class="secao-titulo">Para quem é <em>e para quem não é.</em></h2>
+      <div class="paraquem-inner">
+        <div class="paraquem-col">
+          <p class="sec-label sec-label-claro">Para quem é</p>
+          <p class="pq-text">Quem subiu de patamar e descobriu que o dinheiro não subiu junto. A renda cresceu, o cartão cresceu, os gastos cresceram, e a sensação de que algo escapa cresceu também. No fim, nada de sólido ficou para trás.</p>
+          <p class="pq-text">E quem está em plena aceleração e não quer repetir essa história. Quer erguer uma base de verdade agora, antes de virar mais um que ganhou mais e continuou no mesmo lugar.</p>
+          <p class="pq-sintese">Nos dois casos, a renda já não é o obstáculo. Falta a direção que decide o que fazer com ela.</p>
+        </div>
+        <div class="paraquem-div"></div>
+        <div class="paraquem-col pq-nao">
+          <p class="sec-label sec-label-claro">Para quem não é</p>
+          <p class="pq-text">Quem está em crise aguda: dívida fora de controle, renda instável, água no pescoço. O Regnumm trabalha com quem já tem renda. Não é resgate, é governança, e governar pressupõe que existe algo a governar.</p>
+          <p class="pq-text">E quem só quer falar de número e produto: qual fundo, qual investimento, qual jogada de mercado. Aqui o trabalho começa antes disso. Quem não topa olhar a própria forma de decidir não vai tirar nada do processo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <p class="sec-label r">Perguntas frequentes</p>
+      <div class="faq-item r d1">
+        <div class="faq-q">Preciso fazer o Mapa Financeiro antes das outras sessões?</div>
+        <div class="faq-a">Sim. O Mapa Financeiro é o ponto de entrada de todo o processo. O diagnóstico da sessão orienta as quatro sessões da Bússola Financeira e, consequentemente, o acompanhamento da Arquitetura Financeira. Sem o diagnóstico, o processo perde precisão.</div>
+      </div>
+      <div class="faq-item r d1">
+        <div class="faq-q">O Regnumm oferece consultoria de investimentos?</div>
+        <div class="faq-a">Não. O Regnumm não oferece consultoria de investimentos, não indica produtos financeiros e não tem remuneração atrelada a nenhum produto do mercado. O trabalho é anterior a isso: direção financeira pessoal e governança. Quem chega buscando indicação de fundo ou estratégia de alocação está no lugar errado.</div>
+      </div>
+      <div class="faq-item r d1">
+        <div class="faq-q">Qual a diferença para uma assessoria ou corretora?</div>
+        <div class="faq-a">A remuneração. Assessorias e corretoras ganham sobre os produtos que o cliente contrata, o que cria um interesse próprio dentro do atendimento. No Regnumm não existe produto. A única remuneração vem do próprio trabalho de diagnóstico e direção, o que significa que não há segunda intenção na mesa. É como uma consulta médica: você paga pelo cuidado, não descobre depois que o tratamento rendia comissão para quem prescreveu.</div>
+      </div>
+      <div class="faq-item r d2">
+        <div class="faq-q">O processo funciona para autônomos e profissionais com renda variável?</div>
+        <div class="faq-a">Sim. Grande parte dos clientes tem renda variável: médicos, advogados, consultores, empresários de pequeno porte. A variabilidade da renda não é obstáculo para o processo. É, muitas vezes, parte do padrão que o diagnóstico revela.</div>
+      </div>
+      <div class="faq-item r d2">
+        <div class="faq-q">As sessões são presenciais ou remotas?</div>
+        <div class="faq-a">As sessões são online. Atendimento presencial na região de Campinas disponível mediante agendamento prévio.</div>
+      </div>
+      <div class="faq-item r d3">
+        <div class="faq-q">Qual é a diferença entre o Regnumm e um planejador financeiro?</div>
+        <div class="faq-a">Planejadores financeiros trabalham com projeções, produtos e alocação de ativos. O Regnumm trabalha com o padrão que dirige a vida financeira da pessoa, o nível anterior ao produto. O foco é governança, não carteira.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDÊNCIA -->
+  <section class="faixa faixa-base faixa-alta borda-topo" id="evidencia">
+    <div class="limite-760">
+      <p class="sec-label r">Um caso real</p>
+      <h2 class="evidencia-h r d1">O processo completo.<br><em>Do diagnóstico à governança.</em></h2>
+      <div class="evidencia-corpo r d2">
+        <p>A renda dele foi a mesma do começo ao fim do processo. O que mudou foi a direção, e direção virou resultado material. Um profissional liberal chegou ao Mapa com uma queixa comum: ganhava bem, gastava bem, e o saldo do mês não contava nenhuma das duas histórias. O diagnóstico achou o padrão rápido: ele decidia pelo clima do momento. Cada escolha fazia sentido sozinha. Juntas, não levavam a lugar nenhum.</p>
+        <p>Nas quatro sessões da Bússola, o gargalo apareceu. Não faltava disciplina nem renda. Faltava direção própria. O que ele tinha eram boas intenções, e intenção não sobrevive a um mês difícil. Por isso o problema voltava sempre que parecia resolvido. Na quarta sessão ele assinou a própria Constituição Financeira, com os princípios e as regras escritos com as palavras dele, não com as minhas.</p>
+        <p>Seis meses de Arquitetura depois, o retrato era outro. Uma reserva que não existia virou meses de respiro. Um financiamento que ia drenar anos de renda foi barrado antes da assinatura. Uma formação, paga com critério em vez de impulso, abriu uma frente de renda nova. Nada disso veio de ganhar mais. Veio de saber para onde ir com o que já entrava.</p>
+      </div>
+      <div class="evidencia-quote r d3">
+        <p>"O problema não era quanto eu ganhava. Era que eu nunca tinha parado pra entender como eu decidia."</p>
+        <cite>Cliente · Bússola Financeira + Arquitetura Financeira · identidade preservada</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESCADA DE OFERTAS -->
+  <!-- Âncora antiga: links externos para /#agendar continuam caindo aqui. -->
+  <span id="agendar" aria-hidden="true"></span>
+  <section class="captura faixa-textura" id="ofertas">
+    <div class="grain grain-suave"></div>
+    <div class="captura-inner">
+      <p class="captura-label r">Depois do teste</p>
+      <h2 class="captura-h r d1">Dois jeitos de ir <em>mais fundo.</em></h2>
+      <p class="captura-sub r d2">O Teste dos Quatro Perfis é gratuito e mostra o perfil que conduz as suas decisões. O que vem depois aprofunda: o segundo padrão por trás dele, e o ponto onde os dois se cruzam.</p>
+      {% set ofertaOrigem = 'home' %}{% include "ofertas.njk" %}
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-sec">
+    <div class="grain grain-soft"></div>
+    <div class="cta-inner">
+      <p class="cta-pre r">O primeiro passo é entender o que está sendo construído</p>
+      <h2 class="cta-h r d1">Descubra o seu <em>perfil.</em></h2>
+      <p class="cta-sub r d2">Vinte perguntas, entre cinco e dez minutos. Você sai sabendo qual padrão está dirigindo a sua vida financeira, e o ponto exato onde ele trava. Sem custo e sem compromisso com o que vem depois.</p>
+      <a href="{{ site.linkTeste }}" class="cta-btn r d3" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'cta_final'})">Fazer o teste gratuito</a>
+      <p class="cta-note r d4">Grátis · <span class="data-stat">20</span> perguntas · Resultado na hora</p>
+    </div>
+  </section>
+
+  <!-- REDES SOCIAIS -->
+  <section class="redes" id="redes">
+    <p class="redes-label">Acompanhe o Regnumm</p>
+    <div class="redes-lista">
+      {% set tamanho = 24 %}{% set traco = 1.3 %}{% include "redes-icones.njk" %}
+    </div>
+  </section>
+
+</main>

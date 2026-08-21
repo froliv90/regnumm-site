@@ -1,0 +1,17 @@
+{
+  "url": "https://regnumm.com.br",
+  "nome": "Regnumm",
+  "autor": "Felipe Rodrigues Oliveira",
+  "cnpj": "27.348.900/0001-80",
+  "locale": "pt_BR",
+  "lang": "pt-BR",
+  "ogImage": "/og-image.png",
+  "whatsapp": "https://wa.me/5519982578517?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20o%20Mapa%20Financeiro.",
+  "idPessoa": "https://regnumm.com.br/#felipe",
+  "idNegocio": "https://regnumm.com.br/#regnum",
+  "posthogToken": "<ph_project_token>",
+  "posthogHost": "https://us.i.posthog.com",
+  "numeroWhatsapp": "5519982578517",
+  "linkTeste": "/teste",
+  "_linkTeste": "O app do diagnóstico é dono de /teste. Enquanto o rewrite da Vercel não existir, trocar por a URL da Vercel do app para o link nunca ficar morto."
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/perfis", "destination": "/perfis.html", "permanent": true },
+    { "source": "/perfis/", "destination": "/perfis.html", "permanent": true },
+    { "source": "/blog/feed", "destination": "/blog/feed.xml", "permanent": false }
+  ]
+}

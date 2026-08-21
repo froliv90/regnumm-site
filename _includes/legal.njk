@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+<main>
+
+  <section class="hero-int">
+    <div class="grain"></div>
+    <div class="hero-int-inner">
+      <p class="hero-int-eyebrow">{{ eyebrow }}</p>
+      <h1 class="hero-int-headline">{{ titulo | safe }}</h1>
+      {% if resumo %}<p class="hero-int-sub">{{ resumo }}</p>{% endif %}
+    </div>
+  </section>
+
+  <section class="legal">
+    <div class="legal-prose r">
+      {{ content | safe }}
+      <p class="legal-atualizado">Última atualização: {{ atualizado }}</p>
+    </div>
+  </section>
+
+</main>

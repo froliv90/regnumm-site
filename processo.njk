@@ -1,0 +1,70 @@
+---
+layout: base.njk
+permalink: /processo/index.html
+seoTitulo: "O processo — Descobre, desbrava e constrói | Regnumm"
+seoDescricao: "O Mapa Financeiro é a entrada. O que vem depois depende do que o diagnóstico revela e do quanto a pessoa está disposta a construir. Mapa Financeiro, Bússola Financeira e Arquitetura Financeira."
+---
+<main>
+
+  <section class="hero-int">
+    <div class="grain"></div>
+    <div class="hero-int-inner">
+      <p class="hero-int-eyebrow">O processo</p>
+      <h1 class="hero-int-headline">O problema nunca foi a renda.<br><em>Descobre, desbrava e constrói.</em></h1>
+      <p class="hero-int-sub">O Mapa Financeiro é a entrada. O que vem depois depende do que o diagnóstico revela e do quanto a pessoa está disposta a construir.</p>
+    </div>
+  </section>
+
+  <section class="faixa faixa-base faixa-alta">
+
+    <div class="etapa r" id="mapa-financeiro">
+      <div class="etapa-head">
+        <div class="drawer-trigger-label">01 — Descobre</div>
+        <div class="drawer-trigger-title">Mapa Financeiro</div>
+      </div>
+      <div class="etapa-body">
+        <p class="pb">Noventa minutos para achar o padrão que comanda as suas decisões com dinheiro. A sessão tem três tempos: primeiro a sua história financeira, para entender o contexto. Depois o diagnóstico em si, conduzido como conversa, sem teste nem formulário. E por fim o ponto exato onde o seu perfil trava, que é onde o trabalho de verdade começa.</p>
+        <p class="step-continuidade step-continuidade-solta">Porta de entrada do processo. Disponível para agendamento.</p>
+        <a href="/perfis.html" class="btn-linha" onclick="if(window.posthog)posthog.capture('perfis_link_click',{location:'processo_etapa'})">Conheça os quatro perfis →</a>
+      </div>
+    </div>
+
+    <div class="etapa r d1" id="bussola-financeira">
+      <div class="etapa-head">
+        <div class="drawer-trigger-label">02 — Desbrava</div>
+        <div class="drawer-trigger-title">Bússola Financeira</div>
+      </div>
+      <div class="etapa-body">
+        <p class="pb">Quatro sessões para sair do improviso e construir um governo financeiro que seja seu. A primeira depura os seus objetivos, separa o que é desejo real do que te venderam como desejo. A segunda encontra a decisão que está travando tudo. A terceira transforma improviso em sistema. A quarta consolida a sua Constituição Financeira, o documento que passa a reger as suas escolhas.</p>
+        <p class="pb">A cadência respeita o seu ritmo, com um intervalo antes da última sessão para a vida testar o que foi construído. No fim, você sai com um documento que é só seu: princípios, vedações e regras de decisão escritos com as suas palavras.</p>
+        <p class="step-continuidade step-continuidade-solta">Próximo passo depois do Mapa Financeiro.</p>
+      </div>
+    </div>
+
+    <div class="etapa r d2" id="arquitetura-financeira">
+      <div class="etapa-head">
+        <div class="drawer-trigger-label">03 — Constrói</div>
+        <div class="drawer-trigger-title">Arquitetura Financeira</div>
+      </div>
+      <div class="etapa-body">
+        <p class="pb">Um encontro por mês para governar o que foi construído. A Constituição não é um documento de gaveta. Todo mês ela encara a realidade do período: o que funcionou, o que resistiu, o que precisa de ajuste. É a diferença entre ter um plano e operar um plano.</p>
+        <p class="pb">Felipe senta do mesmo lado da mesa, sem nada para vender. Quando aparece uma proposta de investimento, de crédito, de consórcio, vocês avaliam juntos, pelo sistema que você mesmo construiu. Não é alguém te dizendo o que fazer. É alguém garantindo que a decisão continua sendo sua.</p>
+        <p class="step-continuidade step-continuidade-solta">Acompanhamento após a Bússola Financeira.</p>
+      </div>
+    </div>
+
+    <div class="etapa r d3">
+      <div class="etapa-head">
+        <div class="drawer-trigger-label">A jornada</div>
+        <div class="drawer-trigger-title">Do diagnóstico <em>ao reino.</em></div>
+      </div>
+      <div class="etapa-body">
+        {% set jornadaOrigem = 'processo' %}{% include "jornada.njk" %}
+      </div>
+    </div>
+
+  </section>
+
+  {% set ctaOrigem = 'processo' %}{% include "cta-mapa.njk" %}
+
+</main>

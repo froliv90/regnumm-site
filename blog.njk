@@ -1,0 +1,36 @@
+---
+layout: base.njk
+permalink: /blog/index.html
+feedRss: true
+---
+<main>
+
+  <section class="hero-int">
+    <div class="grain"></div>
+    <div class="hero-int-inner">
+      <p class="hero-int-eyebrow">{{ blog.eyebrow }}</p>
+      <h1 class="hero-int-headline">{{ blog.titulo }} <em>{{ blog.tituloDestaque }}</em></h1>
+      <p class="hero-int-sub">{{ blog.subtitulo }}</p>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="blog-grid">
+      {%- for post in collections.posts | reverse %}
+      <a href="{{ post.url }}" class="blog-card r {{ ['', 'd1', 'd2'][loop.index0 % 3] }}"
+         onclick="if(window.posthog)posthog.capture('post_click',{post:'{{ post.fileSlug }}'})">
+        <div class="blog-card-tag">
+          {%- if post.data.categoria %}{{ post.data.categoria }}<span class="sep">·</span>{% endif -%}
+          <time datetime="{{ post.date | dataISO }}">{{ post.date | dataBR }}</time>
+        </div>
+        <div class="blog-card-title">{{ post.data.titulo | semTags }}</div>
+        <div class="blog-card-excerpt">{{ post.data.resumo }}</div>
+        <div class="blog-card-more">Ler o texto →</div>
+      </a>
+      {%- else %}
+      <div class="blog-empty">{{ blog.vazio }}</div>
+      {%- endfor %}
+    </div>
+  </section>
+
+</main>

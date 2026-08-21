@@ -1,0 +1,59 @@
+{
+  "_comentario": "Navegação do site. Fundamentação e Textos subiram do rodapé (não eram redundantes). Privacidade e Termos ficam só no rodapé, como é convenção. A barra final é obrigatória: é a forma canônica de cada página.",
+  "principal": [
+    {
+      "texto": "Os quatro perfis",
+      "href": "/perfis.html"
+    },
+    {
+      "texto": "O processo",
+      "href": "/processo/"
+    },
+    {
+      "texto": "Fundamentação",
+      "href": "/fundamentacao/"
+    },
+    {
+      "texto": "O fundador",
+      "href": "/sobre/"
+    },
+    {
+      "texto": "Textos",
+      "href": "/blog/"
+    }
+  ],
+  "cta": {
+    "texto": "Fazer o teste",
+    "href": "/teste"
+  },
+  "rodape": [
+    {
+      "texto": "O fundador",
+      "href": "/sobre/"
+    },
+    {
+      "texto": "O processo",
+      "href": "/processo/"
+    },
+    {
+      "texto": "O diagnóstico",
+      "href": "/diagnostico/"
+    },
+    {
+      "texto": "Os quatro perfis",
+      "href": "/perfis.html"
+    },
+    {
+      "texto": "Fundamentação",
+      "href": "/fundamentacao/"
+    },
+    {
+      "texto": "Textos",
+      "href": "/blog/"
+    },
+    {
+      "texto": "Acompanhe",
+      "href": "/#redes"
+    }
+  ]
+}
