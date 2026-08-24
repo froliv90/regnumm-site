@@ -3,104 +3,62 @@ layout: legal.njk
 permalink: /privacidade/index.html
 eyebrow: "Política de privacidade"
 titulo: "Como os seus dados <em>são tratados.</em>"
-resumo: "O que o Regnumm coleta, por que coleta, com quem compartilha e o que você pode exigir a qualquer momento."
-atualizado: "12 de agosto de 2026"
+resumo: "O que a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados."
+atualizado: "24 de agosto de 2026"
 seoTitulo: "Política de Privacidade — Regnumm"
-seoDescricao: "Como o Regnumm trata os dados pessoais dos visitantes do site e dos clientes, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018)."
+seoDescricao: "Quais dados a Regnumm coleta no site e no Teste dos Quatro Perfis, por quanto tempo guarda e como exercer os seus direitos, em conformidade com a LGPD (Lei 13.709/2018)."
 ---
 
-Esta política explica quais dados pessoais o Regnumm trata, com que finalidade, por quanto tempo e quais são os seus direitos. Ela se aplica ao site `regnumm.com.br` e ao contato inicial feito a partir dele.
+Esta política explica quais dados a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados. Aplica-se ao site regnumm.com.br e ao Teste dos Quatro Perfis.
 
-## Quem trata os seus dados
+## 1. Quem é o controlador
 
-O controlador dos dados é **Felipe Rodrigues Oliveira**, inscrito no CNPJ 27.348.900/0001-80, responsável pelo Regnumm.
+Felipe Rodrigues Oliveira, responsável pela Regnumm, é quem decide como e por que seus dados pessoais são tratados. Dúvidas ou pedidos relacionados a dados pessoais podem ser enviados pelo WhatsApp informado no site — é o canal oficial para isso.
 
-Para qualquer assunto relacionado a esta política — inclusive para exercer os direitos descritos abaixo — o canal de contato é o [WhatsApp](https://wa.me/5519982578517).
+## 2. Quais dados coletamos, e por quê
 
-## Quais dados são tratados
+**Ao fazer o Teste dos Quatro Perfis**: nome, WhatsApp, e-mail (se você optar por informar), e as respostas dadas durante o teste. Usamos isso para calcular seu diagnóstico, entrar em contato sobre o resultado, e para poder gerar o Mapa Financeiro em PDF caso você o compre depois.
 
-### Dados que você fornece
+**Ao comprar o Mapa Financeiro (PDF ou sessão)**: os dados acima, mais o registro da compra em si (produto, valor, data). O processamento do pagamento em si é feito por um provedor de pagamento externo — a Regnumm não armazena número de cartão nem dados bancários diretamente.
 
-No formulário de agendamento do site, você pode informar **nome**, **área de atuação** e **o momento financeiro** que mais se aproxima do seu. Esses campos são opcionais: o formulário funciona mesmo em branco.
+**Ao navegar no site**: dados de uso e comportamento de navegação, coletados por uma ferramenta de análise (PostHog), para entender como as páginas são usadas. Não usamos esses dados para te identificar individualmente fora do contexto do teste.
 
-Esses dados **não são gravados em nenhum servidor do Regnumm**. Ao enviar, eles são montados como texto de uma mensagem de WhatsApp e abertos no seu próprio aplicativo. A mensagem só existe a partir do momento em que **você** decide enviá-la.
+## 3. Base legal
 
-Se a conversa avançar, o tratamento passa a incluir os dados que você compartilhar diretamente com Felipe — por WhatsApp, por e-mail ou durante as sessões.
+Tratamos seus dados com base no seu consentimento, dado explicitamente antes de iniciar o Teste dos Quatro Perfis, e, no caso de quem compra o Mapa Financeiro, também com base na execução do contrato de prestação de serviço.
 
-### Dados coletados automaticamente
+## 4. Por quanto tempo guardamos seus dados
 
-O site usa o **PostHog**, uma ferramenta de análise de navegação, para entender como os visitantes usam as páginas: quais seções são abertas, quais botões recebem clique, quanto tempo a visita dura.
+O prazo de guarda depende de você ter ou não se tornado cliente pagante:
 
-O PostHog grava um identificador pseudônimo no seu navegador, por cookie e por armazenamento local, para reconhecer visitas da mesma origem. Esse identificador **não carrega o seu nome nem qualquer dado que identifique você diretamente**, mas, por ser persistente, é tratado aqui como dado pessoal. Também são registrados dados técnicos usuais: endereço IP, tipo de navegador, sistema operacional, resolução de tela, página de origem e localização aproximada derivada do IP.
+- **Se você fez o teste e não comprou nada**: seus dados ficam guardados por até **12 meses**. Esse é o tempo que consideramos razoável para eventual contato comercial de seguimento. Depois disso, os dados são apagados ou anonimizados.
+- **Se você comprou o Mapa Financeiro (PDF ou sessão)**: seus dados ficam guardados por **5 anos** a partir da compra. Esse prazo não é definido pela Regnumm — ele reflete o tempo que a lei brasileira permite que um cliente reclame de um serviço (Código de Defesa do Consumidor) e o tempo que a legislação fiscal exige que registros de venda fiquem disponíveis. Findo esse prazo, os dados são apagados.
 
-A hospedagem do site também registra dados técnicos de acesso, incluindo endereço IP, como parte normal do funcionamento de qualquer servidor web.
+Esses prazos valem exclusivamente para quanto tempo o dado fica guardado — não têm relação com prazos de garantia, de resposta a pedidos, ou com o prazo de arrependimento de compra descrito nos [Termos de Uso](/termos/).
 
-O site **não usa cookies de publicidade** e não faz remarketing.
+## 5. Onde seus dados ficam guardados
 
-## Para que os dados são usados
+Os dados são armazenados em servidor localizado no Brasil (região São Paulo). Não fazemos transferência internacional de dados pessoais.
 
-- **Retomar o contato que você iniciou** e agendar a sessão, quando você preenche o formulário.
-- **Prestar o serviço contratado**, no caso de quem se torna cliente.
-- **Entender e melhorar o site**, de forma agregada, a partir dos dados de navegação.
-- **Cumprir obrigações legais**, fiscais e contábeis.
+## 6. Seus direitos
 
-Os dados **não são vendidos**, não são cedidos para fins comerciais de terceiros e não alimentam nenhuma base de anúncios.
+Você pode, a qualquer momento, pelo WhatsApp informado no site:
 
-## Com que base legal
+- Confirmar se temos dados seus, e pedir acesso a eles.
+- Pedir correção de dado incorreto ou desatualizado.
+- Pedir a exclusão dos seus dados, respeitado o prazo de guarda de registros de compra descrito no item 4, quando aplicável.
+- Revogar o consentimento dado no início do teste.
 
-| Tratamento | Base legal (Lei 13.709/2018) |
-| --- | --- |
-| Dados do formulário e contato inicial | Diligências preliminares a pedido do titular (art. 7º, V) |
-| Prestação do serviço a clientes | Execução de contrato (art. 7º, V) |
-| Análise de navegação do site | Legítimo interesse (art. 7º, IX) |
-| Guarda de registros fiscais e contábeis | Cumprimento de obrigação legal (art. 7º, II) |
+Pedidos são respondidos em até 15 dias, conforme previsto na Lei Geral de Proteção de Dados (Lei 13.709/2018).
 
-## Com quem os dados são compartilhados
+## 7. Segurança
 
-O Regnumm não vende nem cede dados. O compartilhamento se limita aos prestadores de serviço necessários para o site funcionar:
+O acesso aos dados armazenados é restrito: nenhuma chave pública ou usada no navegador tem permissão de leitura ou escrita direta sobre os dados coletados. Todo acesso passa por controles do lado do servidor.
 
-- **Vercel** — hospedagem do site. Processa dados técnicos de acesso.
-- **PostHog** — análise de navegação. Processa os dados descritos acima.
-- **WhatsApp (Meta)** — canal de conversa. O conteúdo trocado fica sujeito também à política de privacidade da própria plataforma.
+## 8. Alterações nesta política
 
-Autoridades públicas podem receber dados quando houver obrigação legal ou ordem judicial.
+Esta política pode ser atualizada a qualquer momento. A versão vigente é sempre a publicada em regnumm.com.br/privacidade.
 
-## Transferência internacional
+## 9. Contato
 
-O PostHog é utilizado com servidores nos **Estados Unidos**, e a hospedagem opera em infraestrutura distribuída internacionalmente. Isso significa que parte dos dados técnicos de navegação é processada fora do Brasil, conforme os arts. 33 e seguintes da LGPD.
-
-## Por quanto tempo os dados ficam guardados
-
-- **Dados do formulário:** não são armazenados pelo Regnumm.
-- **Conversas de WhatsApp:** permanecem enquanto o contato fizer sentido, e são apagadas mediante pedido, ressalvado o que precisar ser mantido por obrigação legal.
-- **Dados de navegação:** pelo período de retenção da própria ferramenta de análise.
-- **Registros de clientes:** pelos prazos legais aplicáveis a documentos fiscais e contábeis.
-
-## Os seus direitos
-
-A LGPD garante a você, a qualquer momento e sem custo, o direito de:
-
-- confirmar se existe tratamento de dados seus e acessar esses dados;
-- corrigir dados incompletos, inexatos ou desatualizados;
-- pedir anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade com a lei;
-- pedir a portabilidade dos dados a outro fornecedor;
-- pedir a eliminação dos dados tratados com base no seu consentimento;
-- saber com quais entidades os seus dados foram compartilhados;
-- revogar o consentimento;
-- se opor a tratamento feito com base em legítimo interesse.
-
-Para exercer qualquer um deles, escreva pelo [WhatsApp](https://wa.me/5519982578517). O pedido é respondido no menor prazo possível.
-
-Você pode desativar a análise de navegação a qualquer momento ativando o sinal **"Do Not Track"** ou bloqueando cookies nas configurações do seu navegador. O site continua funcionando normalmente.
-
-## Segurança
-
-O site é servido exclusivamente por conexão criptografada (HTTPS). O acesso às conversas e aos registros de clientes é restrito a Felipe Rodrigues Oliveira. Nenhum sistema é imune a incidentes, mas, caso ocorra algum que possa gerar risco relevante, os titulares afetados e a ANPD serão comunicados na forma da lei.
-
-## Menores de idade
-
-O Regnumm atende pessoas maiores de 18 anos. O site não se destina a crianças e adolescentes e não coleta dados dessa faixa etária de forma consciente.
-
-## Alterações desta política
-
-Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data no fim da página indica a última revisão. Mudanças relevantes são sinalizadas de forma visível.
+Dúvidas ou pedidos relacionados a esta política podem ser enviados pelo WhatsApp informado no site.

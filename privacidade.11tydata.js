@@ -14,7 +14,7 @@ module.exports = {
             description: data.seoDescricao,
             inLanguage: "pt-BR",
             publisher: ld.refNegocio,
-            dateModified: "2026-08-12"
+            dateModified: "2026-08-24"
           },
           ld.negocio,
           ld.trilha([["Regnumm", "/"], ["Política de privacidade", null]])
