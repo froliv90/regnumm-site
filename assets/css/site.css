@@ -42,6 +42,17 @@
   --mono:   'IBM Plex Mono', 'Courier New', monospace;
 
   /* tons de prosa já usados no site */
+  /* Champagne e silver foram desenhados para fundo escuro: sobre midnight o
+     champagne dá 9.40:1. Sobre off-white cai para 1.72:1, ilegível. Estas duas
+     variantes preservam matiz e saturação e passam em 4.5:1 no claro.
+     A paleta não mudou — ganhou o tom de texto que faltava. */
+  --accent-texto: #806C45;   /* champagne 4.53:1 sobre off-white */
+  --silver-texto: #5B7183;   /* silver   4.54:1 sobre off-white */
+
+  /* Cor do anel de foco. Herda por cascata: blocos escuros trocam para o
+     champagne, que sobre midnight tem contraste de sobra. */
+  --foco: #806C45;
+
   --prose:      #3a4a5c;
   --prose-soft: #4a5a6c;
   --prose-mute: #5a6a7c;
@@ -49,6 +60,18 @@
 }
 
 html { scroll-behavior: smooth; }
+
+/* ── FOCO DE TECLADO ──
+   O site tinha duas regras de foco no arquivo inteiro. Quem navega por teclado
+   não enxergava onde estava — falha objetiva de WCAG 2.4.7, e num funil pago
+   é também quem desiste sem conseguir explicar por quê. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--foco);
+  outline-offset: 3px;
+}
+/* Blocos escuros: o champagne cheio, que rende 9.40:1 sobre midnight. */
+nav, footer, .hero, .hero-int, .cta-sec, .captura, .autonomia,
+.redes, .faixa-anchor, .faixa-mid, .mapa-card { --foco: var(--accent); }
 
 /* A nav é fixa, então um alvo de âncora pararia escondido atrás dela.
    Vale para as seções da home e para as etapas de /processo/. */
@@ -234,7 +257,7 @@ h1.hero-headline em { font-style: italic; color: var(--accent); }
 .btn-primary:hover { opacity: .87; transform: translateY(-1px); }
 .btn-ghost {
   font-size: .74rem; font-weight: 400; letter-spacing: .14em;
-  text-transform: uppercase; color: rgba(244,242,238,.45);
+  text-transform: uppercase; color: rgba(244,242,238,.62);
   text-decoration: none;
   border-bottom: 1px solid rgba(244,242,238,.18);
   padding-bottom: 2px; transition: color .2s, border-color .2s;
@@ -253,7 +276,7 @@ h1.hero-headline em { font-style: italic; color: var(--accent); }
 }
 .scroll-hint span {
   font-size: .58rem; letter-spacing: .22em; text-transform: uppercase;
-  color: rgba(244,242,238,.25); writing-mode: vertical-rl;
+  color: rgba(244,242,238,.58); writing-mode: vertical-rl;  /* .25 dava 2.12:1 */
 }
 .scroll-bar {
   width: 1px; height: 3.5rem;
@@ -314,7 +337,7 @@ h1.hero-int-headline em { font-style: italic; color: var(--accent); }
 .callout cite {
   display: block; font-size: .68rem; font-weight: 400;
   letter-spacing: .12em; text-transform: uppercase;
-  color: var(--silver); margin-top: 1rem; font-style: normal;
+  color: var(--silver-texto); margin-top: 1rem; font-style: normal;
 }
 
 /* botão discreto usado nos links "Conheça os quatro perfis" */
@@ -397,7 +420,7 @@ h1.hero-int-headline em { font-style: italic; color: var(--accent); }
 .mapa-social a:hover { color: var(--accent); transform: translateY(-1px); }
 .mapa-note {
   margin-top: 1rem; font-size: .7rem; font-weight: 300;
-  letter-spacing: .08em; color: rgba(138,158,174,.5);
+  letter-spacing: .08em; color: var(--silver);
 }
 .mapa-card {
   border: 1px solid rgba(244,242,238,.1);
@@ -420,7 +443,7 @@ h1.hero-int-headline em { font-style: italic; color: var(--accent); }
 }
 .mapa-card-detail {
   font-size: .78rem; font-weight: 300; line-height: 1.75;
-  color: rgba(138,158,174,.65);
+  color: var(--silver);  /* a 65% dava 3.47:1 */
 }
 /* linha de preço do card — antes era style= inline */
 .mapa-card-preco {
@@ -429,7 +452,7 @@ h1.hero-int-headline em { font-style: italic; color: var(--accent); }
 .mapa-card-preco .valor { font-size: 1.7rem; color: var(--base); }
 .mapa-card-preco .unidade {
   font-size: .68rem; font-weight: 300; letter-spacing: .08em;
-  color: rgba(138,158,174,.5);
+  color: var(--silver);  /* a 50% dava 2.56:1 */
 }
 
 /* ── 09 · PROCESSO ─────────────────────────────────────────── */
@@ -447,7 +470,7 @@ h2.processo-h em { font-style: italic; color: var(--mid); }
   margin-top: 1.5rem; padding-top: 1.5rem;
   border-top: 1px solid rgba(10,22,40,.07);
   font-size: .72rem; font-weight: 300; letter-spacing: .06em;
-  color: var(--silver); font-style: italic;
+  color: var(--silver-texto); font-style: italic;  /* silver puro dava 2.48:1 no claro */
 }
 /* variante sem a régua superior — antes era style= inline */
 .step-continuidade-solta { margin-top: 0; padding-top: 0; border: none; }
@@ -467,7 +490,7 @@ h2.processo-h em { font-style: italic; color: var(--mid); }
 }
 .story-label {
   font-size: .62rem; font-weight: 500; letter-spacing: .18em;
-  text-transform: uppercase; color: rgba(10,22,40,.55);
+  text-transform: uppercase; color: rgba(10,22,40,.72);
   transition: color .25s;
 }
 .story-sep { color: rgba(10,22,40,.3); font-size: 1rem; align-self: center; }
@@ -478,7 +501,7 @@ a.story-item:hover .story-label { color: rgba(10,22,40,.8); }
 a.story-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
 /* a última etapa é o destino: ganha o peso do acento */
-a.story-item-fim .story-verb { color: var(--accent); }
+a.story-item-fim .story-verb { color: var(--accent-texto); }
 a.story-item-fim:hover .story-verb { color: var(--mid); }
 
 /* faixa da jornada como bloco próprio na home */
@@ -499,7 +522,7 @@ a.story-item-fim:hover .story-verb { color: var(--mid); }
   font-style: italic; line-height: 1.65;
   color: var(--accent); margin-top: 2rem;
 }
-.pq-nao .pq-text { color: rgba(244,242,238,.45); }
+.pq-nao .pq-text { color: rgba(244,242,238,.62); }  /* .45 dava 3.63:1 */
 
 /* ── 11 · FAQ ──────────────────────────────────────────────── */
 .faq {
@@ -564,7 +587,7 @@ h2.sobre-h em { font-style: italic; color: var(--mid); }
 .principio { border-top: 1px solid rgba(10,22,40,.1); padding-top: 1.2rem; }
 .principio-nome {
   font-size: .67rem; font-weight: 500; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--accent); margin-bottom: .45rem;
+  text-transform: uppercase; color: var(--accent-texto); margin-bottom: .45rem;
 }
 .principio-desc { font-size: .82rem; font-weight: 300; line-height: 1.65; color: var(--prose-mute); }
 
@@ -593,7 +616,7 @@ h2.evidencia-h em { font-style: italic; color: var(--mid); }
 .evidencia-quote cite {
   display: block; font-size: .68rem; font-weight: 400;
   letter-spacing: .12em; text-transform: uppercase;
-  color: var(--silver); margin-top: 1rem; font-style: normal;
+  color: var(--silver-texto); margin-top: 1rem; font-style: normal;
 }
 
 /* ── 14 · CAPTURA ──────────────────────────────────────────── */
@@ -643,7 +666,7 @@ h2.captura-h em { font-style: italic; color: var(--accent); }
 .captura-btn:hover { opacity: .88; transform: translateY(-1px); }
 .captura-note {
   margin-top: 1.2rem; font-size: .68rem; font-weight: 300;
-  letter-spacing: .06em; color: rgba(244,242,238,.35); text-align: center;
+  letter-spacing: .06em; color: rgba(244,242,238,.7); text-align: center;
 }
 
 /* ── 14b · ESCADA DE OFERTAS ───────────────────────────────────────
@@ -693,7 +716,7 @@ h2.captura-h em { font-style: italic; color: var(--accent); }
 .oferta-duvida {
   display: block; margin-top: 1.1rem;
   font-size: .74rem; font-weight: 300; line-height: 1.6;
-  color: rgba(138,158,174,.75); text-decoration: none;
+  color: var(--silver);  /* a 75% dava 3.34:1 */ text-decoration: none;
   border-bottom: 1px solid transparent; transition: color .2s;
 }
 .oferta-duvida:hover { color: var(--accent); }
@@ -736,7 +759,7 @@ h2.cta-h em { font-style: italic; color: var(--accent); }
 .cta-btn:hover { opacity: .87; transform: translateY(-2px); }
 .cta-note {
   margin-top: 1.5rem; font-size: .68rem; font-weight: 300;
-  letter-spacing: .1em; color: rgba(138,158,174,.4);
+  letter-spacing: .1em; color: var(--silver);
 }
 
 /* barra de redes — antes era style= inline */
@@ -762,7 +785,7 @@ h2.cta-h em { font-style: italic; color: var(--accent); }
 .perfis { padding: 4vh 5vw 10vh; }
 .drawer-eixo {
   font-size: .6rem; font-weight: 400; letter-spacing: .2em;
-  text-transform: uppercase; color: var(--accent); margin-bottom: .6rem;
+  text-transform: uppercase; color: var(--accent-texto); margin-bottom: .6rem;
 }
 .pf-label {
   font-size: .66rem; font-weight: 500; letter-spacing: .1em;
@@ -828,7 +851,7 @@ h2.autonomia-h em { font-style: italic; color: var(--accent); }
 .blog-card:hover { background: rgba(201,185,154,.05); }
 .blog-card-tag {
   font-size: .6rem; font-weight: 400; letter-spacing: .2em;
-  text-transform: uppercase; color: var(--accent); margin-bottom: 1.4rem;
+  text-transform: uppercase; color: var(--accent-texto); margin-bottom: 1.4rem;
   display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
 }
 .blog-card-tag .sep { color: rgba(201,185,154,.45); }
@@ -859,7 +882,7 @@ h2.autonomia-h em { font-style: italic; color: var(--accent); }
 .post-meta {
   display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
   font-size: .66rem; font-weight: 400; letter-spacing: .14em;
-  text-transform: uppercase; color: rgba(138,158,174,.6);
+  text-transform: uppercase; color: var(--silver);
 }
 .post-meta .sep { color: rgba(138,158,174,.3); }
 
@@ -916,7 +939,7 @@ h2.autonomia-h em { font-style: italic; color: var(--accent); }
 .post-prose blockquote cite {
   display: block; font-size: .68rem; font-weight: 400;
   letter-spacing: .12em; text-transform: uppercase;
-  color: var(--silver); margin-top: 1rem; font-style: normal;
+  color: var(--silver-texto); margin-top: 1rem; font-style: normal;
 }
 
 .post-prose hr {
@@ -1036,7 +1059,7 @@ h2.autonomia-h em { font-style: italic; color: var(--accent); }
   margin-top: 4rem; padding-top: 1.6rem;
   border-top: 1px solid rgba(10,22,40,.1);
   font-size: .68rem; font-weight: 400; letter-spacing: .12em;
-  text-transform: uppercase; color: var(--silver);
+  text-transform: uppercase; color: var(--silver-texto);
 }
 
 /* ── 19 · RODAPÉ ───────────────────────────────────────────── */
@@ -1047,17 +1070,17 @@ footer {
 .f-logo {
   font-family: var(--serif); font-weight: 500;
   font-size: .95rem; letter-spacing: .2em; text-transform: uppercase;
-  color: rgba(244,242,238,.35); text-decoration: none;
+  color: rgba(244,242,238,.62); text-decoration: none;
 }
-.f-logo span { color: rgba(201,185,154,.35); }
-.f-copy { font-size: .63rem; letter-spacing: .08em; color: rgba(244,242,238,.18); }
-.f-copy a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(244,242,238,.15); }
+.f-logo span { color: var(--accent); }
+.f-copy { font-size: .63rem; letter-spacing: .08em; color: rgba(244,242,238,.52); }  /* .18 dava 1.61:1 */
+.f-copy a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(244,242,238,.35); }
 .f-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
 .f-links a {
   font-size: .63rem; letter-spacing: .1em; text-transform: uppercase;
-  color: rgba(244,242,238,.22); text-decoration: none; transition: color .2s;
+  color: rgba(244,242,238,.55); text-decoration: none; transition: color .2s;  /* .22 dava 1.85:1 */
 }
-.f-links a:hover { color: rgba(244,242,238,.55); }
+.f-links a:hover { color: var(--base); }
 
 /* ── 20 · ANIMAÇÕES E REVEAL ───────────────────────────────── */
 @keyframes fadeUp {
