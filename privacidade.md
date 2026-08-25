@@ -8,7 +8,6 @@ atualizado: "24 de agosto de 2026"
 seoTitulo: "Política de Privacidade — Regnumm"
 seoDescricao: "Quais dados a Regnumm coleta no site e no Teste dos Quatro Perfis, por quanto tempo guarda e como exercer os seus direitos, em conformidade com a LGPD (Lei 13.709/2018)."
 ---
-
 Esta política explica quais dados a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados. Aplica-se ao site regnumm.com.br e ao Teste dos Quatro Perfis.
 
 ## 1. Quem é o controlador
@@ -38,7 +37,9 @@ Esses prazos valem exclusivamente para quanto tempo o dado fica guardado — nã
 
 ## 5. Onde seus dados ficam guardados
 
-Os dados são armazenados em servidor localizado no Brasil (região São Paulo). Não fazemos transferência internacional de dados pessoais.
+Os dados coletados no Teste dos Quatro Perfis — nome, WhatsApp, e-mail e respostas — ficam armazenados em servidor localizado no Brasil (região São Paulo). Não há transferência internacional desses dados.
+
+Os dados de navegação e uso do site, coletados por uma ferramenta de análise (PostHog), são processados em servidor localizado na União Europeia. Essa transferência internacional é realizada com base no seu consentimento, e a União Europeia possui regime de proteção de dados reconhecido como adequado. Você pode recusar essa coleta a qualquer momento pelas configurações do seu navegador ou entrando em contato pelo WhatsApp informado no site.
 
 ## 6. Seus direitos
 

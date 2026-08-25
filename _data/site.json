@@ -10,8 +10,9 @@
   "idPessoa": "https://regnumm.com.br/#felipe",
   "idNegocio": "https://regnumm.com.br/#regnum",
   "posthogToken": "<ph_project_token>",
-  "posthogHost": "https://us.i.posthog.com",
+  "posthogHost": "https://eu.i.posthog.com",
   "numeroWhatsapp": "5519982578517",
   "linkTeste": "/teste",
-  "_linkTeste": "O app do diagnóstico é dono de /teste. Enquanto o rewrite da Vercel não existir, trocar por a URL da Vercel do app para o link nunca ficar morto."
+  "_linkTeste": "O app do diagnóstico é dono de /teste. Enquanto o rewrite da Vercel não existir, trocar por a URL da Vercel do app para o link nunca ficar morto.",
+  "_posthog": "Projeto na regiao EU Cloud. A regiao se define na criacao do projeto e nao se troca depois. O token abaixo ainda e placeholder: trocar por phc_... do projeto novo. Ver item 5 da Politica de Privacidade."
 }
