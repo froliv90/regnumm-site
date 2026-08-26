@@ -12,12 +12,8 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
 
   <!-- HERO -->
   <section class="hero">
-    <div class="grain"></div>
-    <div class="hero-line"></div>
     <div class="hero-inner">
-      <h1 class="hero-headline">
-        <em>Descubra, desbrave<br>e construa um reino.</em>
-      </h1>
+      <h1 class="hero-headline">Descubra, desbrave e construa um reino.</h1>
       <p class="hero-subtitle">O que você está construindo é reconhecidamente seu?</p>
       <p class="hero-sub">
         Quem ganha bem e não acumula já tentou planilha, já cortou gasto, já aumentou a renda. O problema voltou. Porque o que faltava nunca foi mais dinheiro. Era uma direção que fosse sua.
@@ -26,14 +22,9 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
         <a href="{{ site.linkTeste }}" class="btn-primary" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'hero'})">Descobrir o meu perfil</a>
         <a href="/processo/" class="btn-ghost">Como funciona</a>
       </div>
-    </div>
-    <div class="hero-bg-letter">R</div>
-    <div class="hero-social">
-      {% set tamanho = 16 %}{% include "redes-icones.njk" %}
-    </div>
-    <div class="scroll-hint">
-      <div class="scroll-bar"></div>
-      <span>Rolar</span>
+      <div class="hero-social">
+        {% set tamanho = 16 %}{% include "redes-icones.njk" %}
+      </div>
     </div>
   </section>
 
@@ -45,9 +36,8 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
   </section>
 
   <!-- PARA QUEM -->
-  <section class="faixa faixa-mid faixa-alta faixa-textura" id="paraquem">
-    <div class="grain grain-suave"></div>
-    <div class="faixa-conteudo r">
+  <section class="faixa faixa-anchor faixa-alta" id="paraquem">
+    <div class="r">
       <h2 class="secao-titulo">Para quem é <em>e para quem não é.</em></h2>
       <div class="paraquem-inner">
         <div class="paraquem-col">
@@ -117,8 +107,7 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
   <!-- ESCADA DE OFERTAS -->
   <!-- Âncora antiga: links externos para /#agendar continuam caindo aqui. -->
   <span id="agendar" aria-hidden="true"></span>
-  <section class="captura faixa-textura" id="ofertas">
-    <div class="grain grain-suave"></div>
+  <section class="captura" id="ofertas">
     <div class="captura-inner">
       <p class="captura-label r">Depois do teste</p>
       <h2 class="captura-h r d1">Dois jeitos de ir <em>mais fundo.</em></h2>
@@ -129,7 +118,6 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
 
   <!-- CTA FINAL -->
   <section class="cta-sec">
-    <div class="grain grain-soft"></div>
     <div class="cta-inner">
       <p class="cta-pre r">O primeiro passo é entender o que está sendo construído</p>
       <h2 class="cta-h r d1">Descubra o seu <em>perfil.</em></h2>
