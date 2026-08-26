@@ -4,8 +4,42 @@
   "outputDirectory": "_site",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/perfis", "destination": "/perfis.html", "permanent": true },
-    { "source": "/perfis/", "destination": "/perfis.html", "permanent": true },
-    { "source": "/blog/feed", "destination": "/blog/feed.xml", "permanent": false }
+    {
+      "source": "/perfis",
+      "destination": "/perfis.html",
+      "permanent": true
+    },
+    {
+      "source": "/perfis/",
+      "destination": "/perfis.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/feed",
+      "destination": "/blog/feed.xml",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/teste",
+      "destination": "https://regnumm-diagnostico.vercel.app/teste"
+    },
+    {
+      "source": "/teste/",
+      "destination": "https://regnumm-diagnostico.vercel.app/teste"
+    },
+    {
+      "source": "/teste/:path+",
+      "destination": "https://regnumm-diagnostico.vercel.app/teste/:path+"
+    },
+    {
+      "source": "/teste-static/:path+",
+      "destination": "https://regnumm-diagnostico.vercel.app/teste-static/:path+"
+    },
+    {
+      "source": "/api/sessoes",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/sessoes"
+    }
   ]
 }
