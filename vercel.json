@@ -40,6 +40,10 @@
     {
       "source": "/api/sessoes",
       "destination": "https://regnumm-diagnostico.vercel.app/api/sessoes"
+    },
+    {
+      "source": "/api/sessoes/",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/sessoes"
     }
   ]
 }
