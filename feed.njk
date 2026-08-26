@@ -8,8 +8,10 @@ eleventyExcludeFromCollections: true
   <subtitle>{{ blog.seoDescricao }}</subtitle>
   <link href="{{ site.url }}/blog/feed.xml" rel="self" />
   <link href="{{ site.url }}/blog/" />
+  {#- A RFC 4287 exige um atom:updated com data valida. Sem posts, cai na data
+      do build: feed vazio e legitimo, feed com o campo em branco nao e. -#}
   {%- set ultimo = collections.posts | last %}
-  <updated>{% if ultimo %}{{ ultimo.date | dataRFC }}{% endif %}</updated>
+  <updated>{% if ultimo %}{{ ultimo.date | dataRFC }}{% else %}{{ page.date | dataRFC }}{% endif %}</updated>
   <id>{{ site.url }}/blog/</id>
   <author>
     <name>{{ site.autor }}</name>
