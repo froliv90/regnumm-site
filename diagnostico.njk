@@ -1,0 +1,65 @@
+---
+layout: base.njk
+permalink: /diagnostico/index.html
+seoTitulo: "O diagnóstico — Faltou direção, não informação | Regnumm"
+seoDescricao: "O padrão que aparece nos diagnósticos é consistente: a pessoa ganha bem, entende de investimento, e ainda assim não acumula. O Mapa Financeiro nomeia o padrão que dirige a sua vida financeira."
+---
+<main>
+
+  <section class="hero-int">
+    <div class="grain"></div>
+    <div class="hero-int-inner">
+      <p class="hero-int-eyebrow">O diagnóstico</p>
+      <h1 class="hero-int-headline">Faltou direção,<br><em>não informação.</em></h1>
+      <p class="hero-int-sub">O padrão que aparece nos diagnósticos é consistente. A pessoa ganha bem, entende de investimento. E ainda assim não acumula, decide no improviso, sente que a vida financeira está sempre um passo atrás da renda.</p>
+    </div>
+  </section>
+
+  <section class="faixa faixa-base faixa-alta">
+    <div class="limite-760 r">
+      <p class="pb">O mercado oferece duas respostas para isso. De um lado, número: rendimento, produto, a promessa de mais. Do outro, medo: a aposentadoria que não vem, o tempo perdido. As duas entregam uma rota pronta, traçada por quem ganha alguma coisa com ela.</p>
+      <p class="pb">O que falta não é mais informação nem mais disciplina. <strong>É uma direção que seja da própria pessoa.</strong> Um critério de prioridade, uma regra que funciona mesmo quando o mês complica, um norte que ninguém empurrou.</p>
+      <div class="callout">
+        <p>"A maioria trata o sintoma como se fosse o diagnóstico. Gasto alto não é o problema, é a evidência dele."</p>
+        <cite>Felipe Rodrigues Oliveira, fundador do Regnumm</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa faixa-anchor faixa-alta" id="mapa">
+    <div class="grain grain-soft"></div>
+    <div class="mapa-inner r">
+      <div class="mapa-left">
+        <p class="sec-label sec-label-claro">O primeiro passo</p>
+        <h2 class="secao-titulo">Mapa <em>Financeiro.</em></h2>
+        <p class="mapa-desc">Uma sessão diagnóstica conduzida por Felipe. O objetivo é nomear o padrão que dirige a sua vida financeira. Aquilo que você já sente mas não consegue segurar com as mãos.</p>
+        <p class="mapa-desc">É uma conversa estruturada que entrega clareza sobre como você decide. Sem formulário, sem julgamento, sem número.</p>
+        <div class="mapa-cta-block">
+          <a href="{{ site.linkTeste }}" class="mapa-btn" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'mapa_card'})">Descobrir o meu perfil</a>
+          <div class="mapa-social">
+            {% set tamanho = 18 %}{% include "redes-icones.njk" %}
+          </div>
+          <p class="mapa-note"><span class="data-stat">{{ ofertas.sessao.valor | brl }}</span> · Online · Presencial na região de Campinas mediante agendamento prévio.</p>
+        </div>
+      </div>
+      <div class="mapa-right">
+        <div class="mapa-card">
+          <div class="mapa-card-label">O que você sai sabendo</div>
+          <div class="mapa-card-title">Qual perfil está conduzindo as suas decisões com dinheiro</div>
+          <div class="mapa-card-body">Ao final dos 90 minutos, você sabe com precisão como decide com dinheiro, qual força te trouxe até aqui e onde ela passou a limitar. Não em teoria. Lido ao vivo, confrontado com o que você mesmo disse durante a sessão.</div>
+          <div class="mapa-card-divider"></div>
+          <div class="mapa-card-detail">A sessão identifica um dos quatro perfis de comportamento financeiro que operam na vida de quem ganha bem. Cada perfil é uma força que trouxe a pessoa até aqui, e a mesma força tem um ponto onde passa a limitar. O diagnóstico nomeia os dois e aponta o que a Bússola Financeira resolve a partir dali.</div>
+          <div class="mapa-card-divider"></div>
+          <div class="mapa-card-preco">
+            <span class="data-stat valor">{{ ofertas.sessao.valor | brl }}</span>
+            <span class="unidade">sessão única · online</span>
+          </div>
+          <a href="/perfis.html" class="btn-linha btn-linha-claro" onclick="if(window.posthog)posthog.capture('perfis_link_click',{location:'mapa_card'})">Conheça os quatro perfis →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% set ctaOrigem = 'diagnostico' %}{% include "cta-mapa.njk" %}
+
+</main>

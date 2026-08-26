@@ -1,0 +1,26 @@
+---
+permalink: /blog/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ blog.seoTitulo }}</title>
+  <subtitle>{{ blog.seoDescricao }}</subtitle>
+  <link href="{{ site.url }}/blog/feed.xml" rel="self" />
+  <link href="{{ site.url }}/blog/" />
+  {%- set ultimo = collections.posts | last %}
+  <updated>{% if ultimo %}{{ ultimo.date | dataRFC }}{% endif %}</updated>
+  <id>{{ site.url }}/blog/</id>
+  <author>
+    <name>{{ site.autor }}</name>
+  </author>
+  {%- for post in collections.posts | reverse %}
+  <entry>
+    <title>{{ post.data.titulo | semTags }}</title>
+    <link href="{{ site.url }}{{ post.url }}" />
+    <updated>{{ post.date | dataRFC }}</updated>
+    <id>{{ site.url }}{{ post.url }}</id>
+    <summary>{{ post.data.resumo }}</summary>
+  </entry>
+  {%- endfor %}
+</feed>

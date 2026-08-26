@@ -1,0 +1,43 @@
+---
+layout: base.njk
+ogType: article
+---
+<main>
+
+  <article>
+    <header class="hero-int">
+      <div class="grain"></div>
+      <div class="hero-int-inner">
+        <p class="hero-int-eyebrow">
+          {%- if categoria %}{{ categoria }}<span class="sep">·</span>{% endif -%}
+          <time datetime="{{ date | dataISO }}">{{ date | dataBR }}</time>
+        </p>
+        <h1 class="hero-int-headline">{{ titulo | safe }}</h1>
+        {% if resumo %}<p class="post-lead">{{ resumo }}</p>{% endif %}
+        <p class="post-meta">
+          <span>{{ site.autor }}</span>
+          <span class="sep">·</span>
+          <span>{{ content | tempoLeitura }} min de leitura</span>
+        </p>
+      </div>
+    </header>
+
+    <div class="post-body">
+      <div class="post-prose r">
+        {{ content | safe }}
+      </div>
+    </div>
+  </article>
+
+  <section class="cta-sec">
+    <div class="grain grain-soft"></div>
+    <div class="cta-inner">
+      <p class="cta-pre r">O primeiro passo é entender o que está sendo construído</p>
+      <h2 class="cta-h r d1">Descubra o seu <em>perfil.</em></h2>
+      <p class="cta-sub r d2">Vinte perguntas, entre cinco e dez minutos. Você sai sabendo qual padrão está dirigindo a sua vida financeira, e o ponto exato onde ele trava. Sem custo e sem compromisso com o que vem depois.</p>
+      <a href="{{ site.linkTeste }}" class="cta-btn r d3" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'post',post:'{{ page.fileSlug }}'})">Fazer o teste gratuito</a>
+      <p class="cta-note r d4">Grátis · <span class="data-stat">20</span> perguntas · Resultado na hora</p>
+    </div>
+  </section>
+
+</main>
