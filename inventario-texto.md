@@ -40,7 +40,7 @@ TÍTULO DA PÁGINA ocupa a largura da tela e quebra em 22 caracteres por linha.
 
 **Aba do navegador e título no Google**
 
-> Regnumm — Governança Financeira Pessoal | Regnum
+> Regnumm — Governança Financeira Pessoal | Regnumm
 
 **Descrição no Google**
 
@@ -85,7 +85,7 @@ TÍTULO DA PÁGINA ocupa a largura da tela e quebra em 22 caracteres por linha.
 - **PERGUNTA (FAQ)** · Preciso fazer o Mapa Financeiro antes das outras sessões?
 - **RESPOSTA (FAQ)** · Sim. O Mapa Financeiro é o ponto de entrada de todo o processo. O diagnóstico da sessão orienta as quatro sessões da Bússola Financeira e, consequentemente, o acompanhamento da Arquitetura Financeira. Sem o diagnóstico, o processo perde precisão.
 - **PERGUNTA (FAQ)** · O Regnumm oferece consultoria de investimentos?
-- **RESPOSTA (FAQ)** · Não. O Regnumm não oferece consultoria de investimentos, não indica produtos financeiros e não tem remuneração atrelada a nenhum produto do mercado. O trabalho é anterior a isso: direção financeira pessoal e governança. Quem chega buscando indicação de fundo ou estratégia de alocação está no lugar errado.
+- **RESPOSTA (FAQ)** · Não. O trabalho aqui acontece antes da escolha de fundo, produto ou estratégia de alocação, na direção que orienta qualquer decisão financeira. A remuneração vem só do cliente, nunca de comissão de mercado. Quem busca indicação de investimento está no lugar errado.
 - **PERGUNTA (FAQ)** · Qual a diferença para uma assessoria ou corretora?
 - **RESPOSTA (FAQ)** · A remuneração. Assessorias e corretoras ganham sobre os produtos que o cliente contrata, o que cria um interesse próprio dentro do atendimento. No Regnumm não existe produto. A única remuneração vem do próprio trabalho de diagnóstico e direção, o que significa que não há segunda intenção na mesa. É como uma consulta médica: você paga pelo cuidado, não descobre depois que o tratamento rendia comissão para quem prescreveu.
 - **PERGUNTA (FAQ)** · O processo funciona para autônomos e profissionais com renda variável?
@@ -108,13 +108,13 @@ TÍTULO DA PÁGINA ocupa a largura da tela e quebra em 22 caracteres por linha.
 ### Escada de ofertas
 
 - **RÓTULO** · Depois do teste
-- **TÍTULO DE SEÇÃO (h2)** · Dois jeitos de ir mais fundo.
+- **TÍTULO DE SEÇÃO (h2)** · Você viu um padrão. Tem outro.
 - **SUBTÍTULO** · O Teste dos Quatro Perfis é gratuito e mostra o perfil que conduz as suas decisões. O que vem depois aprofunda: o segundo padrão por trás dele, e o ponto onde os dois se cruzam.
 - **RÓTULO** · Mapa Financeiro em PDF
 - **OFERTA / PREÇO** · R$ 99
 - **OFERTA / PREÇO** · Relatório completo em PDF: o perfil dominante, o perfil secundário e o cruzamento entre os dois.
 - **BOTÃO** · Comprar o PDF — R$ 99
-- **OFERTA / PREÇO** · Ficou com dúvida? Fala direto comigo no WhatsApp — sou eu que respondo.
+- **OFERTA / PREÇO** · Ficou com dúvida? Fala direto comigo no WhatsApp, sou eu que respondo.
 - **RÓTULO** · Mapa Financeiro
 - **OFERTA / PREÇO** · R$ 125
 - **OFERTA / PREÇO** · Sessão individual de até 90 minutos com Felipe, online ou presencial na região de Campinas.
