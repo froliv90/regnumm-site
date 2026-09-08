@@ -50,7 +50,11 @@ jobs:
             exit 1
           fi
 
-          publicado=$(printf '%s' "$resposta" | jq -r '.commit // "ausente"')
+          if ! publicado=$(printf '%s' "$resposta" | jq -er '.commit' 2>/dev/null); then
+            echo "::error::$URL_VERSAO respondeu, mas nao com o JSON de versao esperado. Provavelmente esta servindo a pagina de erro, ou o build parou de gerar o marcador."
+            echo "resposta recebida (inicio): $(printf '%s' "$resposta" | head -c 200)"
+            exit 1
+          fi
 
           echo "topo de main : $esperado (há ${idade_min} min)"
           echo "no ar        : $publicado"
