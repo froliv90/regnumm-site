@@ -43,6 +43,16 @@ jobs:
 
           esperado=$(git rev-parse HEAD)
           idade_seg=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+
+          # Commit com data no futuro (relogio torto, data forjada a mao) daria
+          # idade negativa, que e sempre menor que a tolerancia — e o vigia
+          # passaria para sempre sem nunca alarmar. Trata como recem-feito, mas
+          # em voz alta: silencio e exatamente o que este job existe para evitar.
+          if [ "$idade_seg" -lt 0 ]; then
+            echo "::warning::O commit $esperado tem data no futuro. A idade nao pode ser usada; tratando como recem-feito."
+            idade_seg=0
+          fi
+
           idade_min=$(( idade_seg / 60 ))
 
           if ! resposta=$(curl -fsSL --max-time 25 "$URL_VERSAO"); then
