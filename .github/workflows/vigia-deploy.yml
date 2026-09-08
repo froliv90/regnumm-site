@@ -1,0 +1,69 @@
+name: Vigia de deploy
+
+# Por que isto existe:
+#
+# Em 27/ago um push para main não gerou build nenhum na Vercel. Não foi um
+# build que falhou, foi um build que nunca existiu — e disso ninguém é avisado,
+# nem pela Vercel nem pelo GitHub, porque não há evento nenhum para notificar.
+# O v6 do site ficou 12 dias pronto e fora do ar.
+#
+# Este job fecha esse buraco pelo único caminho possível: em vez de esperar um
+# aviso, ele pergunta de hora em hora "o que está publicado agora?" e compara
+# com o topo de main. Quando os dois divergem além da janela de tolerância, o
+# job falha — e é a falha do job que dispara o e-mail do GitHub.
+#
+# Não precisa de token nem de segredo: o site publica o próprio commit em
+# /version.json, gerado no build a partir de VERCEL_GIT_COMMIT_SHA.
+
+on:
+  schedule:
+    # 17 minutos depois de cada hora cheia: horário redondo é quando a fila do
+    # GitHub está mais cheia e o agendamento mais atrasa.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  conferir:
+    name: O que está no ar é o topo de main?
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Comparar main com o que está publicado
+        env:
+          URL_VERSAO: https://regnumm.com.br/version.json
+          # Margem para o build acontecer. Um push recente ainda não publicado
+          # é normal; o que não é normal é continuar assim meia hora depois.
+          TOLERANCIA_MINUTOS: "30"
+        run: |
+          set -euo pipefail
+
+          esperado=$(git rev-parse HEAD)
+          idade_seg=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          idade_min=$(( idade_seg / 60 ))
+
+          if ! resposta=$(curl -fsSL --max-time 25 "$URL_VERSAO"); then
+            echo "::error::O site não respondeu em $URL_VERSAO. Ou está fora do ar, ou o build parou de gerar o marcador de versão."
+            exit 1
+          fi
+
+          publicado=$(printf '%s' "$resposta" | jq -r '.commit // "ausente"')
+
+          echo "topo de main : $esperado (há ${idade_min} min)"
+          echo "no ar        : $publicado"
+
+          if [ "$publicado" = "$esperado" ]; then
+            echo "Publicado é o topo de main."
+            exit 0
+          fi
+
+          if [ "$idade_min" -lt "$TOLERANCIA_MINUTOS" ]; then
+            echo "::notice::Divergente, mas o commit tem só ${idade_min} min. Dentro da janela de ${TOLERANCIA_MINUTOS} min, o build ainda pode estar rodando."
+            exit 0
+          fi
+
+          echo "::error::Há ${idade_min} minutos o topo de main não chega à produção. Esperado ${esperado}, no ar ${publicado}. Confira em vercel.com se existe deployment para esse commit — se não existir, o webhook perdeu a entrega e um push vazio costuma destravar."
+          exit 1
