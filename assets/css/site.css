@@ -845,7 +845,11 @@ footer {
     text-transform: none; color: var(--anchor);
   }
   .nav-links-cta { display: block; border-bottom: none !important; margin-top: 2.4rem; }
-  .nav-links-cta a { width: 100%; font-size: .76rem; }
+  /* A regra de cor do painel (.nav-links a) vem depois da regra de botao e
+     tem a mesma especificidade, entao ganhava: o CTA ficava com texto
+     azul-marinho sobre o proprio fundo azul-marinho, invisivel. Repor a cor
+     aqui e o conserto mais direto. */
+  .nav-links-cta a { width: 100%; font-size: .76rem; color: var(--accent); }
   body.menu-travado { overflow: hidden; }
 
   .mapa-inner { grid-template-columns: 1fr; gap: 5vh; }
