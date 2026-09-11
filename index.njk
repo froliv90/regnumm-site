@@ -101,6 +101,14 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
         <p>"O problema não era quanto eu ganhava. Era que eu nunca tinha parado pra entender como eu decidia."</p>
         <cite>Cliente · Bússola Financeira + Arquitetura Financeira · identidade preservada</cite>
       </div>
+{%- if depoimentos.mapa.texto %}
+      {#- Testemunho do Mapa isolado. Renderiza só com texto real preenchido em
+          _data/depoimentos.json: enquanto estiver vazio, nada aparece. -#}
+      <div class="evidencia-quote evidencia-quote-menor r d3">
+        <p>"{{ depoimentos.mapa.texto }}"</p>
+        <cite>{{ depoimentos.mapa.autor }}</cite>
+      </div>
+{%- endif %}
     </div>
   </section>
 

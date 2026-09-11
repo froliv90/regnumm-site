@@ -1,6 +1,5 @@
 {
   "_comentario": "FONTE ÚNICA DE PREÇO DO SITE. Trocar um valor aqui muda todas as telas, o schema.org e os Termos. ATENÇÃO: o app do teste (regnumm-diagnostico) é outro programa, com outro deploy, e mostra os mesmos preços na tela de resultado. Os dois mudam JUNTOS — ver lib/config-publico.ts lá.",
-
   "teste": {
     "nome": "Teste dos Quatro Perfis",
     "valor": 0,
@@ -8,7 +7,6 @@
     "entrega": "Perfil dominante, cruzado com tempo, comportamento e autonomia.",
     "href": "/teste"
   },
-
   "pdf": {
     "nome": "Mapa Financeiro em PDF",
     "valor": 99,
@@ -16,15 +14,20 @@
     "cta": "Comprar o PDF",
     "whatsappTexto": "Olá, Felipe! Quero o PDF do meu Mapa Financeiro."
   },
-
   "sessao": {
     "nome": "Mapa Financeiro",
     "valor": 125,
     "entrega": "Sessão individual de até 90 minutos com Felipe, online ou presencial na região de Campinas.",
     "cta": "Agendar a sessão",
-    "whatsappTexto": "Olá, Felipe! Quero agendar o Mapa Financeiro."
+    "whatsappTexto": "Olá, Felipe! Quero agendar o Mapa Financeiro.",
+    "itens": [
+      "O seu padrão financeiro predominante.",
+      "Os comportamentos que esse padrão costuma produzir.",
+      "Onde ele já aparece na sua vida.",
+      "O principal conflito que ele cria.",
+      "Os pontos para observar daqui pra frente."
+    ]
   },
-
   "duvida": {
     "texto": "Ficou com dúvida? Fala direto comigo no WhatsApp, sou eu que respondo.",
     "cta": "Falar com o Felipe",

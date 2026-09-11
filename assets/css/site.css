@@ -513,6 +513,11 @@ h2.evidencia-h em { font-style: normal; }
 .evidencia-corpo { font-size: 1rem; font-weight: 400; line-height: 1.75; color: var(--texto); }
 .evidencia-corpo p { margin-bottom: 1.4rem; }
 .evidencia-corpo p:last-child { margin-bottom: 0; }
+/* Testemunho secundario: mesmo idioma do principal, em escala menor, para
+   nao competir com o caso completo que vem acima. */
+.evidencia-quote-menor { margin-top: 2rem; }
+.evidencia-quote-menor p { font-size: 1.02rem; }
+
 
 /* ── 15 · ESCADA DE OFERTAS ────────────────────────────────── */
 /* Os dois níveis pagos sempre juntos: é a comparação lado a lado que
@@ -547,6 +552,17 @@ h2.captura-h em { font-style: normal; }
   font-size: .95rem; font-weight: 400; line-height: 1.7;
   color: var(--claro-2); margin-bottom: 2.2rem; flex-grow: 1;
 }
+/* O card com lista para de esticar o paragrafo de abertura: quem cresce
+   para alinhar os dois botoes passa a ser a lista. */
+.oferta-destaque .oferta-entrega { flex-grow: 0; margin-bottom: 1.4rem; }
+.oferta-itens { list-style: none; flex-grow: 1; margin-bottom: 2.2rem; }
+.oferta-itens li {
+  border-top: 1px solid var(--linha-clara); padding: .7rem 0 0;
+  margin-top: .7rem;
+  font-size: .88rem; font-weight: 400; line-height: 1.55;
+  color: var(--claro-2);
+}
+.oferta-itens li:first-child { margin-top: 0; }
 .oferta-btn { display: block; width: 100%; }
 .oferta-duvida {
   display: block; margin-top: 1.2rem; text-align: center;

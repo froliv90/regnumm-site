@@ -1,0 +1,9 @@
+{
+  "_comentario": "Depoimentos reais, nunca inventados. Bloco só aparece no site quando 'texto' está preenchido: campo vazio não renderiza nada. Para publicar, preencha texto e autor com as palavras reais da pessoa e a identidade como ela autorizou aparecer.",
+
+  "mapa": {
+    "texto": "",
+    "autor": "Cliente · Mapa Financeiro · identidade preservada",
+    "_pendente": "AGUARDANDO DEPOIMENTO REAL DO FELIPE. Precisa ser sobre o que a pessoa descobriu na sessão do Mapa isolado, não sobre o processo completo (esse já está na seção 'Um caso real')."
+  }
+}

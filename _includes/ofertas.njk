@@ -21,6 +21,13 @@
     <p class="oferta-nome">{{ ofertas.sessao.nome }}</p>
     <p class="oferta-preco"><span class="data-stat">{{ ofertas.sessao.valor | brl }}</span></p>
     <p class="oferta-entrega">{{ ofertas.sessao.entrega }}</p>
+{%- if ofertas.sessao.itens %}
+    <ul class="oferta-itens">
+      {%- for item in ofertas.sessao.itens %}
+      <li>{{ item }}</li>
+      {%- endfor %}
+    </ul>
+{%- endif %}
     <a href="{{ ofertas.sessao.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
        target="_blank" rel="noopener"
        class="oferta-btn oferta-btn-forte"
@@ -32,10 +39,3 @@
   </div>
 
 </div>
-
-{#- A diferença é CONTA. Nunca escrever o número na mão: na primeira mudança de
-    preço a frase erraria em silêncio. -#}
-<p class="ofertas-comparacao r d2">
-  Por <span class="data-stat">{{ ofertas.sessao.valor | diferenca(ofertas.pdf.valor) }}</span>
-  a mais, você fala comigo ao vivo em vez de só ler um PDF.
-</p>
