@@ -30,6 +30,10 @@
       "destination": "https://regnumm-diagnostico.vercel.app/teste"
     },
     {
+      "source": "/teste/:path+/",
+      "destination": "https://regnumm-diagnostico.vercel.app/teste/:path+"
+    },
+    {
       "source": "/teste/:path+",
       "destination": "https://regnumm-diagnostico.vercel.app/teste/:path+"
     },
@@ -44,6 +48,22 @@
     {
       "source": "/api/sessoes/",
       "destination": "https://regnumm-diagnostico.vercel.app/api/sessoes"
+    },
+    {
+      "source": "/api/checkout",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/checkout"
+    },
+    {
+      "source": "/api/checkout/",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/checkout"
+    },
+    {
+      "source": "/api/webhook/mercadopago",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/webhook/mercadopago"
+    },
+    {
+      "source": "/api/webhook/mercadopago/",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/webhook/mercadopago"
     }
   ]
 }
