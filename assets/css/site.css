@@ -475,14 +475,25 @@ a.story-item-fim .story-verb { color: var(--anchor); }
 .faq-item.open .faq-a { max-height: 500px; padding-top: 1.2rem; }
 
 /* ── 13 · SOBRE ────────────────────────────────────────────── */
-.sobre { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5vw; align-items: center; }
+/* Composição assimétrica: a foto ocupa quase metade da largura, e as duas
+   colunas começam em alturas diferentes. A diagonal nasce desse desencontro,
+   não de rotação — girar a foto brigaria com a régua reta que o sistema usa
+   em todo lugar. */
+.sobre {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 6vw;
+  align-items: start;
+}
 .sobre-visual { position: relative; }
+/* O texto desce; a foto sobe e passa da linha de base dele. */
+.sobre-corpo { padding-top: 9vh; }
 .sobre-box { width: 100%; overflow: hidden; position: relative; padding: .6rem; background: var(--anchor); }
 .sobre-box::after {
   content: ''; position: absolute; inset: .6rem;
   border: 1px solid rgba(201,185,154,.35); pointer-events: none;
 }
-.sobre-box img { width: 100%; height: auto; display: block; object-fit: contain; }
+.sobre-box img { width: 100%; height: auto; display: block; }
 .sobre-text {
   font-size: 1rem; font-weight: 400; line-height: 1.75;
   color: var(--texto); margin-bottom: 1.5rem;
@@ -857,7 +868,9 @@ footer {
   .paraquem-div { display: none; }
   .pq-nao { border-top: 1px solid var(--linha-clara); padding-top: 4vh; }
   .sobre { grid-template-columns: 1fr; gap: 4vh; }
-  .sobre-box { max-width: 360px; }
+  /* Em coluna única não existe diagonal: o escalonamento viraria só um vão. */
+  .sobre-corpo { padding-top: 0; }
+  .sobre-box { max-width: 420px; }
   .story { flex-wrap: wrap; }
   .blog-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 1.2rem; text-align: center; }
