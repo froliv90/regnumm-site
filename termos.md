@@ -19,11 +19,13 @@ Nada do que é entregue pela Regnumm — no teste gratuito, no PDF ou na sessão
 
 ## 2. Serviços oferecidos
 
-**Teste dos Quatro Perfis.** Gratuito. Diagnóstico comportamental online, mediante fornecimento de nome e contato. Entrega o perfil financeiro dominante do respondente.
+**Mapa Financeiro (também chamado de Teste dos Quatro Perfis).** Gratuito. Diagnóstico comportamental online, mediante fornecimento de nome e contato. Entrega o perfil financeiro dominante do respondente.
 
-**Mapa Financeiro em PDF.** <span class="data-stat">R$ 99</span> (noventa e nove reais). Relatório digital, entregue por download ou e-mail, com o perfil dominante, o perfil secundário e o cruzamento entre os dois, a partir das respostas dadas no Teste dos Quatro Perfis.
+A partir do resultado, dois formatos para o resultado completo:
 
-**Mapa Financeiro.** <span class="data-stat">R$ 125</span> (cento e vinte e cinco reais). Sessão individual de até 90 minutos, online ou presencial na região de Campinas/SP mediante agendamento prévio, conduzida por Felipe Rodrigues Oliveira.
+**Mapa Financeiro completo em PDF.** <span class="data-stat">R$ 99</span> (noventa e nove reais). Relatório digital, entregue por download, com o perfil dominante, o perfil secundário e o cruzamento entre os dois.
+
+**Mapa Financeiro completo + direcionamento.** <span class="data-stat">R$ 125</span> (cento e vinte e cinco reais). Inclui o mesmo relatório em PDF, mais uma sessão individual de até 90 minutos, online ou presencial na região de Campinas/SP mediante agendamento prévio, conduzida por Felipe Rodrigues Oliveira, para ler o resultado junto com você e apontar o que fazer com ele.
 
 Os valores acima são os vigentes na data de publicação destes termos e podem ser alterados a qualquer momento, sem efeito retroativo sobre compras já confirmadas.
 
@@ -31,15 +33,15 @@ Os valores acima são os vigentes na data de publicação destes termos e podem 
 
 O Mapa Financeiro em PDF é pago no momento da compra, por meio dos canais de pagamento disponibilizados no site. O Mapa Financeiro (sessão) é agendado diretamente com Felipe pelo WhatsApp; o pagamento é solicitado após a confirmação do agendamento, antes da realização da sessão.
 
-## 4. Direito de arrependimento — Mapa Financeiro em PDF
+## 4. Direito de arrependimento do relatório em PDF
 
-Por se tratar de compra realizada fora de estabelecimento comercial físico, o Mapa Financeiro em PDF está sujeito ao direito de arrependimento previsto no artigo 49 do Código de Defesa do Consumidor. Você tem até 7 (sete) dias corridos, a contar da data da compra, para solicitar o cancelamento e o reembolso integral, sem necessidade de justificativa, desde que o pedido seja feito antes do acesso ao conteúdo do relatório. Após o download ou visualização do PDF, o direito de arrependimento deixa de se aplicar, dado que o conteúdo já foi entregue e consumido.
+Por se tratar de compra realizada fora de estabelecimento comercial físico, o relatório em PDF, seja adquirido isoladamente ou como parte do Mapa Financeiro completo + direcionamento, está sujeito ao direito de arrependimento previsto no artigo 49 do Código de Defesa do Consumidor. Você tem até 7 (sete) dias corridos, a contar da data da compra, para solicitar o cancelamento e o reembolso integral da parte digital, sem necessidade de justificativa, desde que o pedido seja feito antes do acesso ao conteúdo do relatório. No momento da compra, você confirma estar ciente de que acessar ou baixar o PDF encerra o direito de arrependimento sobre ele, dado que o conteúdo já foi entregue e consumido.
 
 Para exercer esse direito, entre em contato pelo WhatsApp ou e-mail informados no site, dentro do prazo acima.
 
-## 5. Cancelamento e reagendamento — Mapa Financeiro (sessão)
+## 5. Cancelamento e reagendamento da sessão
 
-Cancelamentos ou reagendamentos da sessão devem ser solicitados com pelo menos 24 horas de antecedência, diretamente pelo WhatsApp. Pagamentos já realizados para sessões canceladas dentro desse prazo são reembolsados integralmente ou, a critério do cliente, convertidos em crédito para reagendamento. Cancelamentos com menos de 24 horas de antecedência serão avaliados caso a caso.
+Cancelamentos ou reagendamentos da sessão devem ser solicitados com pelo menos 24 horas de antecedência, diretamente pelo WhatsApp. Quando a sessão faz parte do Mapa Financeiro completo + direcionamento, esse cancelamento afeta só a sessão: o valor correspondente à parte da sessão é reembolsado integralmente, ou, a critério do cliente, convertido em crédito para reagendamento, e a regra de reembolso do PDF (item 4 acima) continua valendo separadamente para a parte digital já entregue. Cancelamentos com menos de 24 horas de antecedência serão avaliados caso a caso.
 
 ## 6. Dados pessoais
 
