@@ -6,7 +6,7 @@ titulo: "As regras <em>desta mesa.</em>"
 resumo: "O que a Regnumm entrega em cada nível, o que ela deliberadamente não faz, e em que condições os serviços são oferecidos."
 atualizado: "21 de agosto de 2026"
 seoTitulo: "Termos de Uso — Regnumm"
-seoDescricao: "Condições de uso do site regnumm.com.br e dos serviços da Regnumm: Teste dos Quatro Perfis, Mapa Financeiro em PDF e Mapa Financeiro, com política de reembolso e direito de arrependimento."
+seoDescricao: "Condições de uso do site regnumm.com.br e dos serviços da Regnumm: Mapa Financeiro, Mapa Financeiro completo em PDF e Mapa Financeiro completo + direcionamento, com política de reembolso e direito de arrependimento."
 ---
 
 Estes termos regem o uso do site regnumm.com.br e a contratação dos serviços oferecidos pela Regnumm, de titularidade de Felipe Rodrigues Oliveira. Ao usar o site ou contratar qualquer um dos serviços abaixo, você concorda com o que está descrito aqui.
@@ -31,7 +31,7 @@ Os valores acima são os vigentes na data de publicação destes termos e podem 
 
 ## 3. Pagamento
 
-O Mapa Financeiro em PDF é pago no momento da compra, por meio dos canais de pagamento disponibilizados no site. O Mapa Financeiro (sessão) é agendado diretamente com Felipe pelo WhatsApp; o pagamento é solicitado após a confirmação do agendamento, antes da realização da sessão.
+O Mapa Financeiro completo em PDF é pago no momento da compra, por meio dos canais de pagamento disponibilizados no site. O Mapa Financeiro completo + direcionamento é agendado diretamente com Felipe pelo WhatsApp; o pagamento é solicitado após a confirmação do agendamento, antes da realização da sessão.
 
 ## 4. Direito de arrependimento do relatório em PDF
 
