@@ -20,7 +20,7 @@ Disso vem a proposição central:
 > O padrão que trouxe a pessoa até a posição atual é, estruturalmente, o mesmo padrão que passa a limitar o próximo estágio.
 > <cite>Proposição central do modelo</cite>
 
-Não é defeito de caráter. É um mecanismo cuja utilidade depende do contexto, e cuja permanência para além do contexto original produz um custo silencioso.
+Isso não define o seu caráter. É um jeito de se proteger ou avançar que funcionou até aqui, mas pode começar a custar caro quando continua sendo usado fora do lugar.
 
 ## Os dois eixos
 
@@ -77,7 +77,9 @@ As descrições completas de cada perfil, com a pergunta diagnóstica de cada um
 
 Autonomia, aqui, é o grau em que a pessoa decide sobre dinheiro sem submeter a decisão a nenhuma perspectiva externa de verificação.
 
-Metodologicamente, ela **não é um quinto perfil. É uma variável moderadora.** Não determina direção de resultado por si; modula a magnitude e o sinal do efeito produzido por cada um dos quatro perfis.
+A autonomia não entra como um quinto perfil. Ela muda a forma como os outros quatro funcionam na sua vida: não determina direção de resultado por si, modula a magnitude e o sinal do efeito produzido por cada um dos quatro perfis.
+
+> Nota técnica: na literatura, o papel descrito acima é o de uma variável moderadora.
 
 Isso importa porque a autonomia, isolada, não prevê resultado bom nem ruim. O efeito dela é condicional ao encaixe entre o domínio de competência da pessoa e o domínio da decisão que ela toma sozinha.
 
