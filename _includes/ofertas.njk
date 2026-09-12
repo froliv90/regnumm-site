@@ -11,7 +11,7 @@
        target="_blank" rel="noopener"
        class="oferta-btn"
        onclick="if(window.posthog)posthog.capture('oferta_click',{oferta:'pdf',origem:'{{ ofertaOrigem or page.fileSlug }}'})">
-      {{ ofertas.pdf.cta }} — {{ ofertas.pdf.valor | brl }}
+      {{ ofertas.pdf.cta }} · {{ ofertas.pdf.valor | brl }}
     </a>
     <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
        target="_blank" rel="noopener" class="oferta-duvida">{{ ofertas.duvida.texto }}</a>
@@ -32,7 +32,7 @@
        target="_blank" rel="noopener"
        class="oferta-btn oferta-btn-forte"
        onclick="if(window.posthog)posthog.capture('oferta_click',{oferta:'sessao',origem:'{{ ofertaOrigem or page.fileSlug }}'})">
-      {{ ofertas.sessao.cta }} — {{ ofertas.sessao.valor | brl }}
+      {{ ofertas.sessao.cta }} · {{ ofertas.sessao.valor | brl }}
     </a>
     <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
        target="_blank" rel="noopener" class="oferta-duvida">{{ ofertas.duvida.texto }}</a>
