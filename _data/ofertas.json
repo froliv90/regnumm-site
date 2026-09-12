@@ -1,25 +1,25 @@
 {
   "_comentario": "FONTE ÚNICA DE PREÇO DO SITE. Trocar um valor aqui muda todas as telas, o schema.org e os Termos. ATENÇÃO: o app do teste (regnumm-diagnostico) é outro programa, com outro deploy, e mostra os mesmos preços na tela de resultado. Os dois mudam JUNTOS — ver lib/config-publico.ts lá.",
   "teste": {
-    "nome": "Teste dos Quatro Perfis",
+    "nome": "Mapa Financeiro",
     "valor": 0,
     "rotulo": "Grátis",
-    "entrega": "Perfil dominante, cruzado com tempo, comportamento e autonomia.",
+    "entrega": "O perfil que conduz as suas decisões, na hora, sem custo.",
     "href": "/teste"
   },
   "pdf": {
-    "nome": "Mapa Financeiro em PDF",
+    "nome": "Mapa Financeiro completo em PDF",
     "valor": 99,
-    "entrega": "Relatório completo em PDF: o perfil dominante, o perfil secundário e o cruzamento entre os dois.",
-    "cta": "Comprar o PDF",
-    "whatsappTexto": "Olá, Felipe! Quero o PDF do meu Mapa Financeiro."
+    "entrega": "O seu Mapa inteiro, por escrito: o perfil que conduz as suas decisões, o segundo padrão por trás dele e o ponto onde os dois se cruzam. Seu para guardar e reler quando a decisão apertar.",
+    "cta": "Quero o meu em PDF",
+    "whatsappTexto": "Olá, Felipe! Quero o meu Mapa Financeiro completo em PDF."
   },
   "sessao": {
-    "nome": "Mapa Financeiro",
+    "nome": "Mapa Financeiro completo + direcionamento",
     "valor": 125,
-    "entrega": "Sessão individual de até 90 minutos com Felipe, online ou presencial na região de Campinas.",
-    "cta": "Agendar a sessão",
-    "whatsappTexto": "Olá, Felipe! Quero agendar o Mapa Financeiro.",
+    "entrega": "Tudo o que vem no PDF, e mais uma sessão de até 90 minutos comigo, online ou presencial na região de Campinas, lendo o seu resultado com você e apontando o que fazer com ele.",
+    "cta": "Quero o direcionamento",
+    "whatsappTexto": "Olá, Felipe! Quero o Mapa Financeiro completo com direcionamento.",
     "itens": [
       "O seu padrão financeiro predominante.",
       "Os comportamentos que esse padrão costuma produzir.",
