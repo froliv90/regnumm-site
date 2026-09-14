@@ -12,7 +12,7 @@
   "posthogToken": "phc_pxvDXxAGZUvBkxgQfTuJ9qENyNRyHJaBpKrSTcWVsogh",
   "posthogHost": "https://eu.i.posthog.com",
   "numeroWhatsapp": "5519982578517",
-  "linkTeste": "/teste",
-  "_linkTeste": "O app do diagnóstico é dono de /teste. Enquanto o rewrite da Vercel não existir, trocar por a URL da Vercel do app para o link nunca ficar morto.",
+  "linkTeste": "/mapa/",
+  "_linkTeste": "Endereço público do Mapa Financeiro, servido pelo app do diagnóstico via rewrite da Vercel. /teste redireciona para cá (vercel.json). O nome da chave ficou linkTeste para não mexer em todos os templates.",
   "_posthog": "Projeto na regiao EU Cloud. A regiao se define na criacao do projeto e nao se troca depois. Ver item 5 da Politica de Privacidade, que declara essa transferencia."
 }

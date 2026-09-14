@@ -18,24 +18,44 @@
       "source": "/blog/feed",
       "destination": "/blog/feed.xml",
       "permanent": false
+    },
+    {
+      "source": "/teste/:path+/",
+      "destination": "/mapa/:path+/",
+      "permanent": false
+    },
+    {
+      "source": "/teste/:path+",
+      "destination": "/mapa/:path+/",
+      "permanent": false
+    },
+    {
+      "source": "/teste/",
+      "destination": "/mapa/",
+      "permanent": false
+    },
+    {
+      "source": "/teste",
+      "destination": "/mapa/",
+      "permanent": false
     }
   ],
   "rewrites": [
     {
-      "source": "/teste",
-      "destination": "https://regnumm-diagnostico.vercel.app/teste"
+      "source": "/mapa",
+      "destination": "https://regnumm-diagnostico.vercel.app/mapa"
     },
     {
-      "source": "/teste/",
-      "destination": "https://regnumm-diagnostico.vercel.app/teste"
+      "source": "/mapa/",
+      "destination": "https://regnumm-diagnostico.vercel.app/mapa"
     },
     {
-      "source": "/teste/:path+/",
-      "destination": "https://regnumm-diagnostico.vercel.app/teste/:path+"
+      "source": "/mapa/:path+/",
+      "destination": "https://regnumm-diagnostico.vercel.app/mapa/:path+"
     },
     {
-      "source": "/teste/:path+",
-      "destination": "https://regnumm-diagnostico.vercel.app/teste/:path+"
+      "source": "/mapa/:path+",
+      "destination": "https://regnumm-diagnostico.vercel.app/mapa/:path+"
     },
     {
       "source": "/teste-static/:path+",

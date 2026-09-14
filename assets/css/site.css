@@ -204,6 +204,18 @@ nav.menu-aberto .nav-toggle span:nth-child(3) { transform: translateY(-7px) rota
 
 .nav-links-cta { display: none; }
 
+/* Cabeçalho enxuto (home): logo e a ação direta com o fundador. A pílula
+   vazada deixa o destaque máximo para o golden button do hero. */
+.nav-whats {
+  font-size: .7rem; font-weight: 700; letter-spacing: .11em;
+  text-transform: uppercase; white-space: nowrap;
+  color: var(--anchor); text-decoration: none;
+  border: 1px solid var(--linha); border-radius: 999px;
+  padding: .8rem 1.4rem; transition: border-color .2s, background .2s;
+}
+.nav-whats:hover { border-color: var(--anchor); background: var(--lavado); }
+.nav-whats-curto { display: none; }
+
 /* ── 04 · HERO DA HOME ─────────────────────────────────────── */
 .hero {
   padding: 7vh 5vw 10vh;
@@ -240,6 +252,68 @@ h1.hero-headline em { font-style: normal; }
 .hero-social { display: flex; align-items: center; gap: 1.2rem; margin-top: 3rem; }
 .hero-social a { color: var(--texto-3); transition: color .2s, transform .2s; display: flex; }
 .hero-social a:hover { color: var(--anchor); transform: translateY(-2px); }
+
+/* ── 04b · BLUEPRINT: RÓTULOS TÉCNICOS E MATRIZ DOS PERFIS ───── */
+/* Estética de prancha dentro da paleta do site: rótulos em monospace e
+   traço fino. As cores continuam as de sempre. */
+.tag-tecnica {
+  font-family: var(--mono); font-size: .7rem; font-weight: 500;
+  letter-spacing: .02em; color: var(--texto-3);
+}
+.hero-tag { display: block; margin-bottom: 1.6rem; }
+.hero-inner.hero-com-matriz {
+  max-width: 1280px; display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: 5vw; align-items: center;
+}
+.hero-com-matriz h1.hero-headline {
+  font-size: clamp(2.3rem, 4.2vw, 4.2rem); line-height: 1.04; max-width: 17ch;
+}
+.hero-apoio {
+  margin-top: 1.2rem; font-size: .72rem; font-weight: 700;
+  letter-spacing: .11em; text-transform: uppercase; color: var(--texto-3);
+  opacity: 0; animation: fadeUp .8s .6s forwards;
+}
+.hero-matriz { opacity: 0; animation: fadeUp .8s .45s forwards; }
+
+.matriz { margin: 0; }
+.matriz-tag { display: block; margin-bottom: .9rem; }
+.matriz-quadro { position: relative; padding: 1.9rem 2rem; }
+.matriz-eixo { position: absolute; font-size: .62rem; letter-spacing: .12em; }
+.matriz-eixo-topo { top: .25rem; left: 50%; transform: translateX(-50%); }
+.matriz-eixo-base { bottom: .25rem; left: 50%; transform: translateX(-50%); }
+.matriz-eixo-esq, .matriz-eixo-dir { top: 50%; writing-mode: vertical-rl; }
+.matriz-eixo-esq { left: .35rem; transform: translateY(-50%) rotate(180deg); }
+.matriz-eixo-dir { right: .35rem; transform: translateY(-50%); }
+.matriz-grade {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--linha);
+  background-image:
+    linear-gradient(var(--linha-fina) 1px, transparent 1px),
+    linear-gradient(90deg, var(--linha-fina) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.matriz-q {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .6rem;
+  padding: 1.5rem 1.3rem; min-height: 10.5rem;
+  text-decoration: none; color: inherit; transition: background .2s;
+}
+.matriz-q:nth-child(odd) { border-right: 1px solid var(--linha); }
+.matriz-q:nth-child(-n+2) { border-bottom: 1px solid var(--linha); }
+.matriz-q:hover { background: var(--lavado); }
+.matriz-q .drawer-glyph { --caixa: 36; margin-bottom: .2rem; }
+.matriz-nome {
+  font-weight: 800; font-size: 1.05rem; line-height: 1.15;
+  letter-spacing: -.01em; color: var(--anchor);
+}
+
+/* Espaço de vídeo das páginas internas: só existe no HTML com URL cadastrada. */
+.video-sec { padding: 6vh 5vw 2vh; }
+.video-quadro { max-width: 1100px; margin: 0 auto; border: 1px solid var(--linha); }
+.video-proporcao { position: relative; aspect-ratio: 16 / 9; background: var(--anchor); }
+.video-proporcao iframe, .video-proporcao video {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
 
 /* ── 05 · HERO DE PÁGINA INTERNA ───────────────────────────── */
 .hero-int {
@@ -458,7 +532,7 @@ a.story-item:hover { background: var(--lavado); border-bottom-color: var(--ancho
 a.story-item:hover .story-verb { color: var(--anchor); }
 a.story-item-fim .story-verb { color: var(--anchor); }
 
-.jornada { padding: 9vh 5vw 0; background: var(--base); }
+.jornada { padding: 9vh 5vw 0; background: var(--base); border-top: 1px solid var(--linha-fina); }
 .jornada-inner { max-width: 1100px; margin: 0 auto; }
 
 /* ── 11 · PARA QUEM ────────────────────────────────────────── */
@@ -563,6 +637,17 @@ h2.evidencia-h em { font-style: normal; }
 .evidencia-corpo p:last-child { margin-bottom: 0; }
 /* Testemunho secundario: mesmo idioma do principal, em escala menor, para
    nao competir com o caso completo que vem acima. */
+/* Ficha técnica do caso: rótulo em monospace à esquerda, dado à direita. */
+.caso-dados { margin: 0; border: 1px solid var(--linha); }
+.caso-linha {
+  display: grid; grid-template-columns: 13rem 1fr; gap: 1.5rem;
+  padding: 1.2rem 1.5rem; border-top: 1px solid var(--linha-fina);
+}
+.caso-linha:first-child { border-top: none; }
+.caso-dados dt { margin: 0; padding-top: .2rem; }
+.caso-dados dd {
+  margin: 0; font-size: 1rem; font-weight: 500; line-height: 1.55; color: var(--texto);
+}
 .evidencia-quote-menor { margin-top: 2rem; }
 .evidencia-quote-menor p { font-size: 1.02rem; }
 
@@ -968,4 +1053,30 @@ footer {
   .cta-btn { width: 100%; }
   .oferta { padding: 2rem 1.6rem; }
   .f-copy { display: none; }
+}
+
+/* ── RODADA BLUEPRINT: ações da captura e telas pequenas ─────── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-apoio, .hero-matriz { animation: none; opacity: 1; }
+}
+.captura-acoes {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 1.2rem 1.6rem; margin-top: 2.4rem;
+}
+.captura-acoes .btn-linha { margin-top: 0; }
+@media (max-width: 960px) {
+  .hero-inner.hero-com-matriz { grid-template-columns: 1fr; gap: 6vh; }
+  .hero-com-matriz h1.hero-headline { font-size: clamp(2.2rem, 8.5vw, 3.4rem); max-width: 100%; }
+}
+@media (max-width: 600px) {
+  .nav-whats-longo { display: none; }
+  .nav-whats-curto { display: inline; }
+  .nav-whats { padding: .7rem 1rem; font-size: .66rem; }
+  .matriz-quadro { padding: 1.7rem 1.5rem; }
+  .matriz-q { padding: 1.1rem .9rem; min-height: 9rem; }
+  .matriz-nome { font-size: .92rem; }
+  .matriz-q .tag-tecnica { font-size: .6rem; }
+  .caso-linha { grid-template-columns: 1fr; gap: .45rem; }
+  .captura-acoes { flex-direction: column; align-items: stretch; }
+  .captura-acoes .btn-linha { text-align: center; }
 }

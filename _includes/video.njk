@@ -1,0 +1,24 @@
+{#- Espaço de vídeo de uma página.
+
+    Uso: {% set videoChave = "processo" %}{% include "video.njk" %}
+
+    Só renderiza quando _data/videos.json tiver a URL daquela chave. Vazio,
+    não sai nada no HTML: moldura de vídeo sem vídeo no ar é pior que nenhuma.
+
+    Aceita link de incorporação (YouTube em /embed/, Vimeo em player.vimeo.com)
+    ou arquivo .mp4/.webm. -#}
+{%- set urlVideo = videos[videoChave] -%}
+{%- if urlVideo %}
+<section class="video-sec">
+  <figure class="video-quadro">
+    <div class="video-proporcao">
+      {%- if ".mp4" in urlVideo or ".webm" in urlVideo %}
+      <video src="{{ urlVideo }}" controls playsinline preload="metadata"></video>
+      {%- else %}
+      <iframe src="{{ urlVideo }}" title="Vídeo do Regnumm" loading="lazy"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      {%- endif %}
+    </div>
+  </figure>
+</section>
+{%- endif %}

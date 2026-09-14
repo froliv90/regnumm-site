@@ -2,6 +2,7 @@
 layout: base.njk
 permalink: /index.html
 canonical: /
+cabecalho: enxuto
 redirecionarAncoras: true
 seoTitulo: "Regnumm — Governança Financeira Pessoal | Regnumm"
 seoDescricao: "Regnumm: uma abordagem comportamental de organização financeira pessoal para quem ganha bem mas não acumula. Em vez de planilha ou produto, trabalha o padrão de decisão e a direção financeira da pessoa. Diagnóstico (Mapa Financeiro), governança (Bússola) e acompanhamento sem conflito de interesse (Arquitetura)."
@@ -12,18 +13,22 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <h1 class="hero-headline">Ganhar dinheiro é uma coisa. Construir uma vida com ele é outra.</h1>
-      <p class="hero-subtitle">O que você está construindo é reconhecidamente seu?</p>
-      <p class="hero-sub">
-        Quem ganha bem e não acumula já tentou planilha, já cortou gasto, já aumentou a renda. O problema voltou. Porque o que faltava nunca foi mais dinheiro. Era uma direção que fosse sua.
-      </p>
-      <div class="hero-actions">
-        <a href="{{ site.linkTeste }}" class="btn-primary" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'hero'})">Faça o Mapa Financeiro</a>
-        <a href="/processo/" class="btn-ghost">Como funciona</a>
+    <div class="hero-inner hero-com-matriz">
+      <div class="hero-texto">
+        <p class="tag-tecnica hero-tag">&lt;MAPA_FINANCEIRO&gt;</p>
+        <h1 class="hero-headline">Ganha bem, mas sente que o seu patrimônio não acompanha o ritmo da sua renda?</h1>
+        <p class="hero-sub">Descubra em 5 a 7 minutos o padrão invisível que trava sua construção patrimonial e assuma a direção das suas decisões financeiras.</p>
+        <div class="hero-actions">
+          <a href="{{ site.linkTeste }}" class="btn-primary" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'hero'})">Fazer o Mapa Financeiro (grátis)</a>
+          <a href="/processo/" class="btn-ghost">Como funciona</a>
+        </div>
+        <p class="hero-apoio">Mapa Financeiro gratuito · 5 a 7 minutos · Sem compromisso</p>
+        <div class="hero-social">
+          {% set tamanho = 16 %}{% include "redes-icones.njk" %}
+        </div>
       </div>
-      <div class="hero-social">
-        {% set tamanho = 16 %}{% include "redes-icones.njk" %}
+      <div class="hero-matriz">
+        {% include "matriz-perfis.njk" %}
       </div>
     </div>
   </section>
@@ -106,11 +111,26 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
     <div class="limite-760">
       <p class="sec-label r">Um caso real</p>
       <h2 class="evidencia-h r d1">O processo completo.<br><em>Do diagnóstico à governança.</em></h2>
-      <div class="evidencia-corpo r d2">
-        <p>A renda dele foi a mesma do começo ao fim do processo. O que mudou foi a direção, e direção virou resultado material. Um profissional liberal chegou ao Mapa com uma queixa comum: ganhava bem, gastava bem, e o saldo do mês não contava nenhuma das duas histórias. O diagnóstico achou o padrão rápido: ele decidia pelo clima do momento. Cada escolha fazia sentido sozinha. Juntas, não levavam a lugar nenhum.</p>
-        <p>Nas quatro sessões da Bússola, o gargalo apareceu. Não faltava disciplina nem renda. Faltava direção própria. O que ele tinha eram boas intenções, e intenção não sobrevive a um mês difícil. Por isso o problema voltava sempre que parecia resolvido. Na quarta sessão ele assinou a própria Constituição Financeira, com os princípios e as regras escritos com as palavras dele, não com as minhas.</p>
-        <p>Seis meses de Arquitetura depois, o retrato era outro. Uma reserva que não existia virou meses de respiro. Um financiamento que ia drenar anos de renda foi barrado antes da assinatura. Uma formação, paga com critério em vez de impulso, abriu uma frente de renda nova. Nada disso veio de ganhar mais. Veio de saber para onde ir com o que já entrava.</p>
-      </div>
+      {#- O caso em formato de ficha técnica: entrada, padrão, intervenção e
+          resultado, cada um com o seu rótulo. -#}
+      <dl class="caso-dados r d2">
+        <div class="caso-linha">
+          <dt class="tag-tecnica">&lt;ENTRADA&gt;</dt>
+          <dd>Profissional Liberal | High-Income</dd>
+        </div>
+        <div class="caso-linha">
+          <dt class="tag-tecnica">&lt;PADRÃO_ENCONTRADO&gt;</dt>
+          <dd>Decisões por clima de momento / Ausência de lastro</dd>
+        </div>
+        <div class="caso-linha">
+          <dt class="tag-tecnica">&lt;INTERVENÇÃO&gt;</dt>
+          <dd>Assinatura da Constituição Financeira Pessoal + Barragem de impulso</dd>
+        </div>
+        <div class="caso-linha">
+          <dt class="tag-tecnica">&lt;RESULTADO_6_MESES&gt;</dt>
+          <dd>Formação de reserva estratégica + Criação de nova frente de renda</dd>
+        </div>
+      </dl>
       <div class="evidencia-quote r d3">
         <p>"O problema não era quanto eu ganhava. Era que eu nunca tinha parado pra entender como eu decidia."</p>
         <cite>Cliente · Bússola Financeira + Arquitetura Financeira · identidade preservada</cite>
@@ -131,10 +151,15 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
   <span id="agendar" aria-hidden="true"></span>
   <section class="captura" id="ofertas">
     <div class="captura-inner">
-      <p class="captura-label r">Depois do teste</p>
+      <p class="captura-label r">Depois do Mapa</p>
       <h2 class="captura-h r d1">Você viu um padrão. Tem outro.</h2>
-      <p class="captura-sub r d2">O Teste dos Quatro Perfis é gratuito e mostra o perfil que conduz as suas decisões. O que vem depois aprofunda: o segundo padrão por trás dele, e o ponto onde os dois se cruzam.</p>
-      {% set ofertaOrigem = 'home' %}{% include "ofertas.njk" %}
+      <p class="captura-sub r d2">O Mapa Financeiro é gratuito e mostra o perfil que conduz as suas decisões. O que vem depois aprofunda: o segundo padrão por trás dele, e o ponto onde os dois se cruzam.</p>
+      {#- Sem preço na home: a venda do resultado completo acontece depois do
+          Mapa e no WhatsApp. O id "ofertas" fica porque a jornada aponta para cá. -#}
+      <div class="captura-acoes r d3">
+        <a href="{{ site.linkTeste }}" class="cta-btn" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'captura'})">Faça o Mapa Financeiro</a>
+        <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}" target="_blank" rel="noopener" class="btn-linha" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'captura'})">Falar no WhatsApp com o fundador →</a>
+      </div>
     </div>
   </section>
 
@@ -145,7 +170,7 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
       <h2 class="cta-h r d1">Descubra o seu <em>perfil.</em></h2>
       <p class="cta-sub r d2">De cinco a sete minutos. Você sai sabendo qual padrão está dirigindo a sua vida financeira, e o ponto exato onde ele trava. Sem custo e sem compromisso com o que vem depois.</p>
       <a href="{{ site.linkTeste }}" class="cta-btn r d3" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'cta_final'})">Faça o Mapa Financeiro</a>
-      <p class="cta-note r d4">Grátis · <span class="data-stat">20</span> perguntas · Resultado na hora</p>
+      <p class="cta-note r d4">Mapa Financeiro gratuito · 5 a 7 minutos · Sem compromisso</p>
     </div>
   </section>
 

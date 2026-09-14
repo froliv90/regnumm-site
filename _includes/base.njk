@@ -65,8 +65,20 @@
 </head>
 <body>
 
-  <nav id="nav">
+  <nav id="nav"{% if cabecalho == "enxuto" %} class="nav-enxuto"{% endif %}>
     <a href="/" class="nav-logo">R<span>e</span>gnumm</a>
+{%- if cabecalho == "enxuto" %}
+
+    {#- Cabeçalho enxuto: sem menu, só a ação direta com o fundador. Vale para
+        a página que pedir cabecalho: enxuto (hoje só a home); as internas
+        seguem com o menu completo. -#}
+    <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
+       target="_blank" rel="noopener" class="nav-whats"
+       aria-label="Falar no WhatsApp com o fundador"
+       onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'header'})">
+      <span class="nav-whats-longo" aria-hidden="true">Falar no WhatsApp com o fundador →</span><span class="nav-whats-curto" aria-hidden="true">Falar no WhatsApp →</span>
+    </a>
+{%- else %}
 
     <ul class="nav-links" id="nav-links">
       {%- for item in nav.principal %}
@@ -84,6 +96,7 @@
             aria-controls="nav-links" aria-expanded="false" aria-label="Abrir o menu">
       <span></span><span></span><span></span>
     </button>
+{%- endif %}
   </nav>
 
   {{ content | safe }}

@@ -1,0 +1,5 @@
+{
+  "_comentario": "URL do vídeo de cada página. Vazio = o espaço não aparece. Aceita link de incorporação (YouTube: https://www.youtube.com/embed/ID, Vimeo: https://player.vimeo.com/video/ID) ou arquivo .mp4/.webm. O vídeo do resultado do Mapa fica no app, em lib/config-publico.ts (VIDEO_RESULTADO).",
+  "processo": "",
+  "perfis": ""
+}
