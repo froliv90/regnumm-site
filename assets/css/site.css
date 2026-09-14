@@ -381,7 +381,12 @@ h1.hero-int-headline em { font-style: normal; }
 .drawer-glyph.warm { color: var(--accent); }
 .drawer-glyph.cool { color: var(--silver); }
 .story-item .drawer-glyph { width: 1.8rem; height: 1.8rem; margin: 0 auto .7rem; }
-@media (max-width: 640px) { .drawer-glyph { width: 2.1rem; height: 2.1rem; } }
+.etapa-head .drawer-glyph { width: 3.75rem; height: 3.75rem; }
+@media (max-width: 640px) {
+  .drawer-glyph { width: 2.1rem; height: 2.1rem; }
+  .etapa-head .drawer-glyph { width: 3rem; height: 3rem; }
+  .story-item .drawer-glyph { width: 1.8rem; height: 1.8rem; }
+}
 
 /* ── 09 · MAPA FINANCEIRO ──────────────────────────────────── */
 .mapa-inner {
@@ -519,15 +524,24 @@ a.story-item-fim .story-verb { color: var(--anchor); }
 /* ── 13b · IDENTIFICAÇÃO ─────────────────────── */
 /* Estende em lista o que o paragrafo do hero ja diz em prosa. Regua reta,
    o mesmo idioma de .principio, em duas colunas no desktop. */
-.reconhece { padding: 0 5vw 10vh; background: var(--base); }
+.reconhece { padding: 9vh 5vw 10vh; background: var(--base); }
+/* Com titulo proprio, o bloco deixou de ser um apendice do hero e
+   precisa do mesmo respiro de secao que o resto da pagina. */
 .reconhece-inner { max-width: 1180px; margin: 0 auto; }
 .reconhece-lista {
   list-style: none; display: grid; grid-template-columns: 1fr 1fr;
-  gap: 1.8rem 4vw;
+  gap: 1.2rem;
 }
 .reconhece-lista li {
-  border-top: 1px solid var(--linha); padding-top: 1.1rem;
+  border: 1px solid var(--linha-fina); background: var(--lavado);
+  padding: 1.9rem 2rem;
   font-size: 1rem; font-weight: 400; line-height: 1.6; color: var(--texto-2);
+}
+/* Marcador simples, sem forma geométrica: as quatro formas pertencem aos
+   quatro perfis, e estas frases não são os perfis. */
+.reconhece-lista li::before {
+  content: ''; display: block; width: 1.5rem; height: 1px;
+  background: var(--accent); margin-bottom: 1.1rem;
 }
 
 /* ── 14 · EVIDÊNCIA ────────────────────────────────────────── */
