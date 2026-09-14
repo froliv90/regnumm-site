@@ -295,30 +295,26 @@ h1.hero-int-headline em { font-style: normal; }
 }
 
 /* ── 07 · BOTÕES ───────────────────────────────────────────── */
-/* Um botão só: pílula azul-marinho com texto champagne em negrito.
-   Dentro de um bloco azul ele ganha o contorno champagne para se
-   destacar do próprio fundo. */
+/* O botão de ação é o "golden button": pílula champagne com texto
+   azul-marinho, a passagem para a etapa seguinte. É a exceção deliberada à
+   regra do champagne só dentro do bloco azul: a ação principal aparece
+   dourada em qualquer fundo. Texto a 9,4:1 sobre o champagne. */
 .btn-primary, .cta-btn, .mapa-btn, .pf-btn, .oferta-btn, .nav-cta,
 .nav-links-cta a {
   display: inline-block; text-align: center; text-decoration: none;
-  background: var(--anchor); color: var(--accent);
+  background: var(--accent); color: var(--anchor);
   font-family: var(--sans); font-size: .76rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: .12em; line-height: 1;
-  padding: 1.05rem 2.2rem; border: 1px solid var(--anchor);
+  padding: 1.05rem 2.2rem; border: 1px solid var(--accent);
   border-radius: 999px; cursor: pointer;
-  transition: opacity .2s, transform .2s, background .2s;
+  transition: filter .2s, transform .2s;
 }
 .btn-primary:hover, .cta-btn:hover, .mapa-btn:hover, .pf-btn:hover,
 .oferta-btn:hover, .nav-cta:hover, .nav-links-cta a:hover {
-  opacity: .88; transform: translateY(-1px);
+  filter: brightness(1.06); transform: translateY(-1px);
 }
 .nav-cta { font-size: .7rem; padding: .85rem 1.7rem; }
 
-/* Sobre azul o mesmo botão ganha contorno champagne. */
-.cta-sec .cta-btn, .autonomia .pf-btn, .faixa-anchor .mapa-btn, .oferta-btn {
-  border-color: var(--accent);
-}
-.cta-sec .cta-btn:hover, .oferta-btn:hover { background: rgba(201,185,154,.12); opacity: 1; }
 
 /* Ação secundária no claro: link sublinhado, sem caixa. */
 .btn-ghost {
@@ -925,10 +921,10 @@ footer {
   }
   .nav-links-cta { display: block; border-bottom: none !important; margin-top: 2.4rem; }
   /* A regra de cor do painel (.nav-links a) vem depois da regra de botao e
-     tem a mesma especificidade, entao ganhava: o CTA ficava com texto
-     azul-marinho sobre o proprio fundo azul-marinho, invisivel. Repor a cor
-     aqui e o conserto mais direto. */
-  .nav-links-cta a { width: 100%; font-size: .76rem; color: var(--accent); }
+     tem a mesma especificidade, entao ganha. Com o golden button a cor dela
+     (marinho) coincide com a do botao, mas a regra fica explicita: se o
+     painel mudar de cor, o texto do CTA nao pode sumir no champanhe. */
+  .nav-links-cta a { width: 100%; font-size: .76rem; color: var(--anchor); }
   body.menu-travado { overflow: hidden; }
 
   .mapa-inner { grid-template-columns: 1fr; gap: 5vh; }

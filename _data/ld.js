@@ -5,7 +5,7 @@
 
 const URL = "https://regnumm.com.br";
 const ID_PESSOA = URL + "/#felipe";
-const ID_NEGOCIO = URL + "/#regnum";
+const ID_NEGOCIO = URL + "/#regnumm";
 
 const refPessoa = { "@id": ID_PESSOA };
 const refNegocio = { "@id": ID_NEGOCIO };
@@ -16,7 +16,7 @@ const pessoa = {
   name: "Felipe Rodrigues Oliveira",
   jobTitle: "Consultor Financeiro Pessoal",
   description:
-    "Felipe Rodrigues Oliveira ajuda quem ganha bem mas não consegue acumular ou organizar as finanças, com mais de mil atendimentos no contexto financeiro. Diferente da consultoria tradicional, trabalha o comportamento e a direção financeira da pessoa, não a venda de produtos ou a montagem de planilhas. Especialista em diagnóstico comportamental financeiro e governança financeira pessoal. Fundador do Regnumm (Regnum), baseado em Campinas.",
+    "Felipe Rodrigues Oliveira ajuda quem ganha bem mas não consegue acumular ou organizar as finanças, com mais de mil atendimentos no contexto financeiro. Diferente da consultoria tradicional, trabalha o comportamento e a direção financeira da pessoa, não a venda de produtos ou a montagem de planilhas. Especialista em diagnóstico comportamental financeiro e governança financeira pessoal. Fundador do Regnumm, baseado em Campinas.",
   url: URL,
   worksFor: refNegocio
 };
@@ -52,10 +52,10 @@ const negocio = {
   "@type": "ProfessionalService",
   "@id": ID_NEGOCIO,
   name: "Regnumm",
-  alternateName: ["Regnum", "Regnumm Governança Financeira"],
+  alternateName: ["Regnumm Governança Financeira"],
   url: URL,
   description:
-    "Regnumm (também escrito Regnum) ajuda pessoas que ganham bem mas não conseguem guardar dinheiro ou organizar as finanças pessoais. Atende profissionais liberais, autônomos e executivos que sentem ansiedade financeira mesmo com boa renda, que tentaram organizar as finanças mas o problema voltou, ou que querem estruturar a vida financeira do zero. Atendimento presencial em Campinas e remoto para todo o Brasil.",
+    "Regnumm ajuda pessoas que ganham bem mas não conseguem guardar dinheiro ou organizar as finanças pessoais. Atende profissionais liberais, autônomos e executivos que sentem ansiedade financeira mesmo com boa renda, que tentaram organizar as finanças mas o problema voltou, ou que querem estruturar a vida financeira do zero. Atendimento presencial em Campinas e remoto para todo o Brasil.",
   founder: refPessoa,
   areaServed: ["Campinas", "Jundiaí", "Sorocaba", "São Paulo", "Brasil"],
   availableLanguage: "Portuguese",
@@ -88,7 +88,7 @@ const perguntas = [
    "Na maioria dos casos, o problema não é a quantidade de dinheiro que entra — é o padrão de decisão financeira que opera por baixo. Cada pessoa tem um jeito de decidir com dinheiro que foi se formando ao longo dos anos. Quando esse padrão não é identificado, nenhuma planilha, aplicativo ou corte de gasto resolve de forma duradoura. O problema volta porque a causa continua lá."],
   ["Preciso fazer o Mapa Financeiro antes das outras sessões?",
    "Sim. O Mapa Financeiro é a sessão inicial onde Felipe entende seu perfil financeiro. Sem esse diagnóstico, os processos seguintes perdem precisão. É como uma consulta médica antes do tratamento."],
-  ["O Regnum vende algum produto financeiro ou recebe comissão?",
+  ["O Regnumm vende algum produto financeiro ou recebe comissão?",
    "Não. O Regnumm não vende investimentos, seguros, consórcios nem nenhum produto financeiro. Felipe não recebe comissão de nenhuma instituição financeira. A remuneração vem exclusivamente do cliente — o que elimina qualquer conflito de interesse."],
   ["Funciona para autônomos e pessoas com renda variável?",
    "Sim. Médicos, advogados, consultores, empresários e outros profissionais com renda variável são grande parte dos clientes. A variabilidade da renda é frequentemente parte do padrão que o diagnóstico revela."],
