@@ -376,16 +376,27 @@ h1.hero-int-headline em { font-style: normal; }
    sentido. Tamanho fixo em rem: o espaço existe antes do SVG pintar, então
    nada se desloca no carregamento. */
 .drawer-trigger-left { display: flex; align-items: center; gap: 1.1rem; }
-.drawer-glyph { width: 2.6rem; height: 2.6rem; flex-shrink: 0; }
-.drawer-glyph svg { display: block; width: 100%; height: 100%; overflow: visible; }
+/* --caixa e o tamanho da caixa em px, sem unidade. Dele saem a largura
+   (em rem, para respeitar a fonte do usuario) e o --min-u, que o macro dos
+   glifos usa para nenhum traco ficar abaixo de 1px. Mudar o tamanho e
+   mudar so o --caixa. */
+.drawer-glyph {
+  --caixa: 41.6;
+  width: calc(var(--caixa) / 16 * 1rem); height: calc(var(--caixa) / 16 * 1rem);
+  flex-shrink: 0;
+}
+.drawer-glyph svg {
+  display: block; width: 100%; height: 100%; overflow: visible;
+  --min-u: calc(var(--lado) / var(--caixa));
+}
 .drawer-glyph.warm { color: var(--accent); }
 .drawer-glyph.cool { color: var(--silver); }
-.story-item .drawer-glyph { width: 1.8rem; height: 1.8rem; margin: 0 auto .7rem; }
-.etapa-head .drawer-glyph { width: 3.75rem; height: 3.75rem; }
+.story-item .drawer-glyph { --caixa: 28.8; margin: 0 auto .7rem; }
+.etapa-head .drawer-glyph { --caixa: 60; }
 @media (max-width: 640px) {
-  .drawer-glyph { width: 2.1rem; height: 2.1rem; }
-  .etapa-head .drawer-glyph { width: 3rem; height: 3rem; }
-  .story-item .drawer-glyph { width: 1.8rem; height: 1.8rem; }
+  .drawer-glyph { --caixa: 33.6; }
+  .etapa-head .drawer-glyph { --caixa: 48; }
+  .story-item .drawer-glyph { --caixa: 28.8; }
 }
 
 /* ── 09 · MAPA FINANCEIRO ──────────────────────────────────── */
