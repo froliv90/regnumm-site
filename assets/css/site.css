@@ -48,6 +48,8 @@
   --anchor: #0A1628;
   --base:   #FFFFFF;
   --accent: #C9B99A;
+  /* Prata dos glifos de contenção. */
+  --silver: #8A9EAE;
 
   --sans: 'DM Sans', system-ui, -apple-system, sans-serif;
   --logo: 'Cormorant Garamond', Georgia, serif;
@@ -369,6 +371,17 @@ h1.hero-int-headline em { font-style: normal; }
   transition: max-height .5s cubic-bezier(.4,0,.2,1), padding .35s ease;
 }
 .drawer.open .drawer-body { max-height: 2400px; padding-bottom: 3rem; }
+
+/* Glifos dos perfis e da esteira. Decorativos, o texto ao lado carrega o
+   sentido. Tamanho fixo em rem: o espaço existe antes do SVG pintar, então
+   nada se desloca no carregamento. */
+.drawer-trigger-left { display: flex; align-items: center; gap: 1.1rem; }
+.drawer-glyph { width: 2.6rem; height: 2.6rem; flex-shrink: 0; }
+.drawer-glyph svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.drawer-glyph.warm { color: var(--accent); }
+.drawer-glyph.cool { color: var(--silver); }
+.story-item .drawer-glyph { width: 1.8rem; height: 1.8rem; margin: 0 auto .7rem; }
+@media (max-width: 640px) { .drawer-glyph { width: 2.1rem; height: 2.1rem; } }
 
 /* ── 09 · MAPA FINANCEIRO ──────────────────────────────────── */
 .mapa-inner {

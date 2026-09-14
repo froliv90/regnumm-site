@@ -7,6 +7,7 @@ ogTitulo: "Os Quatro Perfis Financeiros — Regnumm"
 ogDescricao: "Qual força te trouxe até aqui, e onde ela passou a limitar. Conheça os quatro perfis de comportamento financeiro da Regnumm."
 ctaOrigem: "perfis_page"
 ---
+{% from "glifos.njk" import glifo %}
 <main>
 
   <section class="hero-int">
@@ -47,9 +48,12 @@ ctaOrigem: "perfis_page"
 
     <div class="drawer r">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
-        <div>
-          <div class="drawer-eixo">Futuro · Movimento</div>
-          <div class="drawer-trigger-title">Visionário sem Estrutura</div>
+        <div class="drawer-trigger-left">
+          <div class="drawer-glyph warm">{{ glifo("visionario") }}</div>
+          <div>
+            <div class="drawer-eixo">Futuro · Movimento</div>
+            <div class="drawer-trigger-title">Visionário sem Estrutura</div>
+          </div>
         </div>
         <div class="drawer-icon">+</div>
       </button>
@@ -71,9 +75,12 @@ ctaOrigem: "perfis_page"
 
     <div class="drawer r">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
-        <div>
-          <div class="drawer-eixo">Presente · Movimento</div>
-          <div class="drawer-trigger-title">Executor sem Lastro</div>
+        <div class="drawer-trigger-left">
+          <div class="drawer-glyph warm">{{ glifo("executor") }}</div>
+          <div>
+            <div class="drawer-eixo">Presente · Movimento</div>
+            <div class="drawer-trigger-title">Executor sem Lastro</div>
+          </div>
         </div>
         <div class="drawer-icon">+</div>
       </button>
@@ -95,9 +102,12 @@ ctaOrigem: "perfis_page"
 
     <div class="drawer r">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
-        <div>
-          <div class="drawer-eixo">Presente · Contenção</div>
-          <div class="drawer-trigger-title">Guardião que Aprisiona</div>
+        <div class="drawer-trigger-left">
+          <div class="drawer-glyph cool">{{ glifo("guardiao") }}</div>
+          <div>
+            <div class="drawer-eixo">Presente · Contenção</div>
+            <div class="drawer-trigger-title">Guardião que Aprisiona</div>
+          </div>
         </div>
         <div class="drawer-icon">+</div>
       </button>
@@ -119,9 +129,12 @@ ctaOrigem: "perfis_page"
 
     <div class="drawer r">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
-        <div>
-          <div class="drawer-eixo">Futuro · Contenção</div>
-          <div class="drawer-trigger-title">Estrategista Imóvel</div>
+        <div class="drawer-trigger-left">
+          <div class="drawer-glyph cool">{{ glifo("estrategista") }}</div>
+          <div>
+            <div class="drawer-eixo">Futuro · Contenção</div>
+            <div class="drawer-trigger-title">Estrategista Imóvel</div>
+          </div>
         </div>
         <div class="drawer-icon">+</div>
       </button>
