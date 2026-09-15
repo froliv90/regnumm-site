@@ -204,7 +204,7 @@ nav.menu-aberto .nav-toggle span:nth-child(3) { transform: translateY(-7px) rota
 
 .nav-links-cta { display: none; }
 
-/* Cabeçalho enxuto (home): logo e a ação direta com o fundador. A pílula
+/* Ação da home no cabeçalho: conversa direta com o fundador. A pílula
    vazada deixa o destaque máximo para o golden button do hero. */
 .nav-whats {
   font-size: .7rem; font-weight: 700; letter-spacing: .11em;
@@ -215,6 +215,15 @@ nav.menu-aberto .nav-toggle span:nth-child(3) { transform: translateY(-7px) rota
 }
 .nav-whats:hover { border-color: var(--anchor); background: var(--lavado); }
 .nav-whats-curto { display: none; }
+/* Com os cinco links na mesma linha, o rótulo longo só cabe em tela larga. */
+@media (min-width: 961px) { .nav-links { margin: 0 2rem; } }
+@media (max-width: 1280px) {
+  .nav-whats-longo { display: none; }
+  .nav-whats-curto { display: inline; }
+}
+@media (max-width: 1200px) and (min-width: 961px) {
+  .nav-links { gap: 1.1rem; margin: 0 1.2rem; }
+}
 
 /* ── 04 · HERO DA HOME ─────────────────────────────────────── */
 .hero {
@@ -256,30 +265,27 @@ h1.hero-headline em { font-style: normal; }
 /* ── 04b · BLUEPRINT: RÓTULOS TÉCNICOS E MATRIZ DOS PERFIS ───── */
 /* Estética de prancha dentro da paleta do site: rótulos em monospace e
    traço fino. As cores continuam as de sempre. */
-.tag-tecnica {
-  font-family: var(--mono); font-size: .7rem; font-weight: 500;
-  letter-spacing: .02em; color: var(--texto-3);
+/* Hero da home só com texto: promessa e botão, sem diagrama ao lado. */
+.hero-inner.hero-so-texto { max-width: 1100px; margin: 0 auto; }
+.hero-so-texto h1.hero-headline {
+  font-size: clamp(2.6rem, 5.6vw, 5.4rem); line-height: 1.02; max-width: 19ch;
 }
-.hero-tag { display: block; margin-bottom: 1.6rem; }
-.hero-inner.hero-com-matriz {
-  max-width: 1280px; display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-  gap: 5vw; align-items: center;
-}
-.hero-com-matriz h1.hero-headline {
-  font-size: clamp(2.3rem, 4.2vw, 4.2rem); line-height: 1.04; max-width: 17ch;
-}
+.hero-so-texto .hero-sub { font-size: 1.15rem; max-width: 50ch; }
 .hero-apoio {
   margin-top: 1.2rem; font-size: .72rem; font-weight: 700;
   letter-spacing: .11em; text-transform: uppercase; color: var(--texto-3);
   opacity: 0; animation: fadeUp .8s .6s forwards;
 }
-.hero-matriz { opacity: 0; animation: fadeUp .8s .45s forwards; }
 
+/* Matriz dos perfis, em /perfis.html logo depois do hero. */
+.perfis-matriz { padding: 2vh 5vw 6vh; }
+.perfis-matriz-inner { max-width: 760px; margin: 0 auto; }
 .matriz { margin: 0; }
-.matriz-tag { display: block; margin-bottom: .9rem; }
 .matriz-quadro { position: relative; padding: 1.9rem 2rem; }
-.matriz-eixo { position: absolute; font-size: .62rem; letter-spacing: .12em; }
+.matriz-eixo {
+  position: absolute; font-size: .62rem; font-weight: 700;
+  letter-spacing: .12em; color: var(--texto-3);
+}
 .matriz-eixo-topo { top: .25rem; left: 50%; transform: translateX(-50%); }
 .matriz-eixo-base { bottom: .25rem; left: 50%; transform: translateX(-50%); }
 .matriz-eixo-esq, .matriz-eixo-dir { top: 50%; writing-mode: vertical-rl; }
@@ -637,17 +643,6 @@ h2.evidencia-h em { font-style: normal; }
 .evidencia-corpo p:last-child { margin-bottom: 0; }
 /* Testemunho secundario: mesmo idioma do principal, em escala menor, para
    nao competir com o caso completo que vem acima. */
-/* Ficha técnica do caso: rótulo em monospace à esquerda, dado à direita. */
-.caso-dados { margin: 0; border: 1px solid var(--linha); }
-.caso-linha {
-  display: grid; grid-template-columns: 13rem 1fr; gap: 1.5rem;
-  padding: 1.2rem 1.5rem; border-top: 1px solid var(--linha-fina);
-}
-.caso-linha:first-child { border-top: none; }
-.caso-dados dt { margin: 0; padding-top: .2rem; }
-.caso-dados dd {
-  margin: 0; font-size: 1rem; font-weight: 500; line-height: 1.55; color: var(--texto);
-}
 .evidencia-quote-menor { margin-top: 2rem; }
 .evidencia-quote-menor p { font-size: 1.02rem; }
 
@@ -1057,7 +1052,7 @@ footer {
 
 /* ── RODADA BLUEPRINT: ações da captura e telas pequenas ─────── */
 @media (prefers-reduced-motion: reduce) {
-  .hero-apoio, .hero-matriz { animation: none; opacity: 1; }
+  .hero-apoio { animation: none; opacity: 1; }
 }
 .captura-acoes {
   display: flex; flex-wrap: wrap; align-items: center;
@@ -1065,18 +1060,17 @@ footer {
 }
 .captura-acoes .btn-linha { margin-top: 0; }
 @media (max-width: 960px) {
-  .hero-inner.hero-com-matriz { grid-template-columns: 1fr; gap: 6vh; }
-  .hero-com-matriz h1.hero-headline { font-size: clamp(2.2rem, 8.5vw, 3.4rem); max-width: 100%; }
+  /* No celular o menu sai da linha: WhatsApp encosta no hambúrguer. */
+  .nav-whats { margin-left: auto; margin-right: 1rem; }
+  .hero-so-texto h1.hero-headline { font-size: clamp(2.2rem, 8.5vw, 3.4rem); max-width: 100%; }
 }
 @media (max-width: 600px) {
-  .nav-whats-longo { display: none; }
-  .nav-whats-curto { display: inline; }
-  .nav-whats { padding: .7rem 1rem; font-size: .66rem; }
+  /* Logo, WhatsApp e hambúrguer precisam caber em 360px sem rolar de lado. */
+  .nav-logo { letter-spacing: .14em; font-size: 1.1rem; }
+  .nav-whats { padding: .6rem .8rem; font-size: .6rem; letter-spacing: .06em; margin-right: .4rem; }
   .matriz-quadro { padding: 1.7rem 1.5rem; }
   .matriz-q { padding: 1.1rem .9rem; min-height: 9rem; }
   .matriz-nome { font-size: .92rem; }
-  .matriz-q .tag-tecnica { font-size: .6rem; }
-  .caso-linha { grid-template-columns: 1fr; gap: .45rem; }
   .captura-acoes { flex-direction: column; align-items: stretch; }
   .captura-acoes .btn-linha { text-align: center; }
 }

@@ -18,6 +18,12 @@ ctaOrigem: "perfis_page"
     </div>
   </section>
 
+  <section class="perfis-matriz">
+    <div class="perfis-matriz-inner r">
+      {% include "matriz-perfis.njk" %}
+    </div>
+  </section>
+
   {% set videoChave = "perfis" %}{% include "video.njk" %}
 
   <section class="disclaimer">
@@ -48,7 +54,7 @@ ctaOrigem: "perfis_page"
 
   <section class="perfis">
 
-    <div class="drawer r">
+    <div class="drawer r" id="perfil-visionario">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
         <div class="drawer-trigger-left">
           <div class="drawer-glyph warm">{{ glifo("visionario") }}</div>
@@ -75,7 +81,7 @@ ctaOrigem: "perfis_page"
       </div>
     </div>
 
-    <div class="drawer r">
+    <div class="drawer r" id="perfil-executor">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
         <div class="drawer-trigger-left">
           <div class="drawer-glyph warm">{{ glifo("executor") }}</div>
@@ -102,7 +108,7 @@ ctaOrigem: "perfis_page"
       </div>
     </div>
 
-    <div class="drawer r">
+    <div class="drawer r" id="perfil-guardiao">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
         <div class="drawer-trigger-left">
           <div class="drawer-glyph cool">{{ glifo("guardiao") }}</div>
@@ -129,7 +135,7 @@ ctaOrigem: "perfis_page"
       </div>
     </div>
 
-    <div class="drawer r">
+    <div class="drawer r" id="perfil-estrategista">
       <button class="drawer-trigger" onclick="toggleDrawer(this)">
         <div class="drawer-trigger-left">
           <div class="drawer-glyph cool">{{ glifo("estrategista") }}</div>
@@ -164,7 +170,7 @@ ctaOrigem: "perfis_page"
       <h2 class="cta-h r">Descubra o seu <em>com precisão.</em></h2>
       <p class="cta-sub r">Em cinco a sete minutos, o Mapa Financeiro identifica qual dos quatro está conduzindo as suas decisões. Gratuito, com o resultado na hora.</p>
       <a href="{{ site.linkTeste }}" class="cta-btn r">Faça o Mapa Financeiro</a>
-      <p class="cta-note r">Grátis · <span class="data-stat">20</span> perguntas · Resultado na hora</p>
+      <p class="cta-note r">Mapa Financeiro gratuito · 5 a 7 minutos · Sem compromisso</p>
     </div>
   </section>
 

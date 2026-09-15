@@ -65,20 +65,8 @@
 </head>
 <body>
 
-  <nav id="nav"{% if cabecalho == "enxuto" %} class="nav-enxuto"{% endif %}>
+  <nav id="nav">
     <a href="/" class="nav-logo">R<span>e</span>gnumm</a>
-{%- if cabecalho == "enxuto" %}
-
-    {#- Cabeçalho enxuto: sem menu, só a ação direta com o fundador. Vale para
-        a página que pedir cabecalho: enxuto (hoje só a home); as internas
-        seguem com o menu completo. -#}
-    <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
-       target="_blank" rel="noopener" class="nav-whats"
-       aria-label="Falar no WhatsApp com o fundador"
-       onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'header'})">
-      <span class="nav-whats-longo" aria-hidden="true">Falar no WhatsApp com o fundador →</span><span class="nav-whats-curto" aria-hidden="true">Falar no WhatsApp →</span>
-    </a>
-{%- else %}
 
     <ul class="nav-links" id="nav-links">
       {%- for item in nav.principal %}
@@ -87,8 +75,15 @@
       {#- No painel do celular o CTA entra como último item da lista. -#}
       <li class="nav-links-cta"><a href="{{ site.linkTeste }}">{{ nav.cta.texto }}</a></li>
     </ul>
-
-    <a href="{{ site.linkTeste }}" class="nav-cta">{{ nav.cta.texto }}</a>
+    {#- A ação do cabeçalho, em todas as páginas, é a conversa direta com o
+        fundador. O botão do Mapa fica no conteúdo de cada página e, no
+        celular, como último item do menu. -#}
+    <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
+       target="_blank" rel="noopener" class="nav-whats"
+       aria-label="Falar no WhatsApp com o fundador"
+       onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'header'})">
+      <span class="nav-whats-longo" aria-hidden="true">Falar no WhatsApp com o fundador →</span><span class="nav-whats-curto" aria-hidden="true">Falar no WhatsApp →</span>
+    </a>
 
     {#- Abaixo de 960px o menu horizontal não cabe. Sem este botão o site fica
         sem navegação nenhuma no celular, que é o que acontecia até aqui. -#}
@@ -96,7 +91,6 @@
             aria-controls="nav-links" aria-expanded="false" aria-label="Abrir o menu">
       <span></span><span></span><span></span>
     </button>
-{%- endif %}
   </nav>
 
   {{ content | safe }}

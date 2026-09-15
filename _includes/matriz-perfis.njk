@@ -6,35 +6,33 @@
     na mesma cor dos drawers de /perfis.html: dourado para os de movimento,
     prata para os de contenção.
 
+    Mora em /perfis.html: cada quadrante leva ao drawer do perfil, logo
+    abaixo, e o abre (site.js).
+
     É HTML com os glifos em SVG, e não um SVG único, para o nome dos perfis
     quebrar linha no celular em vez de encolher até ficar ilegível. -#}
 {% from "glifos.njk" import glifo %}
 <figure class="matriz" aria-label="Matriz dos quatro perfis financeiros">
-  <figcaption class="tag-tecnica matriz-tag">&lt;MATRIZ_DOS_QUATRO_PERFIS&gt;</figcaption>
   <div class="matriz-quadro">
-    <span class="tag-tecnica matriz-eixo matriz-eixo-topo" aria-hidden="true">FUTURO</span>
-    <span class="tag-tecnica matriz-eixo matriz-eixo-base" aria-hidden="true">PRESENTE</span>
-    <span class="tag-tecnica matriz-eixo matriz-eixo-esq" aria-hidden="true">CONTENÇÃO</span>
-    <span class="tag-tecnica matriz-eixo matriz-eixo-dir" aria-hidden="true">MOVIMENTO</span>
+    <span class="matriz-eixo matriz-eixo-topo" aria-hidden="true">FUTURO</span>
+    <span class="matriz-eixo matriz-eixo-base" aria-hidden="true">PRESENTE</span>
+    <span class="matriz-eixo matriz-eixo-esq" aria-hidden="true">CONTENÇÃO</span>
+    <span class="matriz-eixo matriz-eixo-dir" aria-hidden="true">MOVIMENTO</span>
     <div class="matriz-grade">
-      <a href="/perfis.html" class="matriz-q" aria-label="Estrategista Imóvel: futuro e contenção">
+      <a href="#perfil-estrategista" class="matriz-q" aria-label="Estrategista Imóvel: futuro e contenção">
         <span class="drawer-glyph cool">{{ glifo("estrategista") }}</span>
-        <span class="tag-tecnica">&lt;FUTURO + CONTENÇÃO&gt;</span>
         <span class="matriz-nome">Estrategista Imóvel</span>
       </a>
-      <a href="/perfis.html" class="matriz-q" aria-label="Visionário sem Estrutura: futuro e movimento">
+      <a href="#perfil-visionario" class="matriz-q" aria-label="Visionário sem Estrutura: futuro e movimento">
         <span class="drawer-glyph warm">{{ glifo("visionario") }}</span>
-        <span class="tag-tecnica">&lt;FUTURO + MOVIMENTO&gt;</span>
         <span class="matriz-nome">Visionário sem Estrutura</span>
       </a>
-      <a href="/perfis.html" class="matriz-q" aria-label="Guardião que Aprisiona: presente e contenção">
+      <a href="#perfil-guardiao" class="matriz-q" aria-label="Guardião que Aprisiona: presente e contenção">
         <span class="drawer-glyph cool">{{ glifo("guardiao") }}</span>
-        <span class="tag-tecnica">&lt;PRESENTE + CONTENÇÃO&gt;</span>
         <span class="matriz-nome">Guardião que Aprisiona</span>
       </a>
-      <a href="/perfis.html" class="matriz-q" aria-label="Executor sem Lastro: presente e movimento">
+      <a href="#perfil-executor" class="matriz-q" aria-label="Executor sem Lastro: presente e movimento">
         <span class="drawer-glyph warm">{{ glifo("executor") }}</span>
-        <span class="tag-tecnica">&lt;PRESENTE + MOVIMENTO&gt;</span>
         <span class="matriz-nome">Executor sem Lastro</span>
       </a>
     </div>

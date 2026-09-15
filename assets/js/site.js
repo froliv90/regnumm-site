@@ -85,6 +85,16 @@
     });
   });
 
+  // ── Matriz dos perfis: o quadrante leva ao drawer e o abre ──
+  document.querySelectorAll('.matriz-q[href^="#perfil-"]').forEach(function (q) {
+    q.addEventListener('click', function () {
+      var drawer = document.getElementById(q.getAttribute('href').slice(1));
+      if (drawer && !drawer.classList.contains('open')) {
+        toggleDrawer(drawer.querySelector('.drawer-trigger'));
+      }
+    });
+  });
+
   // Botões da página de perfis — evento e propriedades preservados como eram.
   document.querySelectorAll('.perfis a.pf-btn, .perfis ~ .cta-sec a.cta-btn').forEach(function (el) {
     el.addEventListener('click', function () {
