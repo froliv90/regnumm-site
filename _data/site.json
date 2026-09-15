@@ -13,8 +13,8 @@
   "posthogHost": "https://eu.i.posthog.com",
   "numeroWhatsapp": "5519982578517",
   "linkTeste": "/mapa/",
-  "_email": "E-mail de contato. Vazio = a página /contato/ mostra só o WhatsApp.",
-  "email": "",
+  "_email": "E-mail principal de contato: aparece em /contato/ e no rodapé. Os Termos e a Privacidade citam o endereço escrito à mão; trocou aqui, troca lá.",
+  "email": "felipe@regnumm.com.br",
   "_linkTeste": "Endereço público do Mapa Financeiro, servido pelo app do diagnóstico via rewrite da Vercel. /teste redireciona para cá (vercel.json). O nome da chave ficou linkTeste para não mexer em todos os templates.",
   "_posthog": "Projeto na regiao EU Cloud. A regiao se define na criacao do projeto e nao se troca depois. Ver item 5 da Politica de Privacidade, que declara essa transferencia."
 }

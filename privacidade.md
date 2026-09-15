@@ -12,7 +12,7 @@ Esta política explica quais dados a Regnumm coleta, para quê, por quanto tempo
 
 ## 1. Quem é o controlador
 
-Felipe Rodrigues Oliveira, responsável pela Regnumm, é quem decide como e por que seus dados pessoais são tratados. Dúvidas ou pedidos relacionados a dados pessoais podem ser enviados pelo WhatsApp informado no site — é o canal oficial para isso.
+Felipe Rodrigues Oliveira, responsável pela Regnumm, é quem decide como e por que seus dados pessoais são tratados. Dúvidas ou pedidos relacionados a dados pessoais podem ser enviados para o e-mail felipe@regnumm.com.br, que é o canal oficial para isso, ou pelo WhatsApp informado no site.
 
 ## 2. Quais dados coletamos, e por quê
 
@@ -39,11 +39,11 @@ Esses prazos valem exclusivamente para quanto tempo o dado fica guardado — nã
 
 Os dados coletados no Mapa Financeiro — nome, WhatsApp, e-mail e respostas — ficam armazenados em servidor localizado no Brasil (região São Paulo). Não há transferência internacional desses dados.
 
-Os dados de navegação e uso do site, coletados por uma ferramenta de análise (PostHog), são processados em servidor localizado na União Europeia. Essa transferência internacional é realizada com base no seu consentimento, e a União Europeia possui regime de proteção de dados reconhecido como adequado. Você pode recusar essa coleta a qualquer momento pelas configurações do seu navegador ou entrando em contato pelo WhatsApp informado no site.
+Os dados de navegação e uso do site, coletados por uma ferramenta de análise (PostHog), são processados em servidor localizado na União Europeia. Essa transferência internacional é realizada com base no seu consentimento, e a União Europeia possui regime de proteção de dados reconhecido como adequado. Você pode recusar essa coleta a qualquer momento pelas configurações do seu navegador ou entrando em contato pelo e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site.
 
 ## 6. Seus direitos
 
-Você pode, a qualquer momento, pelo WhatsApp informado no site:
+Você pode, a qualquer momento, pelo e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site:
 
 - Confirmar se temos dados seus, e pedir acesso a eles.
 - Pedir correção de dado incorreto ou desatualizado.
@@ -62,4 +62,4 @@ Esta política pode ser atualizada a qualquer momento. A versão vigente é semp
 
 ## 9. Contato
 
-Dúvidas ou pedidos relacionados a esta política podem ser enviados pelo WhatsApp informado no site.
+Dúvidas ou pedidos relacionados a esta política podem ser enviados para o e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site.

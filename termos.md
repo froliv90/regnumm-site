@@ -35,7 +35,7 @@ O Mapa Financeiro completo + direcionamento é agendado diretamente com Felipe p
 
 Por se tratar de contratação feita fora de estabelecimento comercial físico, o Mapa Financeiro completo + direcionamento está sujeito ao direito de arrependimento previsto no artigo 49 do Código de Defesa do Consumidor. Você tem até 7 (sete) dias corridos, a contar da contratação, para desistir e receber o reembolso integral do valor pago, sem necessidade de justificativa.
 
-Para exercer esse direito, entre em contato pelo WhatsApp ou e-mail informados no site, dentro do prazo acima.
+Para exercer esse direito, entre em contato pelo e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site, dentro do prazo acima.
 
 ## 5. Cancelamento e reagendamento da sessão
 
@@ -59,4 +59,4 @@ Estes termos podem ser atualizados a qualquer momento. A versão vigente é semp
 
 ## 10. Contato
 
-Dúvidas sobre estes termos podem ser enviadas pelo WhatsApp ou e-mail informados no site.
+Dúvidas sobre estes termos podem ser enviadas para o e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site.

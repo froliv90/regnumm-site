@@ -11,7 +11,7 @@ ctaOrigem: "contato"
     <div class="hero-int-inner">
       <p class="hero-int-eyebrow">Contato</p>
       <h1 class="hero-int-headline">Fale com <em>o fundador.</em></h1>
-      <p class="hero-int-sub">Pelo WhatsApp, quem responde é o Felipe.</p>
+      <p class="hero-int-sub">Por e-mail ou pelo WhatsApp, quem responde é o Felipe.</p>
     </div>
   </section>
 
@@ -22,7 +22,7 @@ ctaOrigem: "contato"
         <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}" target="_blank" rel="noopener" class="btn-linha" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'contato'})">Falar no WhatsApp com o fundador →</a>
       </div>
 {%- if site.email %}
-      {#- Aparece quando site.email for preenchido em _data/site.json. -#}
+      {#- Endereço em _data/site.json. -#}
       <div class="contato-canal">
         <p class="sec-label">E-mail</p>
         <a href="mailto:{{ site.email }}" class="contato-email">{{ site.email }}</a>

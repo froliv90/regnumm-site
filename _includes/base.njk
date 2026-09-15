@@ -98,6 +98,9 @@
       <li><a href="{{ item.href }}">{{ item.texto }}</a></li>
       {%- endfor %}
       <li><a href="{{ site.whatsapp }}" target="_blank" rel="noopener" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'footer'})">WhatsApp</a></li>
+      {%- if site.email %}
+      <li><a href="mailto:{{ site.email }}">E-mail</a></li>
+      {%- endif %}
     </ul>
   </footer>
 
