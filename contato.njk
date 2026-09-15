@@ -16,18 +16,19 @@ ctaOrigem: "contato"
   </section>
 
   <section class="contato-sec">
-    <div class="contato-canais r">
-      <div class="contato-canal">
-        <p class="sec-label">WhatsApp</p>
-        <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}" target="_blank" rel="noopener" class="btn-linha" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'contato'})">Falar no WhatsApp com o fundador →</a>
+    <div class="contato-grade">
+      <div class="contato-card r">
+        <p class="contato-rotulo">WhatsApp</p>
+        <p class="contato-desc">Atendimento direto e diagnóstico.</p>
+        <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}" target="_blank" rel="noopener" class="btn-linha contato-acao" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'contato'})">Falar no WhatsApp com o fundador →</a>
       </div>
-{%- if site.email %}
-      {#- Endereço em _data/site.json. -#}
-      <div class="contato-canal">
-        <p class="sec-label">E-mail</p>
-        <a href="mailto:{{ site.email }}" class="contato-email">{{ site.email }}</a>
+      <div class="contato-card r d1">
+        <p class="contato-rotulo">E-mail</p>
+        <p class="contato-desc">Para mensagens institucionais e dúvidas.</p>
+        {#- A Cloudflare reescreve o link de e-mail para escondê-lo de robôs e
+            troca a classe do <a>. O estilo mora no <p>, não no link. -#}
+        <p class="contato-email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       </div>
-{%- endif %}
     </div>
   </section>
 

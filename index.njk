@@ -101,49 +101,37 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
     </div>
   </section>
 
-  <!-- EVIDÊNCIA + DEPOIS DO MAPA -->
-  {#- Caso real à esquerda, a chamada para o Mapa ao lado dele numa moldura
-      azul. No celular as duas colunas empilham, caso primeiro. Os ids antigos
-      (#evidencia, #ofertas, #agendar) continuam valendo para links de fora e
-      para a jornada. -#}
-  <section class="faixa faixa-base faixa-alta borda-topo caso-e-depois">
-    <div class="caso-grade">
-      <div class="caso-col" id="evidencia">
-        <p class="sec-label r">Um caso real</p>
-        <h2 class="evidencia-h r d1">O processo completo.<br><em>Do diagnóstico à governança.</em></h2>
-        <div class="evidencia-corpo r d2">
-          <p>A renda dele foi a mesma do começo ao fim do processo. O que mudou foi a direção, e direção virou resultado material. Um profissional liberal chegou ao Mapa com uma queixa comum: ganhava bem, gastava bem, e o saldo do mês não contava nenhuma das duas histórias. O diagnóstico achou o padrão rápido: ele decidia pelo clima do momento. Cada escolha fazia sentido sozinha. Juntas, não levavam a lugar nenhum.</p>
-          <p>Nas quatro sessões da Bússola, o gargalo apareceu. Não faltava disciplina nem renda. Faltava direção própria. O que ele tinha eram boas intenções, e intenção não sobrevive a um mês difícil. Por isso o problema voltava sempre que parecia resolvido. Na quarta sessão ele assinou a própria Constituição Financeira, com os princípios e as regras escritos com as palavras dele, não com as minhas.</p>
-          <p>Seis meses de Arquitetura depois, o retrato era outro. Uma reserva que não existia virou meses de respiro. Um financiamento que ia drenar anos de renda foi barrado antes da assinatura. Uma formação, paga com critério em vez de impulso, abriu uma frente de renda nova. Nada disso veio de ganhar mais. Veio de saber para onde ir com o que já entrava.</p>
-        </div>
-        <div class="evidencia-quote r d3">
-          <p>"O problema não era quanto eu ganhava. Era que eu nunca tinha parado pra entender como eu decidia."</p>
-          <cite>Cliente · Bússola Financeira + Arquitetura Financeira · identidade preservada</cite>
-        </div>
-{%- if depoimentos.mapa.texto %}
-        {#- Testemunho do Mapa isolado. Renderiza só com texto real preenchido em
-            _data/depoimentos.json: enquanto estiver vazio, nada aparece. -#}
-        <div class="evidencia-quote evidencia-quote-menor r d3">
-          <p>"{{ depoimentos.mapa.texto }}"</p>
-          <cite>{{ depoimentos.mapa.autor }}</cite>
-        </div>
-{%- endif %}
+  <!-- EVIDÊNCIA -->
+  {#- Ordem: rótulo, título, a citação do cliente em destaque e só então a
+      narrativa. A seção termina direto no CTA final, sem bloco intermediário. -#}
+  <section class="faixa faixa-base faixa-alta borda-topo" id="evidencia">
+    <div class="limite-760">
+      <p class="sec-label r">Um caso real</p>
+      <h2 class="evidencia-h r d1">O processo completo.<br><em>Do diagnóstico à governança.</em></h2>
+      <div class="evidencia-quote evidencia-quote-topo r d2">
+        <p>"O problema não era quanto eu ganhava. Era que eu nunca tinha parado pra entender como eu decidia."</p>
+        <cite>Cliente · Bússola Financeira + Arquitetura Financeira · identidade preservada</cite>
       </div>
-
-      <aside class="depois-card r d2" id="ofertas" aria-labelledby="depois-titulo">
-        <span id="agendar" aria-hidden="true"></span>
-        <p class="depois-label">Depois do Mapa</p>
-        <h3 class="depois-h" id="depois-titulo">Você viu um padrão. Tem outro.</h3>
-        <p class="depois-sub">O Mapa Financeiro é gratuito e mostra o perfil que conduz as suas decisões. O que vem depois aprofunda: o segundo padrão por trás dele, e o ponto onde os dois se cruzam.</p>
-        {#- Sem preço na home: a venda do resultado completo acontece depois do
-            Mapa e no WhatsApp. -#}
-        <div class="depois-acoes">
-          <a href="{{ site.linkTeste }}" class="cta-btn" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'captura'})">Fazer o Mapa Financeiro</a>
-          <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}" target="_blank" rel="noopener" class="btn-linha btn-linha-claro" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'captura'})">Falar no WhatsApp com o fundador →</a>
-        </div>
-      </aside>
+      <div class="evidencia-corpo r d3">
+        <p>A renda dele foi a mesma do começo ao fim do processo. O que mudou foi a direção, e direção virou resultado material. Um profissional liberal chegou ao Mapa com uma queixa comum: ganhava bem, gastava bem, e o saldo do mês não contava nenhuma das duas histórias. O diagnóstico achou o padrão rápido: ele decidia pelo clima do momento. Cada escolha fazia sentido sozinha. Juntas, não levavam a lugar nenhum.</p>
+        <p>Nas quatro sessões da Bússola, o gargalo apareceu. Não faltava disciplina nem renda. Faltava direção própria. O que ele tinha eram boas intenções, e intenção não sobrevive a um mês difícil. Por isso o problema voltava sempre que parecia resolvido. Na quarta sessão ele assinou a própria Constituição Financeira, com os princípios e as regras escritos com as palavras dele, não com as minhas.</p>
+        <p>Seis meses de Arquitetura depois, o retrato era outro. Uma reserva que não existia virou meses de respiro. Um financiamento que ia drenar anos de renda foi barrado antes da assinatura. Uma formação, paga com critério em vez de impulso, abriu uma frente de renda nova. Nada disso veio de ganhar mais. Veio de saber para onde ir com o que já entrava.</p>
+      </div>
+{%- if depoimentos.mapa.texto %}
+      {#- Testemunho do Mapa isolado. Renderiza só com texto real preenchido em
+          _data/depoimentos.json: enquanto estiver vazio, nada aparece. -#}
+      <div class="evidencia-quote evidencia-quote-menor r d3">
+        <p>"{{ depoimentos.mapa.texto }}"</p>
+        <cite>{{ depoimentos.mapa.autor }}</cite>
+      </div>
+{%- endif %}
     </div>
   </section>
+
+  {#- Âncoras antigas: /#ofertas (a jornada aponta para cá) e /#agendar caem
+      agora no CTA final, que é onde está o botão do Mapa. -#}
+  <span id="ofertas" class="ancora" aria-hidden="true"></span>
+  <span id="agendar" class="ancora" aria-hidden="true"></span>
 
   <!-- CTA FINAL -->
   <section class="cta-sec">

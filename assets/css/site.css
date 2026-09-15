@@ -84,10 +84,11 @@ html { scroll-behavior: smooth; }
 }
 /* Dentro de bloco azul o anel vira champagne: 9,40:1 sobre midnight. */
 .cta-sec, .autonomia, .faixa-anchor, .oferta,
-.callout, .evidencia-quote, .pf-pergunta, .depois-card { --foco: var(--accent); }
+.callout, .evidencia-quote, .pf-pergunta { --foco: var(--accent); }
 
 /* A nav gruda no topo, então um alvo de âncora pararia atrás dela. */
-section[id], .etapa[id], .caso-col[id], .depois-card[id] { scroll-margin-top: 6rem; }
+section[id], .etapa[id], .ancora[id] { scroll-margin-top: 6rem; }
+.ancora { display: block; height: 0; }
 
 body {
   background: var(--base);
@@ -649,36 +650,8 @@ h2.evidencia-h em { font-style: normal; }
 .evidencia-quote-menor { margin-top: 2rem; }
 .evidencia-quote-menor p { font-size: 1.02rem; }
 
-/* Caso real e "Depois do Mapa" lado a lado. No desktop a moldura azul
-   acompanha a leitura do caso (sticky); abaixo de 1024px empilha. */
-.caso-grade {
-  max-width: 1180px; margin: 0 auto;
-  display: grid; grid-template-columns: minmax(0, 1fr);
-  gap: 2rem; align-items: start;
-}
-.depois-card {
-  background: var(--anchor); color: var(--base);
-  border-radius: 6px; padding: 2rem;
-}
-.depois-label {
-  font-size: .72rem; font-weight: 700; letter-spacing: .11em;
-  text-transform: uppercase; color: var(--accent); margin-bottom: 1.3rem;
-}
-h3.depois-h {
-  font-weight: 800; font-size: clamp(1.7rem, 2.6vw, 2.4rem);
-  line-height: 1.04; letter-spacing: -.02em;
-  color: var(--base); margin-bottom: 1.2rem;
-}
-.depois-sub {
-  font-size: 1rem; font-weight: 400; line-height: 1.7;
-  color: var(--claro-2); margin-bottom: 2.2rem;
-}
-.depois-acoes { display: flex; flex-direction: column; gap: 1rem; }
-.depois-acoes .cta-btn, .depois-acoes .btn-linha { margin-top: 0; width: 100%; text-align: center; }
-@media (min-width: 1024px) {
-  .caso-grade { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3rem; }
-  .depois-card { padding: 2.5rem; position: sticky; top: 7rem; }
-}
+/* Citação logo abaixo do título do caso, antes da narrativa. */
+.evidencia-quote.evidencia-quote-topo { margin: 0 0 2.6rem; }
 
 
 /* ── 15 · ESCADA DE OFERTAS ────────────────────────────────── */
@@ -1119,15 +1092,40 @@ footer {
   .nav-cta { font-size: .64rem; padding: .8rem 1.2rem; }
 }
 
-.contato-sec { padding: 8vh 5vw 10vh; }
-.contato-canais { max-width: 1100px; display: flex; flex-wrap: wrap; gap: 3rem 5rem; }
-.contato-canal .sec-label { margin-bottom: 1rem; }
-.contato-canal .btn-linha { margin-top: 0; }
-.contato-email {
-  font-size: 1.2rem; font-weight: 700; color: var(--anchor);
-  text-decoration: none; border-bottom: 1px solid var(--linha);
+/* Contato: dois cards simétricos, com respiro próprio em relação ao hero
+   e ao bloco de CTA que fecha a página. */
+.contato-sec { padding: 4rem 5vw; }
+.contato-grade {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem;
 }
-.contato-email:hover { border-color: var(--anchor); }
+.contato-card {
+  display: flex; flex-direction: column; align-items: flex-start;
+  border: 1px solid var(--linha); border-radius: 6px;
+  padding: 2rem; background: var(--base);
+}
+.contato-rotulo {
+  font-size: .72rem; font-weight: 700; letter-spacing: .11em;
+  text-transform: uppercase; color: var(--texto-3); margin-bottom: 1rem;
+}
+.contato-desc {
+  font-size: 1.05rem; line-height: 1.6; color: var(--texto-2);
+  margin-bottom: 2rem; flex-grow: 1;
+}
+.contato-card .btn-linha { margin-top: 0; }
+.contato-email { margin: 0; font-family: var(--mono); font-size: 1.05rem; letter-spacing: -.01em; }
+.contato-email a, .contato-email .__cf_email__ {
+  color: var(--anchor); text-decoration: none;
+  border-bottom: 1px solid var(--linha); padding-bottom: .2rem;
+  transition: border-color .2s, color .2s;
+  overflow-wrap: anywhere;
+}
+.contato-email a:hover { border-color: var(--anchor); }
+@media (min-width: 768px) {
+  .contato-sec { padding: 6rem 5vw; }
+  .contato-grade { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; }
+  .contato-card { padding: 2.6rem; }
+}
 
 /* Fixo no canto inferior direito. Azul com o ícone em champagne: aparece
    sobre qualquer fundo sem gritar mais que o botão do Mapa. */
