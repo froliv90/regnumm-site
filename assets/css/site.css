@@ -1114,13 +1114,16 @@ footer {
 }
 .contato-card .btn-linha { margin-top: 0; }
 .contato-email { margin: 0; font-family: var(--mono); font-size: 1.05rem; letter-spacing: -.01em; }
-.contato-email a, .contato-email .__cf_email__ {
+.contato-email a {
   color: var(--anchor); text-decoration: none;
   border-bottom: 1px solid var(--linha); padding-bottom: .2rem;
   transition: border-color .2s, color .2s;
   overflow-wrap: anywhere;
 }
 .contato-email a:hover { border-color: var(--anchor); }
+/* Dentro do link a Cloudflare põe um <span class="__cf_email__">: herda a cor,
+   sem segunda linha embaixo. */
+.contato-email .__cf_email__ { color: inherit; border: 0; padding: 0; }
 @media (min-width: 768px) {
   .contato-sec { padding: 6rem 5vw; }
   .contato-grade { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; }
