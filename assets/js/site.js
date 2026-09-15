@@ -21,7 +21,10 @@
         entries.forEach(function (e) {
           if (e.isIntersecting) { e.target.classList.add('v'); obs.unobserve(e.target); }
         });
-      }, { threshold: 0.1 });
+      // Limiar zero: com 0.1, um bloco alto (o corpo inteiro de
+      // /fundamentacao passa de 6000px) só aparecia depois de rolar, e a
+      // página abria com o texto invisível logo abaixo do título.
+      }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
       alvos.forEach(function (el) { obs.observe(el); });
     } else {
       // navegador sem suporte: mostra tudo em vez de esconder
