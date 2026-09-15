@@ -1,23 +1,8 @@
-{#- Escada de produtos: os dois níveis pagos SEMPRE lado a lado.
-    A especificação é explícita: não exibir em telas separadas sem a comparação
-    direta entre os dois preços. É a comparação que faz a escada funcionar. -#}
+{#- Oferta paga do resultado completo. O PDF avulso foi descontinuado; resta a
+    sessão com direcionamento. Hoje nenhum template inclui este arquivo. -#}
 <div class="ofertas">
 
-  <div class="oferta r">
-    <p class="oferta-nome">{{ ofertas.pdf.nome }}</p>
-    <p class="oferta-preco"><span class="data-stat">{{ ofertas.pdf.valor | brl }}</span></p>
-    <p class="oferta-entrega">{{ ofertas.pdf.entrega }}</p>
-    <a href="{{ ofertas.pdf.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
-       target="_blank" rel="noopener"
-       class="oferta-btn"
-       onclick="if(window.posthog)posthog.capture('oferta_click',{oferta:'pdf',origem:'{{ ofertaOrigem or page.fileSlug }}'})">
-      {{ ofertas.pdf.cta }} · {{ ofertas.pdf.valor | brl }}
-    </a>
-    <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
-       target="_blank" rel="noopener" class="oferta-duvida">{{ ofertas.duvida.texto }}</a>
-  </div>
-
-  <div class="oferta oferta-destaque r d1">
+  <div class="oferta oferta-destaque r">
     <p class="oferta-nome">{{ ofertas.sessao.nome }}</p>
     <p class="oferta-preco"><span class="data-stat">{{ ofertas.sessao.valor | brl }}</span></p>
     <p class="oferta-entrega">{{ ofertas.sessao.entrega }}</p>

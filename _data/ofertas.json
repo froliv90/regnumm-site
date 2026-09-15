@@ -1,5 +1,5 @@
 {
-  "_comentario": "FONTE ÚNICA DE PREÇO DO SITE. Trocar um valor aqui muda todas as telas, o schema.org e os Termos. ATENÇÃO: o app do teste (regnumm-diagnostico) é outro programa, com outro deploy, e mostra os mesmos preços na tela de resultado. Os dois mudam JUNTOS — ver lib/config-publico.ts lá.",
+  "_comentario": "FONTE ÚNICA DE PREÇO DO SITE. O PDF avulso (R$ 99) foi descontinuado em 15/09/2026. Trocar um valor aqui muda as telas e o schema.org; os Termos têm o valor escrito à mão. ATENÇÃO: o app do Mapa (regnumm-diagnostico) mostra o mesmo preço na tela de resultado, em lib/config-publico.ts. Os dois mudam JUNTOS.",
   "teste": {
     "nome": "Mapa Financeiro",
     "valor": 0,
@@ -7,17 +7,10 @@
     "entrega": "O perfil que conduz as suas decisões, na hora, sem custo.",
     "href": "/mapa/"
   },
-  "pdf": {
-    "nome": "Mapa Financeiro completo em PDF",
-    "valor": 99,
-    "entrega": "O seu Mapa inteiro, por escrito: o perfil que conduz as suas decisões, o segundo padrão por trás dele e o ponto onde os dois se cruzam. Seu para guardar e reler quando a decisão apertar.",
-    "cta": "Quero o meu em PDF",
-    "whatsappTexto": "Olá, Felipe! Quero o meu Mapa Financeiro completo em PDF."
-  },
   "sessao": {
     "nome": "Mapa Financeiro completo + direcionamento",
     "valor": 125,
-    "entrega": "Tudo o que vem no PDF, e mais uma sessão de até 90 minutos comigo, online ou presencial na região de Campinas, lendo o seu resultado com você e apontando o que fazer com ele.",
+    "entrega": "O seu Mapa inteiro, lido com você: o perfil que apareceu no Mapa, o segundo padrão por trás dele e o ponto onde os dois se cruzam, numa sessão de até 90 minutos comigo, online ou presencial na região de Campinas, apontando o que fazer com ele.",
     "cta": "Quero o direcionamento",
     "whatsappTexto": "Olá, Felipe! Quero o Mapa Financeiro completo com direcionamento.",
     "itens": [

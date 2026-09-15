@@ -20,10 +20,14 @@
     {
       "texto": "Textos",
       "href": "/blog/"
+    },
+    {
+      "texto": "Contato",
+      "href": "/contato/"
     }
   ],
   "cta": {
-    "texto": "Faça o Mapa Financeiro",
+    "texto": "Fazer o Mapa Financeiro",
     "href": "/mapa/"
   },
   "rodape": [
@@ -50,6 +54,10 @@
     {
       "texto": "Textos",
       "href": "/blog/"
+    },
+    {
+      "texto": "Contato",
+      "href": "/contato/"
     },
     {
       "texto": "Acompanhe",

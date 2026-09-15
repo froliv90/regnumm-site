@@ -1,0 +1,36 @@
+---
+layout: base.njk
+permalink: /contato/index.html
+seoTitulo: "Contato | Regnumm"
+seoDescricao: "Fale com Felipe Rodrigues Oliveira, fundador do Regnumm, pelo WhatsApp."
+ctaOrigem: "contato"
+---
+<main>
+
+  <section class="hero-int">
+    <div class="hero-int-inner">
+      <p class="hero-int-eyebrow">Contato</p>
+      <h1 class="hero-int-headline">Fale com <em>o fundador.</em></h1>
+      <p class="hero-int-sub">Pelo WhatsApp, quem responde é o Felipe.</p>
+    </div>
+  </section>
+
+  <section class="contato-sec">
+    <div class="contato-canais r">
+      <div class="contato-canal">
+        <p class="sec-label">WhatsApp</p>
+        <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}" target="_blank" rel="noopener" class="btn-linha" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'contato'})">Falar no WhatsApp com o fundador →</a>
+      </div>
+{%- if site.email %}
+      {#- Aparece quando site.email for preenchido em _data/site.json. -#}
+      <div class="contato-canal">
+        <p class="sec-label">E-mail</p>
+        <a href="mailto:{{ site.email }}" class="contato-email">{{ site.email }}</a>
+      </div>
+{%- endif %}
+    </div>
+  </section>
+
+  {% include "cta-mapa.njk" %}
+
+</main>

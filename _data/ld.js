@@ -22,12 +22,6 @@ const pessoa = {
 };
 
 const servicos = {
-  pdf: {
-    "@type": "Service",
-    name: "Mapa Financeiro em PDF — relatório de perfil financeiro",
-    description:
-      "Relatório digital em PDF gerado a partir das respostas do Teste dos Quatro Perfis, com o perfil dominante, o perfil secundário e o cruzamento entre os dois."
-  },
   mapa: {
     "@type": "Service",
     name: "Mapa Financeiro — sessão de diagnóstico financeiro pessoal",
@@ -75,7 +69,6 @@ const negocio = {
     "@type": "OfferCatalog",
     name: "Como funciona o Regnumm",
     itemListElement: [
-      { "@type": "Offer", itemOffered: servicos.pdf },
       { "@type": "Offer", itemOffered: servicos.mapa },
       { "@type": "Offer", itemOffered: servicos.bussola },
       { "@type": "Offer", itemOffered: servicos.arquitetura }

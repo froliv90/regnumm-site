@@ -75,15 +75,10 @@
       {#- No painel do celular o CTA entra como último item da lista. -#}
       <li class="nav-links-cta"><a href="{{ site.linkTeste }}">{{ nav.cta.texto }}</a></li>
     </ul>
-    {#- A ação do cabeçalho, em todas as páginas, é a conversa direta com o
-        fundador. O botão do Mapa fica no conteúdo de cada página e, no
-        celular, como último item do menu. -#}
-    <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
-       target="_blank" rel="noopener" class="nav-whats"
-       aria-label="Falar no WhatsApp com o fundador"
-       onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'header'})">
-      <span class="nav-whats-longo" aria-hidden="true">Falar no WhatsApp com o fundador →</span><span class="nav-whats-curto" aria-hidden="true">Falar no WhatsApp →</span>
-    </a>
+    {#- A ação do cabeçalho, em todas as páginas, é o Mapa Financeiro. A conversa
+        com o fundador ficou no botão flutuante, no canto inferior direito. -#}
+    <a href="{{ site.linkTeste }}" class="nav-cta"
+       onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'header'})">{{ nav.cta.texto }}</a>
 
     {#- Abaixo de 960px o menu horizontal não cabe. Sem este botão o site fica
         sem navegação nenhuma no celular, que é o que acontecia até aqui. -#}
@@ -105,6 +100,18 @@
       <li><a href="{{ site.whatsapp }}" target="_blank" rel="noopener" onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'footer'})">WhatsApp</a></li>
     </ul>
   </footer>
+
+  {#- WhatsApp com o fundador, fixo no canto inferior direito de todas as
+      páginas. Some quando o menu do celular está aberto. -#}
+  <a href="{{ ofertas.duvida.whatsappTexto | whatsapp(site.numeroWhatsapp) }}"
+     target="_blank" rel="noopener" class="whats-flutuante"
+     aria-label="Falar no WhatsApp com o fundador" title="Falar no WhatsApp com o fundador"
+     onclick="if(window.posthog)posthog.capture('lead_whatsapp_direto',{location:'flutuante'})">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3.6 20.4l1.3-4A8.4 8.4 0 1 1 8 19.3z"/>
+      <path d="M9.3 8.7c.2-.5.6-.7 1-.7h.3c.2 0 .4.1.5.4l.6 1.4c.1.2 0 .5-.1.7l-.5.6a6.5 6.5 0 0 0 2.8 2.8l.6-.5c.2-.2.5-.2.7-.1l1.4.6c.3.1.4.3.4.5v.3c0 .4-.2.8-.7 1-.8.4-1.7.4-2.6 0a9.2 9.2 0 0 1-4.4-4.4c-.4-.9-.4-1.8 0-2.6z"/>
+    </svg>
+  </a>
 
   <script src="/assets/js/site.js"></script>
 </body>
