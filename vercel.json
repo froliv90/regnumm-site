@@ -70,6 +70,14 @@
       "destination": "https://regnumm-diagnostico.vercel.app/api/sessoes"
     },
     {
+      "source": "/api/leitura",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/leitura"
+    },
+    {
+      "source": "/api/leitura/",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/leitura"
+    },
+    {
       "source": "/api/checkout",
       "destination": "https://regnumm-diagnostico.vercel.app/api/checkout"
     },
