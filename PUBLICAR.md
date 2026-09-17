@@ -33,7 +33,7 @@ O texto começa aqui.
 | `categoria` | não | Aparece acima do título e no cartão da listagem. |
 | `palavrasChave` | não | Lista de termos que entram no schema do artigo. |
 | `atualizadoEm` | não | Data de revisão. Vira `dateModified` no schema. |
-| `seoTitulo` | não | Sobrescreve o título da aba. O padrão já é `Título — Regnumm`. |
+| `seoTitulo` | não | Sobrescreve o título da aba. O padrão já é `Título | Regnumm`. |
 | `seoDescricao` | não | Sobrescreve a meta description. O padrão é o `resumo`. |
 | `rascunho` | não | `true` tira o texto do ar sem apagar o arquivo. |
 

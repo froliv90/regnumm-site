@@ -5,7 +5,7 @@ eyebrow: "Política de privacidade"
 titulo: "Como os seus dados <em>são tratados.</em>"
 resumo: "O que a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados."
 atualizado: "15 de setembro de 2026"
-seoTitulo: "Política de Privacidade — Regnumm"
+seoTitulo: "Política de Privacidade | Regnumm"
 seoDescricao: "Quais dados a Regnumm coleta no site e no Mapa Financeiro, por quanto tempo guarda e como exercer os seus direitos, em conformidade com a LGPD (Lei 13.709/2018)."
 ---
 Esta política explica quais dados a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados. Aplica-se ao site regnumm.com.br e ao Mapa Financeiro.

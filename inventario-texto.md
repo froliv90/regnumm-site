@@ -177,11 +177,11 @@ TÍTULO DA PÁGINA ocupa a largura da tela e quebra em 22 caracteres por linha.
 - **RÓTULO** · O que define
 - **CORPO** · Vive no amanhã. Quando o dinheiro aparece, a mente vai direto para o próximo movimento, a próxima oportunidade, o que aquilo pode virar. Enxerga possibilidade antes dos outros e move o dinheiro em direção ao futuro que vê.
 - **RÓTULO** · A força que trouxe até aqui
-- **CORPO** · A capacidade de antecipar. Em ambiente certo, com estrutura, essa visão é vantagem competitiva real. Esse perfil raramente fica parado, tem energia e iniciativa.
+- **CORPO** · A capacidade de antecipar. Com a estrutura certa, essa visão vira resultado de verdade. Esse perfil raramente fica parado, tem energia e iniciativa.
 - **RÓTULO** · O ponto onde trava
 - **CORPO** · A visão cresce mais rápido que a base que deveria sustentá-la. A vida financeira vira uma sequência de apostas no futuro, e cada aposta começa do zero em vez de se acumular sobre a anterior.
 - **RÓTULO** · O custo que não aparece no extrato
-- **CORPO** · Uma trajetória onde o patamar nunca sobe de forma consistente. Muito movimento em direção ao amanhã, pouco chão construído hoje. Voou alto e não tinha onde pousar.
+- **CORPO** · O patamar não sobe de forma consistente, mesmo com todo esse movimento. Muita energia em direção ao amanhã, pouco chão construído hoje.
 - **CORPO** · Quantas oportunidades boas você enxergou antes dos outros, e que nunca viraram um sistema real de crescimento na sua vida?
 - **BOTÃO** · Descobrir o meu perfil
 - **RÓTULO** · Presente · Movimento

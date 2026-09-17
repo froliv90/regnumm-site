@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 permalink: /diagnostico/index.html
-seoTitulo: "O diagnóstico — Faltou direção, não informação | Regnumm"
+seoTitulo: "O diagnóstico · Faltou direção, não informação | Regnumm"
 seoDescricao: "O padrão que aparece nos diagnósticos é consistente: a pessoa ganha bem, entende de investimento, e ainda assim não acumula. O Mapa Financeiro nomeia o padrão que dirige a sua vida financeira."
 ---
 <main>
@@ -30,23 +30,20 @@ seoDescricao: "O padrão que aparece nos diagnósticos é consistente: a pessoa 
       <div class="mapa-left">
         <p class="sec-label sec-label-claro">O primeiro passo</p>
         <h2 class="secao-titulo">Mapa <em>Financeiro.</em></h2>
-        <p class="mapa-desc">Uma sessão diagnóstica conduzida por Felipe. O objetivo é nomear o padrão que dirige a sua vida financeira. Aquilo que você já sente mas não consegue segurar com as mãos.</p>
-        <p class="mapa-desc">É uma conversa estruturada que entrega clareza sobre como você decide. Sem formulário, sem julgamento, sem número.</p>
+        <p class="mapa-desc">Um diagnóstico rápido, online e gratuito. O objetivo é nomear o padrão que dirige a sua vida financeira. Aquilo que você já sente mas não consegue segurar com as mãos.</p>
+        <p class="mapa-desc">Cinco a sete minutos, sem julgamento, sem número que resuma quem você é. Só o padrão, nomeado com precisão.</p>
         <div class="mapa-cta-block">
           <a href="{{ site.linkTeste }}" class="mapa-btn" onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'mapa_card'})">Fazer o Mapa Financeiro</a>
           <div class="mapa-social">
             {% set tamanho = 18 %}{% include "redes-icones.njk" %}
           </div>
-          <p class="mapa-note"><span class="data-stat">{{ ofertas.sessao.valor | brl }}</span> · Online · Presencial na região de Campinas mediante agendamento prévio.</p>
         </div>
       </div>
       <div class="mapa-right">
         <div class="mapa-card">
           <div class="mapa-card-label">O que você sai sabendo</div>
           <div class="mapa-card-title">Qual perfil está conduzindo as suas decisões com dinheiro</div>
-          <div class="mapa-card-body">Ao final dos 90 minutos, você sabe com precisão como decide com dinheiro, qual força te trouxe até aqui e onde ela passou a limitar. Não em teoria. Lido ao vivo, confrontado com o que você mesmo disse durante a sessão.</div>
-          <div class="mapa-card-divider"></div>
-          <div class="mapa-card-detail">A sessão identifica um dos quatro perfis de comportamento financeiro que operam na vida de quem ganha bem. Cada perfil é uma força que trouxe a pessoa até aqui, e a mesma força tem um ponto onde passa a limitar. O diagnóstico nomeia os dois e aponta o que a Bússola Financeira resolve a partir dali.</div>
+          <div class="mapa-card-body">Ao final, você sabe qual dos quatro perfis está conduzindo as suas decisões com dinheiro, e onde ele passou a limitar. Se quiser ir mais fundo, o Mapa Financeiro completo cruza esse perfil com o segundo padrão por trás dele, numa sessão comigo.</div>
           <div class="mapa-card-divider"></div>
           <div class="mapa-card-preco">
             <span class="data-stat valor">{{ ofertas.sessao.valor | brl }}</span>

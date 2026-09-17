@@ -14,7 +14,7 @@ module.exports = {
       data.rascunho ? false : `/blog/${data.page.fileSlug}/index.html`,
     eleventyExcludeFromCollections: (data) => Boolean(data.rascunho),
 
-    seoTitulo: (data) => data.seoTitulo || `${semTags(data.titulo)} — ${data.site.nome}`,
+    seoTitulo: (data) => data.seoTitulo || `${semTags(data.titulo)} | ${data.site.nome}`,
     seoDescricao: (data) => data.seoDescricao || data.resumo,
 
     // Mesmo padrão de @graph das outras páginas do site, adaptado para artigo.

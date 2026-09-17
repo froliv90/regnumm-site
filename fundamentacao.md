@@ -5,7 +5,7 @@ eyebrow: "Fundamentação"
 titulo: "De onde vem <em>o modelo.</em>"
 resumo: "Os quatro perfis não saíram de uma intuição. Cruzam dois eixos com base estabelecida em economia comportamental. Esta página mostra qual é essa base, o que é contribuição original e o que ainda não foi validado."
 ctaOrigem: "fundamentacao"
-seoTitulo: "Fundamentação teórica dos quatro perfis — Regnumm"
+seoTitulo: "Fundamentação teórica dos quatro perfis | Regnumm"
 seoDescricao: "A base do modelo de quatro perfis de comportamento financeiro do Regnumm: desconto temporal, aversão à perda e a autonomia como variável moderadora. Com referências e limitações declaradas."
 ---
 

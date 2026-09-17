@@ -5,7 +5,7 @@ eyebrow: "Termos de uso"
 titulo: "As regras <em>desta mesa.</em>"
 resumo: "O que a Regnumm entrega em cada nível, o que ela deliberadamente não faz, e em que condições os serviços são oferecidos."
 atualizado: "15 de setembro de 2026"
-seoTitulo: "Termos de Uso — Regnumm"
+seoTitulo: "Termos de Uso | Regnumm"
 seoDescricao: "Condições de uso do site regnumm.com.br e dos serviços da Regnumm: Mapa Financeiro e Mapa Financeiro completo + direcionamento, com política de cancelamento, reembolso e direito de arrependimento."
 ---
 
