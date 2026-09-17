@@ -22,22 +22,22 @@
     {
       "source": "/teste/:path+/",
       "destination": "/mapa/:path+/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/teste/:path+",
       "destination": "/mapa/:path+/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/teste/",
       "destination": "/mapa/",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/teste",
       "destination": "/mapa/",
-      "permanent": false
+      "permanent": true
     }
   ],
   "rewrites": [
