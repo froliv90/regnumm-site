@@ -1,65 +1,123 @@
 ---
 layout: legal.njk
 permalink: /privacidade/index.html
+templateEngineOverride: njk,md
 eyebrow: "Política de privacidade"
 titulo: "Como os seus dados <em>são tratados.</em>"
-resumo: "O que a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados."
-atualizado: "15 de setembro de 2026"
+resumo: "O que a Regnumm coleta, para quê, com que base legal, com quem compartilha, por quanto tempo guarda, e como você exerce os seus direitos."
+atualizado: "21 de setembro de 2026"
 seoTitulo: "Política de Privacidade | Regnumm"
-seoDescricao: "Quais dados a Regnumm coleta no site e no Mapa Financeiro, por quanto tempo guarda e como exercer os seus direitos, em conformidade com a LGPD (Lei 13.709/2018)."
+seoDescricao: "Quais dados a Regnumm coleta no site e no Mapa Financeiro, com que base legal, com quem compartilha, por quanto tempo guarda e como exercer os seus direitos, conforme a LGPD (Lei 13.709/2018)."
 ---
-Esta política explica quais dados a Regnumm coleta, para quê, por quanto tempo guarda, e como você pode acessar, corrigir ou pedir a exclusão dos seus dados. Aplica-se ao site regnumm.com.br e ao Mapa Financeiro.
+Esta política explica quais dados a Regnumm coleta, para quê, com que base legal, com quem compartilha, por quanto tempo guarda e como você exerce os seus direitos. Vale para o site regnumm.com.br, para o Mapa Financeiro e para os serviços descritos nos [Termos de Uso](/termos/).
 
 ## 1. Quem é o controlador
 
-Felipe Rodrigues Oliveira, responsável pela Regnumm, é quem decide como e por que seus dados pessoais são tratados. Dúvidas ou pedidos relacionados a dados pessoais podem ser enviados para o e-mail felipe@regnumm.com.br, que é o canal oficial para isso, ou pelo WhatsApp informado no site.
+O controlador dos dados é Felipe Rodrigues Oliveira, responsável pela Regnumm, CNPJ {{ site.cnpj }}.
 
-## 2. Quais dados coletamos, e por quê
+Pedidos e dúvidas sobre dados pessoais vão pelo e-mail {{ site.email }} ou pelo WhatsApp (19) 98257-8517. A Regnumm é agente de tratamento de pequeno porte e, conforme a Resolução CD/ANPD nº 2/2022, não indicou encarregado formal: o próprio Felipe atende por esses canais.
 
-**Ao fazer o Mapa Financeiro**: nome, WhatsApp, e-mail (se você optar por informar), e as respostas dadas durante o preenchimento. Usamos isso para calcular seu diagnóstico e entrar em contato sobre o resultado.
+## 2. Quais dados coletamos, para quê, e com que base legal
 
-**Ao contratar o Mapa Financeiro completo + direcionamento**: os dados acima, mais o registro da compra em si (produto, valor, data). O processamento do pagamento em si é feito por um provedor de pagamento externo — a Regnumm não armazena número de cartão nem dados bancários diretamente.
+**Mapa Financeiro.** Nome, WhatsApp, e-mail (se você informar), as respostas do questionário, o perfil calculado a partir delas, a data e, quando você chega por um convite, o código de quem convidou.
 
-**Ao navegar no site**: dados de uso e comportamento de navegação, coletados por uma ferramenta de análise (PostHog), para entender como as páginas são usadas. Não usamos esses dados para te identificar individualmente fora do contexto do Mapa Financeiro.
+- Para quê: calcular e mostrar o seu resultado, e falar com você sobre ele, inclusive para apresentar o Mapa Financeiro completo + direcionamento.
+- Base legal: o seu consentimento (art. 7º, I, da LGPD), dado na caixa de autorização antes de começar o Mapa. A mesma caixa autoriza o processamento em servidores nos Estados Unidos (item 5).
 
-## 3. Base legal
+**Contratação do Mapa Financeiro completo + direcionamento.** Os dados do Mapa, mais o registro da compra (produto, valor, data, o fornecedor do pagamento e o número da transação), o registro do aceite dos Termos de Uso (data, hora e versão aceita) e os dados necessários para emitir a nota fiscal. O pagamento é processado pelo Mercado Pago: a Regnumm não recebe nem guarda número de cartão ou dados bancários.
 
-Tratamos seus dados com base no seu consentimento, dado explicitamente antes de iniciar o Mapa Financeiro, e, no caso de quem contrata o Mapa Financeiro completo + direcionamento, também com base na execução do contrato de prestação de serviço.
+- Para quê: prestar o serviço contratado, agendar a sessão, emitir a nota fiscal, atender pedidos de arrependimento, cancelamento e reembolso, comprovar a contratação em caso de contestação, e cumprir obrigações legais e fiscais.
+- Base legal: execução de contrato (art. 7º, V), cumprimento de obrigação legal (art. 7º, II) e exercício regular de direitos (art. 7º, VI).
 
-## 4. Por quanto tempo guardamos seus dados
+**Conversas pelo WhatsApp e por e-mail.** O conteúdo das mensagens que você enviar.
 
-O prazo de guarda depende de você ter ou não se tornado cliente pagante:
+- Para quê: responder, agendar e atender pedidos.
+- Base legal: procedimentos preliminares e execução de contrato (art. 7º, V) e, no caso de pedidos sobre dados, cumprimento de obrigação legal (art. 7º, II).
 
-- **Se você fez o Mapa Financeiro e não contratou nada**: seus dados ficam guardados por até **12 meses**. Esse é o tempo que consideramos razoável para eventual contato comercial de seguimento. Depois disso, os dados são apagados ou anonimizados.
-- **Se você contratou o Mapa Financeiro completo + direcionamento**: seus dados ficam guardados por **5 anos** a partir da compra. Esse prazo não é definido pela Regnumm — ele reflete o tempo que a lei brasileira permite que um cliente reclame de um serviço (Código de Defesa do Consumidor) e o tempo que a legislação fiscal exige que registros de venda fiquem disponíveis. Findo esse prazo, os dados são apagados.
+**Navegação no site.** Páginas visitadas, cliques em botões, origem da visita, tipo de aparelho e navegador, endereço IP e um identificador aleatório gravado no seu navegador, coletados pela ferramenta de análise PostHog.
 
-Esses prazos valem exclusivamente para quanto tempo o dado fica guardado — não têm relação com prazos de garantia, de resposta a pedidos, ou com o prazo de arrependimento de compra descrito nos [Termos de Uso](/termos/).
+- Para quê: entender quais páginas funcionam e medir o uso do Mapa, de forma agregada. Esses dados não são usados para criar perfil de consumo nem para publicidade.
+- Base legal: legítimo interesse (art. 7º, IX, e art. 10), limitado ao necessário para essa medição. Você pode se opor a esse tratamento a qualquer momento: basta apagar ou bloquear o identificador no navegador (item 10) ou pedir pelos canais do item 1.
 
-## 5. Onde seus dados ficam guardados
+## 3. O resultado do Mapa é calculado automaticamente
 
-Os dados coletados no Mapa Financeiro — nome, WhatsApp, e-mail e respostas — ficam armazenados em servidor localizado no Brasil (região São Paulo). Não há transferência internacional desses dados.
+O perfil do Mapa Financeiro é definido por um cálculo automático: as respostas são convertidas em posições em dois eixos (a relação com o tempo e a relação com o risco), e a combinação dos dois define o perfil. O resultado serve apenas para descrever um padrão de comportamento. Ele não gera nenhum efeito jurídico, não é usado para concessão de crédito e não é compartilhado com terceiros para esse fim.
 
-Os dados de navegação e uso do site, coletados por uma ferramenta de análise (PostHog), são processados em servidor localizado na União Europeia. Essa transferência internacional é realizada com base no seu consentimento, e a União Europeia possui regime de proteção de dados reconhecido como adequado. Você pode recusar essa coleta a qualquer momento pelas configurações do seu navegador ou entrando em contato pelo e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site.
+Você pode pedir que o resultado seja revisto por uma pessoa (art. 20 da LGPD) pelos canais do item 1.
 
-## 6. Seus direitos
+## 4. Com quem os dados são compartilhados
 
-Você pode, a qualquer momento, pelo e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site:
+A Regnumm não vende dados pessoais. Os dados são tratados por fornecedores que prestam serviço para a Regnumm e só os usam para esse serviço:
 
-- Confirmar se temos dados seus, e pedir acesso a eles.
-- Pedir correção de dado incorreto ou desatualizado.
-- Pedir a exclusão dos seus dados, respeitado o prazo de guarda de registros de compra descrito no item 4, quando aplicável.
-- Revogar o consentimento dado no início do Mapa Financeiro.
+- **Supabase:** banco de dados onde ficam os dados do Mapa e das compras.
+- **Vercel:** hospedagem do site e do Mapa.
+- **PostHog:** análise de navegação do site.
+- **Mercado Pago:** processamento do pagamento.
+- **Umbler:** e-mail {{ site.email }}.
+- **WhatsApp (Meta):** conversas, quando você escolhe falar por lá. As mensagens seguem também a política de privacidade do WhatsApp.
 
-Pedidos são respondidos em até 15 dias, conforme previsto na Lei Geral de Proteção de Dados (Lei 13.709/2018).
+Dados também podem ser fornecidos a autoridades quando a lei ou uma ordem judicial exigir.
+
+## 5. Onde os dados ficam, e transferência internacional
+
+Os dados do Mapa Financeiro e das compras são gravados em banco de dados no Brasil (região de São Paulo).
+
+Antes de chegar ao banco, esses dados passam pela aplicação do Mapa e do pagamento, hospedada pela Vercel em servidores nos Estados Unidos. Essa transferência internacional tem duas bases legais:
+
+- **No Mapa Financeiro:** o seu consentimento específico, dado na caixa de autorização antes de começar (art. 33, VIII, da LGPD).
+- **Na contratação:** a necessidade de executar o contrato de prestação de serviço (art. 33, IX, combinado com o art. 7º, V).
+
+Os dados de navegação coletados pelo PostHog são processados em servidores na União Europeia. Essa transferência internacional é feita com base nas garantias contratuais de proteção de dados adotadas pelo fornecedor (art. 33 da LGPD).
+
+As mensagens de WhatsApp são processadas pela Meta, que pode tratá-las fora do Brasil, conforme a política dela.
+
+## 6. Por quanto tempo guardamos os dados
+
+- **Se você fez o Mapa Financeiro e não contratou nada:** até 12 meses a partir do início do Mapa, para que você possa pedir o seu resultado de novo e para que a conversa sobre ele possa ser retomada.
+- **Se você contratou o Mapa Financeiro completo + direcionamento:** 5 anos a partir da compra, que é o prazo em que um cliente pode reclamar de um serviço pelo Código de Defesa do Consumidor e o prazo de guarda de registros exigido pela legislação fiscal.
+- **Dados de navegação:** até 12 meses.
+- **Mensagens:** pelo tempo necessário ao atendimento e, se houver compra, pelo mesmo prazo do registro da compra.
+
+O prazo fica registrado junto de cada cadastro. Uma vez por mês, os cadastros cujo prazo venceu são excluídos.
+
+Esses prazos tratam só de quanto tempo o dado fica guardado. Eles não se confundem com o prazo de arrependimento descrito nos [Termos de Uso](/termos/).
 
 ## 7. Segurança
 
-O acesso aos dados armazenados é restrito: nenhuma chave pública ou usada no navegador tem permissão de leitura ou escrita direta sobre os dados coletados. Todo acesso passa por controles do lado do servidor.
+O acesso aos dados é restrito. Nenhuma chave usada no navegador tem permissão de ler ou gravar os dados coletados: todo acesso passa por controles do lado do servidor, e o painel interno exige senha.
 
-## 8. Alterações nesta política
+Se ocorrer um incidente de segurança que possa trazer risco ou dano relevante a você, a Regnumm comunicará você e a Autoridade Nacional de Proteção de Dados (art. 48 da LGPD).
 
-Esta política pode ser atualizada a qualquer momento. A versão vigente é sempre a publicada em regnumm.com.br/privacidade.
+## 8. Seus direitos
 
-## 9. Contato
+Pelo e-mail {{ site.email }} ou pelo WhatsApp (19) 98257-8517, você pode, a qualquer momento:
 
-Dúvidas ou pedidos relacionados a esta política podem ser enviados para o e-mail felipe@regnumm.com.br ou pelo WhatsApp informado no site.
+- confirmar se tratamos dados seus e ter acesso a eles;
+- corrigir dados incompletos, inexatos ou desatualizados;
+- pedir a anonimização, o bloqueio ou a eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei;
+- pedir a portabilidade dos seus dados;
+- pedir a eliminação dos dados tratados com base no seu consentimento, exceto o que a lei obriga a guardar (como o registro de uma compra, pelo prazo do item 6);
+- saber com quem os seus dados foram compartilhados;
+- saber que pode não consentir, e o que isso implica: sem nome, WhatsApp e a autorização da caixa do Mapa, não é possível fazer o Mapa Financeiro;
+- revogar o consentimento, sem afetar o que foi feito antes da revogação;
+- se opor ao tratamento feito com base em legítimo interesse, como a análise de navegação;
+- pedir a revisão, por uma pessoa, do resultado calculado automaticamente (item 3);
+- apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).
+
+A confirmação de existência e o acesso aos dados em formato simplificado são fornecidos de imediato, pelo mesmo canal do pedido. A declaração completa é enviada em até 15 dias. Para proteger os seus dados, podemos pedir uma confirmação de que o pedido vem de você, como uma mensagem do mesmo WhatsApp informado no Mapa.
+
+## 9. Idade mínima
+
+O Mapa Financeiro e os serviços da Regnumm são destinados a maiores de 18 anos. Se identificarmos dados de uma pessoa menor de idade, eles serão excluídos.
+
+## 10. Cookies
+
+O site grava no seu navegador um identificador usado pela ferramenta de análise (item 2). Você pode apagá-lo ou bloqueá-lo nas configurações do navegador, e o site continua funcionando normalmente.
+
+## 11. Alterações nesta política
+
+Esta política pode ser atualizada. A versão vigente fica publicada em regnumm.com.br/privacidade, com a data da última atualização. Se uma mudança alterar a finalidade de um dado coletado com o seu consentimento, pediremos um novo consentimento.
+
+## 12. Contato
+
+Dúvidas ou pedidos sobre esta política: e-mail {{ site.email }} ou WhatsApp (19) 98257-8517.

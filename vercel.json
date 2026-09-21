@@ -84,6 +84,14 @@
     {
       "source": "/api/checkout/",
       "destination": "https://regnumm-diagnostico.vercel.app/api/checkout"
+    },
+    {
+      "source": "/api/termos",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/termos"
+    },
+    {
+      "source": "/api/termos/",
+      "destination": "https://regnumm-diagnostico.vercel.app/api/termos"
     }
   ]
 }
