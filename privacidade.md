@@ -19,9 +19,9 @@ Pedidos e dúvidas sobre dados pessoais vão pelo e-mail {{ site.email }} ou pel
 
 ## 2. Quais dados coletamos, para quê, e com que base legal
 
-**Mapa Financeiro.** Nome, WhatsApp, e-mail (se você informar), as respostas do questionário, o perfil calculado a partir delas, a data e, quando você chega por um convite, o código de quem convidou.
+**Mapa Financeiro.** Nome, WhatsApp, e-mail (se você informar), as respostas do questionário, o perfil calculado a partir delas, a data, de onde você conheceu a Regnumm e, quando você chega por um convite, o código de quem convidou.
 
-- Para quê: calcular e mostrar o seu resultado, e falar com você sobre ele, inclusive para apresentar o Mapa Financeiro completo + direcionamento.
+- Para quê: calcular e mostrar o seu resultado, falar com você sobre ele, inclusive para apresentar o Mapa Financeiro completo + direcionamento, e entender quais canais trazem as pessoas até aqui.
 - Base legal: o seu consentimento (art. 7º, I, da LGPD), dado na caixa de autorização antes de começar o Mapa. A mesma caixa autoriza o processamento em servidores nos Estados Unidos (item 5).
 
 **Contratação do Mapa Financeiro completo + direcionamento.** Os dados do Mapa, mais o registro da compra (produto, valor, data, o fornecedor do pagamento e o número da transação), o registro do aceite dos Termos de Uso (data, hora e versão aceita) e os dados necessários para emitir a nota fiscal. O pagamento é processado pelo Mercado Pago: a Regnumm não recebe nem guarda número de cartão ou dados bancários.
