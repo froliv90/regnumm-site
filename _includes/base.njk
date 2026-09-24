@@ -61,6 +61,15 @@
   </script>{% endraw %}
   <script>
     posthog.init('{{ site.posthogToken }}', { api_host: '{{ site.posthogHost }}', defaults: '2026-01-30' })
+    /* Recusa da medição, como a Política de Privacidade promete: abrir
+       ?posthog=off desliga a coleta neste navegador para sempre, e ?posthog=on
+       religa. Sem isso, o único jeito de recusar seria bloquear script na mão.
+       Serve também para o Felipe tirar as próprias visitas da conta. */
+    try {
+      var medicao = new URLSearchParams(location.search).get('posthog')
+      if (medicao === 'off') posthog.opt_out_capturing()
+      if (medicao === 'on') posthog.opt_in_capturing()
+    } catch (e) {}
   </script>
 </head>
 <body>

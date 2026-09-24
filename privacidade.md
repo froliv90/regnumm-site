@@ -34,10 +34,10 @@ Pedidos e dúvidas sobre dados pessoais vão pelo e-mail {{ site.email }} ou pel
 - Para quê: responder, agendar e atender pedidos.
 - Base legal: procedimentos preliminares e execução de contrato (art. 7º, V) e, no caso de pedidos sobre dados, cumprimento de obrigação legal (art. 7º, II).
 
-**Navegação no site.** Páginas visitadas, cliques em botões, origem da visita, tipo de aparelho e navegador, endereço IP e um identificador aleatório gravado no seu navegador, coletados pela ferramenta de análise PostHog.
+**Navegação no site.** Páginas visitadas, cliques em botões, origem da visita, tipo de aparelho e navegador, e um identificador aleatório gravado no seu navegador, coletados pela ferramenta de análise PostHog. O endereço IP é descartado: a ferramenta está configurada para não guardá-lo.
 
 - Para quê: entender quais páginas funcionam e medir o uso do Mapa, de forma agregada. Esses dados não são usados para criar perfil de consumo nem para publicidade.
-- Base legal: legítimo interesse (art. 7º, IX, e art. 10), limitado ao necessário para essa medição. Você pode se opor a esse tratamento a qualquer momento: basta apagar ou bloquear o identificador no navegador (item 10) ou pedir pelos canais do item 1.
+- Base legal: legítimo interesse (art. 7º, IX, e art. 10), limitado ao necessário para essa medição. Você pode se opor a esse tratamento a qualquer momento, sem falar com ninguém: abra [regnumm.com.br/?posthog=off](https://regnumm.com.br/?posthog=off) e a medição para nesse navegador. Para voltar a permitir, abra [regnumm.com.br/?posthog=on](https://regnumm.com.br/?posthog=on).
 
 ## 3. O resultado do Mapa é calculado automaticamente
 
@@ -112,7 +112,7 @@ O Mapa Financeiro e os serviços da Regnumm são destinados a maiores de 18 anos
 
 ## 10. Cookies
 
-O site grava no seu navegador um identificador usado pela ferramenta de análise (item 2). Você pode apagá-lo ou bloqueá-lo nas configurações do navegador, e o site continua funcionando normalmente.
+O site grava no seu navegador um identificador usado pela ferramenta de análise (item 2). Você pode desligar essa medição abrindo [regnumm.com.br/?posthog=off](https://regnumm.com.br/?posthog=off), ou apagar e bloquear o identificador nas configurações do navegador. Nos dois casos, o site continua funcionando normalmente.
 
 ## 11. Alterações nesta política
 
