@@ -73,30 +73,12 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
   <section class="faq" id="faq">
     <div class="faq-inner">
       <p class="sec-label r">Perguntas frequentes</p>
-      <div class="faq-item r d1">
-        <div class="faq-q">Preciso fazer o Mapa Financeiro antes das outras sessões?</div>
-        <div class="faq-a">Sim. O Mapa Financeiro é o ponto de entrada de todo o processo. O diagnóstico da sessão orienta as quatro sessões da Bússola Financeira e, consequentemente, o acompanhamento da Arquitetura Financeira. Sem o diagnóstico, o processo perde precisão.</div>
+{% for item in faq.itens %}
+      <div class="faq-item r {{ item.atraso }}">
+        <div class="faq-q">{{ item.pergunta }}</div>
+        <div class="faq-a">{{ item.resposta }}</div>
       </div>
-      <div class="faq-item r d1">
-        <div class="faq-q">O Regnumm oferece consultoria de investimentos?</div>
-        <div class="faq-a">Não. O trabalho aqui acontece antes da escolha de fundo, produto ou estratégia de alocação, na direção que orienta qualquer decisão financeira. A remuneração vem só do cliente, nunca de comissão de mercado. Quem busca indicação de investimento está no lugar errado.</div>
-      </div>
-      <div class="faq-item r d1">
-        <div class="faq-q">Qual a diferença para uma assessoria ou corretora?</div>
-        <div class="faq-a">A remuneração. Assessorias e corretoras ganham sobre os produtos que o cliente contrata, o que cria um interesse próprio dentro do atendimento. No Regnumm não existe produto. A única remuneração vem do próprio trabalho de diagnóstico e direção, o que significa que não há segunda intenção na mesa. É como uma consulta médica: você paga pelo cuidado, não descobre depois que o tratamento rendia comissão para quem prescreveu.</div>
-      </div>
-      <div class="faq-item r d2">
-        <div class="faq-q">O processo funciona para autônomos e profissionais com renda variável?</div>
-        <div class="faq-a">Sim. Grande parte dos clientes tem renda variável: médicos, advogados, consultores, empresários de pequeno porte. A variabilidade da renda não é obstáculo para o processo. É, muitas vezes, parte do padrão que o diagnóstico revela.</div>
-      </div>
-      <div class="faq-item r d2">
-        <div class="faq-q">As sessões são presenciais ou remotas?</div>
-        <div class="faq-a">As sessões são online. Atendimento presencial na região de Campinas disponível mediante agendamento prévio.</div>
-      </div>
-      <div class="faq-item r d3">
-        <div class="faq-q">Qual é a diferença entre o Regnumm e um planejador financeiro?</div>
-        <div class="faq-a">Planejadores financeiros trabalham com projeções, produtos e alocação de ativos. O Regnumm trabalha com o padrão que dirige a vida financeira da pessoa, o nível anterior ao produto. O foco é governança, não carteira.</div>
-      </div>
+{% endfor %}
     </div>
   </section>
 

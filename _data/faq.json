@@ -1,0 +1,35 @@
+{
+  "_comentario": "Perguntas frequentes da home. Fonte única: a seção visível (index.njk) e os dados estruturados (FAQPage em _data/ld.js) leem daqui. O Google exige que os dois digam a mesma coisa.",
+  "itens": [
+    {
+      "atraso": "d1",
+      "pergunta": "Preciso fazer o Mapa Financeiro antes das outras sessões?",
+      "resposta": "Sim. O Mapa Financeiro é o ponto de entrada de todo o processo. O padrão que ele identifica orienta as quatro sessões da Bússola Financeira e, consequentemente, o acompanhamento da Arquitetura Financeira. Sem esse diagnóstico, o processo perde precisão."
+    },
+    {
+      "atraso": "d1",
+      "pergunta": "O Regnumm oferece consultoria de investimentos?",
+      "resposta": "Não. O trabalho aqui acontece antes da escolha de fundo, produto ou estratégia de alocação, na direção que orienta qualquer decisão financeira. A remuneração vem só do cliente, nunca de comissão de mercado. Quem busca indicação de investimento está no lugar errado."
+    },
+    {
+      "atraso": "d1",
+      "pergunta": "Qual a diferença para uma assessoria ou corretora?",
+      "resposta": "A remuneração. Assessorias e corretoras ganham sobre os produtos que o cliente contrata, o que cria um interesse próprio dentro do atendimento. No Regnumm não existe produto. A única remuneração vem do próprio trabalho de diagnóstico e direção, o que significa que não há segunda intenção na mesa. É como uma consulta médica: você paga pelo cuidado, não descobre depois que o tratamento rendia comissão para quem prescreveu."
+    },
+    {
+      "atraso": "d2",
+      "pergunta": "O processo funciona para autônomos e profissionais com renda variável?",
+      "resposta": "Sim. Grande parte dos clientes tem renda variável: médicos, advogados, consultores, empresários de pequeno porte. A variabilidade da renda não é obstáculo para o processo. É, muitas vezes, parte do padrão que o diagnóstico revela."
+    },
+    {
+      "atraso": "d2",
+      "pergunta": "As sessões são presenciais ou remotas?",
+      "resposta": "As sessões são online. Atendimento presencial na região de Campinas disponível mediante agendamento prévio."
+    },
+    {
+      "atraso": "d3",
+      "pergunta": "Qual é a diferença entre o Regnumm e um planejador financeiro?",
+      "resposta": "Planejadores financeiros trabalham com projeções, produtos e alocação de ativos. O Regnumm trabalha com o padrão que dirige a vida financeira da pessoa, o nível anterior ao produto. O foco é governança, não carteira."
+    }
+  ]
+}

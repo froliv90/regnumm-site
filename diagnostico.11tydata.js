@@ -17,18 +17,31 @@ module.exports = {
             about: ld.refNegocio,
             primaryImageOfPage: ld.URL + "/og-image.png"
           },
+          // O Mapa é gratuito; os R$ 125 são do Mapa completo, a sessão.
+          // Antes, o preço da sessão ia pendurado no Mapa gratuito.
           Object.assign({}, ld.servicos.mapa, {
             "@id": url + "#mapa-financeiro",
             provider: ld.refNegocio,
             areaServed: ld.negocio.areaServed,
-            // Preço estruturado que o Google lê. Vem de _data/ofertas.json,
-            // nunca escrito à mão: preço errado aqui vira rich result errado.
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "BRL",
+              availability: "https://schema.org/InStock",
+              url: ld.URL + "/mapa/"
+            }
+          }),
+          Object.assign({}, ld.servicos.mapaCompleto, {
+            "@id": url + "#mapa-financeiro-completo",
+            provider: ld.refNegocio,
+            areaServed: ld.negocio.areaServed,
+            // Preço que o Google lê. Vem de _data/ofertas.json, nunca à mão.
             offers: {
               "@type": "Offer",
               price: String(data.ofertas.sessao.valor),
               priceCurrency: "BRL",
               availability: "https://schema.org/InStock",
-              url: ld.URL + "/#ofertas"
+              url: ld.URL + "/diagnostico/"
             }
           }),
           ld.pessoa,
