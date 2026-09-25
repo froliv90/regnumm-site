@@ -1,13 +1,14 @@
 /* Schema de /perfis.html.
-   O FAQPage é o mesmo que já estava no arquivo original, com as seis
-   perguntas verbatim. Só foram acrescentados WebPage e BreadcrumbList,
+   O FAQPage veio do arquivo original. A resposta de "Qual é o meu perfil
+   financeiro?" foi reescrita em 25/09/2026: descrevia o Mapa como sessão de
+   90 minutos, do formato antigo. Só foram acrescentados WebPage e BreadcrumbList,
    para a página entrar no mesmo grafo das demais. */
 
 const perguntas = [
   ["Quais são os quatro perfis financeiros da Regnumm?",
    "São quatro perfis de comportamento financeiro, definidos pelo cruzamento entre foco no tempo, presente ou futuro, e comportamento, movimento ou contenção: Visionário sem Estrutura, Executor sem Lastro, Guardião que Aprisiona e Estrategista Imóvel. Cada perfil descreve uma força que trouxe a pessoa até onde ela está, e o ponto exato em que essa mesma força passa a limitar o próximo passo."],
   ["Qual é o meu perfil financeiro?",
-   "A forma mais precisa de descobrir é através do Mapa Financeiro, uma sessão de 90 minutos que identifica o perfil a partir da sua própria história, confrontada ao vivo. As descrições gerais dos quatro perfis ajudam a se reconhecer, mas a aplicação individual revela onde exatamente aquele padrão está custando caro na sua vida."],
+   "A forma mais direta de descobrir é o Mapa Financeiro, um questionário online e gratuito de cinco a sete minutos que mostra na hora o perfil dominante nas suas respostas. As descrições gerais dos quatro perfis ajudam a se reconhecer. Para ir mais fundo, o Mapa Financeiro completo cruza esse perfil com o segundo padrão por trás dele, numa sessão individual com Felipe Rodrigues Oliveira."],
   ["O que é o Visionário sem Estrutura?",
    "É o perfil que vive no amanhã, movendo dinheiro em direção a oportunidades futuras, mas cuja visão cresce mais rápido do que a base que deveria sustentá-la, resultando em movimento constante sem acúmulo consistente."],
   ["O que é o Executor sem Lastro?",
