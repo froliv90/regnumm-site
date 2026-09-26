@@ -54,6 +54,7 @@ A Regnumm não vende dados pessoais. Os dados são tratados por fornecedores que
 - **PostHog:** análise de navegação do site.
 - **Mercado Pago:** processamento do pagamento.
 - **Umbler:** e-mail {{ site.email }}.
+- **Resend:** envio de avisos internos por e-mail para a Regnumm, quando um Mapa é concluído ou uma compra é confirmada. Esses avisos levam só o perfil calculado e códigos de identificação da sessão e do pagamento, sem nome, contato ou respostas, e são processados em servidores nos Estados Unidos.
 - **WhatsApp (Meta):** conversas, quando você escolhe falar por lá. As mensagens seguem também a política de privacidade do WhatsApp.
 
 Dados também podem ser fornecidos a autoridades quando a lei ou uma ordem judicial exigir.

@@ -12,6 +12,7 @@
 
 const ofertas = require("./ofertas.json");
 const faq = require("./faq.json");
+const site = require("./site.json");
 
 const URL = "https://regnumm.com.br";
 const ID_PESSOA = URL + "/#felipe";
@@ -28,6 +29,7 @@ const pessoa = {
   description:
     "Felipe Rodrigues Oliveira ajuda quem ganha bem mas não consegue acumular ou organizar as finanças, com mais de mil atendimentos no contexto financeiro. Diferente da consultoria tradicional, trabalha o comportamento e a direção financeira da pessoa, não a venda de produtos ou a montagem de planilhas. Especialista em diagnóstico comportamental financeiro e governança financeira pessoal. Fundador do Regnumm, baseado na região de Campinas.",
   url: URL,
+  email: site.email,
   worksFor: refNegocio
 };
 
@@ -75,6 +77,17 @@ const negocio = {
   description:
     "Regnumm ajuda pessoas que ganham bem mas não conseguem guardar dinheiro ou organizar as finanças pessoais. Atende profissionais liberais, autônomos e executivos que sentem ansiedade financeira mesmo com boa renda, que tentaram organizar as finanças mas o problema voltou, ou que querem estruturar a vida financeira do zero. Atendimento online para todo o Brasil e presencial na região de Campinas.",
   founder: refPessoa,
+  email: site.email,
+  /* Contato oficial. O e-mail entrou quando passou a receber de verdade
+     (26/09/2026): publicar um endereço que não funciona seria prometer o que
+     não existe. */
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    email: site.email,
+    telephone: "+" + site.numeroWhatsapp,
+    availableLanguage: "Portuguese"
+  },
   areaServed: ["Campinas", "Jundiaí", "Sorocaba", "São Paulo", "Brasil"],
   availableLanguage: "Portuguese",
   serviceType: [
