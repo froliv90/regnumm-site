@@ -5,7 +5,7 @@ templateEngineOverride: njk,md
 eyebrow: "Política de privacidade"
 titulo: "Como os seus dados <em>são tratados.</em>"
 resumo: "O que a Regnumm coleta, para quê, com que base legal, com quem compartilha, por quanto tempo guarda, e como você exerce os seus direitos."
-atualizado: "21 de setembro de 2026"
+atualizado: "28 de setembro de 2026"
 seoTitulo: "Política de Privacidade | Regnumm"
 seoDescricao: "Quais dados a Regnumm coleta no site e no Mapa Financeiro, com que base legal, com quem compartilha, por quanto tempo guarda e como exercer os seus direitos, conforme a LGPD (Lei 13.709/2018)."
 ---
@@ -19,7 +19,7 @@ Pedidos e dúvidas sobre dados pessoais vão pelo e-mail {{ site.email }} ou pel
 
 ## 2. Quais dados coletamos, para quê, e com que base legal
 
-**Mapa Financeiro.** Nome, WhatsApp, e-mail (se você informar), as respostas do questionário, o perfil calculado a partir delas, a data, de onde você conheceu a Regnumm e, quando você chega por um convite, o código de quem convidou.
+**Mapa Financeiro.** Nome, WhatsApp, e-mail, as respostas do questionário, o perfil calculado a partir delas, a data, de onde você conheceu a Regnumm e, quando você chega por um convite, o código de quem convidou.
 
 - Para quê: calcular e mostrar o seu resultado, falar com você sobre ele, inclusive para apresentar o Mapa Financeiro completo + direcionamento, e entender quais canais trazem as pessoas até aqui.
 - Base legal: o seu consentimento (art. 7º, I, da LGPD), dado na caixa de autorização antes de começar o Mapa. A mesma caixa autoriza o processamento em servidores nos Estados Unidos (item 5).
@@ -99,7 +99,7 @@ Pelo e-mail {{ site.email }} ou pelo WhatsApp (19) 98257-8517, você pode, a qua
 - pedir a portabilidade dos seus dados;
 - pedir a eliminação dos dados tratados com base no seu consentimento, exceto o que a lei obriga a guardar (como o registro de uma compra, pelo prazo do item 6);
 - saber com quem os seus dados foram compartilhados;
-- saber que pode não consentir, e o que isso implica: sem nome, WhatsApp e a autorização da caixa do Mapa, não é possível fazer o Mapa Financeiro;
+- saber que pode não consentir, e o que isso implica: sem nome, WhatsApp, e-mail e a autorização da caixa do Mapa, não é possível fazer o Mapa Financeiro;
 - revogar o consentimento, sem afetar o que foi feito antes da revogação;
 - se opor ao tratamento feito com base em legítimo interesse, como a análise de navegação;
 - pedir a revisão, por uma pessoa, do resultado calculado automaticamente (item 3);

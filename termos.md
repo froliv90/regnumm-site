@@ -5,7 +5,7 @@ templateEngineOverride: njk,md
 eyebrow: "Termos de uso"
 titulo: "As regras <em>desta mesa.</em>"
 resumo: "O que a Regnumm entrega, o que ela deliberadamente não faz, e em que condições os serviços são oferecidos."
-atualizado: "21 de setembro de 2026"
+atualizado: "28 de setembro de 2026"
 seoTitulo: "Termos de Uso | Regnumm"
 seoDescricao: "Condições de uso do site regnumm.com.br e dos serviços da Regnumm: Mapa Financeiro e Mapa Financeiro completo + direcionamento, com pagamento, direito de arrependimento, cancelamento e reembolso."
 ---
@@ -34,7 +34,7 @@ Nada do que a Regnumm entrega, no Mapa Financeiro gratuito ou na sessão, consti
 
 ## 3. Serviços
 
-**Mapa Financeiro.** Gratuito. Questionário online de cinco a sete minutos, que começa depois de você informar nome e WhatsApp (o e-mail é opcional). O resultado mostra o perfil financeiro dominante nas suas respostas. O perfil é calculado automaticamente a partir das respostas, como explica a [Política de Privacidade](/privacidade/).
+**Mapa Financeiro.** Gratuito. Questionário online de cinco a sete minutos, que começa depois de você informar nome, WhatsApp e e-mail. O resultado mostra o perfil financeiro dominante nas suas respostas. O perfil é calculado automaticamente a partir das respostas, como explica a [Política de Privacidade](/privacidade/).
 
 **Mapa Financeiro completo + direcionamento.** <span class="data-stat">{{ ofertas.sessao.valor | brl }}</span>, em pagamento único. Inclui uma sessão individual de até 90 minutos com Felipe Rodrigues Oliveira, online ou presencial na região de Campinas/SP, em que o resultado completo (o perfil dominante, o segundo perfil e o cruzamento entre os dois) é lido e conversado com você, olhando como esse padrão aparece nas suas decisões com dinheiro.
 
