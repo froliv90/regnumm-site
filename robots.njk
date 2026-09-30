@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# Regnumm. O mapa do site lista todas as páginas públicas, inclusive o /mapa,
+# que é servido pelo app e por isso não sai sozinho da coleção do Eleventy.
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml

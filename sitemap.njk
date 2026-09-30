@@ -12,4 +12,10 @@ eleventyExcludeFromCollections: true
   </url>
   {%- endif %}
   {%- endfor %}
+  {#- O Mapa é servido pelo app (rewrite no vercel.json), então não é página do
+      Eleventy e não entra pelo loop acima. É a página mais importante para a
+      busca por "mapa financeiro". #}
+  <url>
+    <loc>{{ site.url }}/mapa/</loc>
+  </url>
 </urlset>
