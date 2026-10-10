@@ -50,13 +50,13 @@ const servicos = {
     "@type": "Service",
     name: "Bússola Financeira",
     description:
-      "Quatro sessões para sair do improviso e construir um sistema de decisão financeira próprio. No fim, a pessoa sai com a sua Constituição Financeira: princípios, vedações e regras de decisão escritos com as próprias palavras."
+      "Projeto de seis meses, com dois encontros por mês e valor fechado, para colocar em prática o que o Mapa Financeiro mostrou. As decisões reais de cada mês são avaliadas com alguém do mesmo lado da mesa, sem produto para vender e sem comissão."
   },
   arquitetura: {
     "@type": "Service",
     name: "Arquitetura Financeira",
     description:
-      "Um encontro por mês para aplicar à realidade de cada período o sistema construído na Bússola Financeira, com alguém do mesmo lado da mesa, sem produto para vender e sem comissão."
+      "Imersão em quatro sessões para transformar a direção da Bússola Financeira em estrutura que dura: objetivos depurados, a decisão que travava resolvida, improviso convertido em sistema e, no fim, a Constituição Financeira, com princípios, vedações e regras de decisão escritos com as próprias palavras. Uma construção pensada para esta geração e para as próximas."
   }
 };
 

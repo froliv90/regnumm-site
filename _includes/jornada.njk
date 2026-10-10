@@ -1,5 +1,7 @@
-{#- Faixa da jornada. Cada etapa leva à página que a explica; "Governa o
-    reino" leva ao agendamento do Mapa Financeiro, que é a porta de entrada. -#}
+{#- Faixa da jornada (esteira de 10/10/2026): Mapa (Descobre) → Bússola, seis
+    meses com dois encontros por mês (Direciona) → Arquitetura, imersão em
+    quatro sessões até a Constituição Financeira (Constrói). Cada etapa leva à
+    página que a explica; a última leva ao CTA do Mapa, a porta de entrada. -#}
 {% from "glifos.njk" import glifo %}
 <div class="story {{ 'story-borda' if bordaTopo }}">
   <a href="/diagnostico/" class="story-item" onclick="if(window.posthog)posthog.capture('jornada_click',{etapa:'mapa',origem:'{{ jornadaOrigem }}'})">
