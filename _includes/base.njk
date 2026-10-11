@@ -24,12 +24,15 @@
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#FFFFFF" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&display=swap" rel="stylesheet" />
+  {#- Fontes no próprio site (declaradas no site.css). O DM Sans é o texto de
+      tudo, então vem pré-carregado; o Cormorant só desenha o logotipo. -#}
+  <link rel="preload" href="/assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="stylesheet" href="/assets/css/site.css" />
   <script>document.documentElement.classList.add('js')</script>
+  {#- defer: baixa junto com a página e só roda depois dela montada, sem
+      segurar a primeira pintura. Antes ficava no fim do body, sem defer. -#}
+  <script src="/assets/js/site.js" defer></script>
   {% if feedRss %}<link rel="alternate" type="application/atom+xml" title="{{ site.nome }}" href="{{ site.url }}/blog/feed.xml" />{% endif %}
 
   {% if redirecionarAncoras %}
@@ -60,7 +63,9 @@
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
   </script>{% endraw %}
   <script>
-    posthog.init('{{ site.posthogToken }}', { api_host: '{{ site.posthogHost }}', defaults: '2026-01-30' })
+    /* disable_surveys: o site não usa pesquisas do PostHog, e o módulo delas
+       pesava cerca de 33 KB a cada visita (11/10/2026). */
+    posthog.init('{{ site.posthogToken }}', { api_host: '{{ site.posthogHost }}', defaults: '2026-01-30', disable_surveys: true })
     /* Recusa da medição, como a Política de Privacidade promete: abrir
        ?posthog=off desliga a coleta neste navegador para sempre, e ?posthog=on
        religa. Sem isso, o único jeito de recusar seria bloquear script na mão.
@@ -125,6 +130,5 @@
     </svg>
   </a>
 
-  <script src="/assets/js/site.js"></script>
 </body>
 </html>

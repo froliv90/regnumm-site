@@ -93,5 +93,52 @@
       "source": "/api/termos/",
       "destination": "https://regnumm-diagnostico.vercel.app/api/termos"
     }
+  ],
+  "headers": [
+    {
+      "source": "/assets/fonts/:arquivo",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/css/:arquivo",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/assets/js/:arquivo",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/assets/icones/:arquivo",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/felipe.webp",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
   ]
 }

@@ -23,6 +23,7 @@ module.exports = function (eleventyConfig) {
   // ── Arquivos copiados sem processamento ──
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("felipe.png");
+  eleventyConfig.addPassthroughCopy("felipe.webp");
   eleventyConfig.addPassthroughCopy("og-image.png");
   eleventyConfig.addPassthroughCopy({ "conteudo/imagens": "blog/imagens" });
 
