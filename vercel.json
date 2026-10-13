@@ -42,6 +42,10 @@
   ],
   "rewrites": [
     {
+      "source": "/icon.svg",
+      "destination": "https://regnumm-diagnostico.vercel.app/icon.svg"
+    },
+    {
       "source": "/mapa",
       "destination": "https://regnumm-diagnostico.vercel.app/mapa"
     },
