@@ -91,8 +91,19 @@
     </ul>
     {#- A ação do cabeçalho, em todas as páginas, é o Mapa Financeiro. A conversa
         com o fundador ficou no botão flutuante, no canto inferior direito. -#}
+    {#- No celular o texto inteiro não cabe ao lado do logo e do menu sem cair
+        para 9px; lá o botão mostra só "Fazer o Mapa", e o resto fica num span
+        que o CSS esconde abaixo de 600px. Se o texto mudar e não começar
+        assim, ele sai inteiro. -#}
+    {%- set ctaCurto = "Fazer o Mapa" -%}
     <a href="{{ site.linkTeste }}" class="nav-cta"
-       onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'header'})">{{ nav.cta.texto }}</a>
+       onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'header'})">
+      {%- if nav.cta.texto.indexOf(ctaCurto) == 0 and nav.cta.texto != ctaCurto -%}
+        {{ ctaCurto }}<span class="nav-cta-resto">{{ nav.cta.texto.slice(ctaCurto.length) }}</span>
+      {%- else -%}
+        {{ nav.cta.texto }}
+      {%- endif -%}
+    </a>
 
     {#- Abaixo de 960px o menu horizontal não cabe. Sem este botão o site fica
         sem navegação nenhuma no celular, que é o que acontecia até aqui. -#}

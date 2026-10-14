@@ -7,7 +7,7 @@ titulo: "Como os seus dados <em>são tratados.</em>"
 resumo: "O que a Regnumm coleta, para quê, com que base legal, com quem compartilha, por quanto tempo guarda, e como você exerce os seus direitos."
 atualizado: "28 de setembro de 2026"
 seoTitulo: "Política de Privacidade | Regnumm"
-seoDescricao: "Quais dados a Regnumm coleta no site e no Mapa Financeiro, com que base legal, com quem compartilha, por quanto tempo guarda e como exercer os seus direitos, conforme a LGPD (Lei 13.709/2018)."
+seoDescricao: "Quais dados a Regnumm coleta, com que base legal, com quem compartilha, por quanto tempo guarda e como exercer os seus direitos pela LGPD."
 ---
 Esta política explica quais dados a Regnumm coleta, para quê, com que base legal, com quem compartilha, por quanto tempo guarda e como você exerce os seus direitos. Vale para o site regnumm.com.br, para o Mapa Financeiro e para os serviços descritos nos [Termos de Uso](/termos/).
 

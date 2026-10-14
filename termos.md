@@ -7,7 +7,7 @@ titulo: "As regras <em>desta mesa.</em>"
 resumo: "O que a Regnumm entrega, o que ela deliberadamente não faz, e em que condições os serviços são oferecidos."
 atualizado: "28 de setembro de 2026"
 seoTitulo: "Termos de Uso | Regnumm"
-seoDescricao: "Condições de uso do site regnumm.com.br e dos serviços da Regnumm: Mapa Financeiro e Mapa Financeiro completo + direcionamento, com pagamento, direito de arrependimento, cancelamento e reembolso."
+seoDescricao: "Condições de uso da Regnumm: Mapa Financeiro gratuito e sessão paga, com pagamento, direito de arrependimento, cancelamento e reembolso."
 ---
 
 Estes termos regem o uso do site regnumm.com.br e a contratação dos serviços da Regnumm. Ao usar o site ou contratar um dos serviços abaixo, você concorda com o que está descrito aqui.
