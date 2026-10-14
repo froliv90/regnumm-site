@@ -762,6 +762,14 @@ h2.cta-h em { font-style: normal; color: var(--accent); }
 .redes-lista a { color: var(--texto-3); transition: color .2s, transform .2s; display: flex; }
 .redes-lista a:hover { color: var(--anchor); transform: translateY(-2px); }
 
+/* Área de toque dos ícones das redes: o desenho tem 16 a 24px, pequeno para o
+   dedo. O padding aumenta a área clicável e a margem negativa devolve o mesmo
+   espaço, então nada se move na tela. Nenhum padding passa da metade do gap
+   da lista, para as áreas vizinhas não se sobreporem. */
+.hero-social a { padding: .6rem; margin: -.6rem; }
+.mapa-social a { padding: .55rem; margin: -.55rem; }
+.redes-lista a { padding: .75rem; margin: -.75rem; }
+
 /* ── 17 · OS QUATRO PERFIS ─────────────────────────────────── */
 .disclaimer { padding: 8vh 5vw 2vh; }
 .disclaimer-inner { max-width: 680px; }
