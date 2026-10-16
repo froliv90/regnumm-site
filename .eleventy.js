@@ -70,6 +70,17 @@ module.exports = function (eleventyConfig) {
     return Math.max(1, Math.round(palavras / 200));
   });
 
+  /** Posts marcados com o perfil (perfisRelacionados no front matter), para
+      as páginas /perfis/{slug}/. Os específicos do perfil vêm antes dos que
+      valem para vários; entre iguais, o mais novo primeiro. */
+  eleventyConfig.addFilter("postsDoPerfil", (posts, chave) =>
+    (posts || [])
+      .filter((p) => (p.data.perfisRelacionados || []).includes(chave))
+      .sort((a, b) =>
+        a.data.perfisRelacionados.length - b.data.perfisRelacionados.length ||
+        b.date - a.date)
+  );
+
   // ── Coleção de posts, do mais antigo para o mais novo ──
   // (a listagem inverte com `| reverse`, então o mais recente aparece primeiro)
   eleventyConfig.addCollection("posts", (colecao) =>

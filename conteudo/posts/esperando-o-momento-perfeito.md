@@ -5,6 +5,7 @@ categoria: "Perfis financeiros"
 seoTitulo: "Esperar o momento perfeito para decidir sobre dinheiro | Regnumm"
 date: 2026-09-30T12:03:00Z
 palavrasChave: ["momento certo para decidir", "planejamento financeiro pessoal", "Estrategista Imóvel"]
+perfisRelacionados: ["estrategista"]
 ---
 
 Quem espera o momento perfeito para agir percebe, com o tempo, que o momento passou.

@@ -5,6 +5,7 @@ categoria: "Comportamento financeiro"
 seoTitulo: "Ganho bem, mas não consigo guardar dinheiro | Regnumm"
 date: 2026-09-30T12:09:00Z
 palavrasChave: ["ganho bem mas não consigo guardar dinheiro", "guardar dinheiro", "comportamento financeiro"]
+perfisRelacionados: ["visionario", "executor"]
 ---
 
 Ganhar bem e continuar com a sensação de que algo não fecha é uma das dores mais solitárias com dinheiro.

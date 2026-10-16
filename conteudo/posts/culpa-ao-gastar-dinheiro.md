@@ -5,6 +5,7 @@ categoria: "Comportamento financeiro"
 seoTitulo: "Culpa ao gastar dinheiro, mesmo quando cabe no bolso | Regnumm"
 date: 2026-09-30T12:08:00Z
 palavrasChave: ["culpa ao gastar dinheiro", "sentimento de culpa ao gastar dinheiro", "comportamento financeiro"]
+perfisRelacionados: ["executor", "guardiao"]
 ---
 
 Sentir culpa por gastar, mesmo quando o gasto cabe no bolso, costuma ser falta de critério. O gasto em si quase nunca é o problema.

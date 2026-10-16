@@ -1,0 +1,101 @@
+---
+layout: base.njk
+pagination:
+  data: perfis
+  size: 1
+  alias: perfil
+  addAllPagesToCollections: true
+permalink: "/perfis/{{ perfil.slug }}/index.html"
+eleventyComputed:
+  seoTitulo: "{{ perfil.nome }}: perfil financeiro | Regnumm"
+  seoDescricao: "{{ perfil.seoDescricao }}"
+  ogImage: "/assets/og/perfil-{{ perfil.slug }}.png"
+  ctaOrigem: "perfil_{{ perfil.chave }}"
+  matrizDestaque: "{{ perfil.chave }}"
+---
+{#- Uma página por perfil, em /perfis/{slug}/. O texto vem de _data/perfis.js,
+    o mesmo das gavetas de /perfis.html e da tela de resultado gratuito. Só
+    entra aqui o que é público: nada do segundo perfil nem do cruzamento, que
+    são do resultado completo. -#}
+{% from "glifos.njk" import glifo %}
+<main>
+
+  <section class="hero-int perfil-hero">
+    <div class="hero-int-inner">
+      <div class="drawer-glyph {{ perfil.tom }} perfil-hero-glifo">{{ glifo(perfil.chave) }}</div>
+      <p class="hero-int-eyebrow">Perfil financeiro · {{ perfil.eixo }}</p>
+      <h1 class="hero-int-headline">{{ perfil.nome }}</h1>
+      <p class="hero-int-sub">{{ perfil.define }}</p>
+    </div>
+  </section>
+
+  <section class="perfil-corpo">
+    <div class="perfil-corpo-inner r">
+      <div class="pf-label">A força que trouxe até aqui</div>
+      <p class="pb">{{ perfil.forca }}</p>
+      <div class="pf-label">O ponto onde trava</div>
+      <p class="pb">{{ perfil.trava }}</p>
+      <div class="pf-label">O custo que não aparece no extrato</div>
+      <p class="pb">{{ perfil.custo }}</p>
+      <div class="pf-pergunta">
+        <p>{{ perfil.pergunta }}</p>
+      </div>
+      <a href="{{ site.linkTeste }}" class="pf-btn"
+         onclick="if(window.posthog)posthog.capture('teste_cta_click',{location:'{{ ctaOrigem }}'})">{{ nav.cta.texto }}</a>
+    </div>
+  </section>
+
+  {#- O mesmo "decidir sozinho" de /perfis.html, sem as frases que lá apontam
+      para os perfis "abaixo". -#}
+  <section class="autonomia">
+    <div class="autonomia-inner r">
+      <p class="autonomia-eyebrow">A camada que atravessa os quatro perfis</p>
+      <h2 class="autonomia-h">Decidir sozinho pode proteger você.<br><em>Ou deixar você sem correção.</em></h2>
+      <p>Decidir sozinho não é bom nem ruim por si. Funciona como amplificador. <strong>O que decide se ajuda ou atrapalha é se você está operando dentro ou fora do seu campo de força.</strong></p>
+      <div class="autonomia-grid">
+        <div class="autonomia-card">
+          <div class="autonomia-card-tag">Quando sustenta</div>
+          <p>Você decide sozinho numa área que domina, com lastro real para isso. Aqui isso protege das modas, do conselho ruim, da pressão para gastar ou investir mal.</p>
+        </div>
+        <div class="autonomia-card">
+          <div class="autonomia-card-tag">Quando isola</div>
+          <p>Você carrega sozinho uma decisão que não é o seu campo de força. Sem uma segunda perspectiva, os pontos cegos não aparecem, e o erro fica sem correção.</p>
+        </div>
+      </div>
+      <a href="/fundamentacao/" class="btn-linha btn-linha-claro">Ver a fundamentação teórica →</a>
+    </div>
+  </section>
+
+  <section class="perfis-matriz perfil-matriz">
+    <div class="perfis-matriz-inner r">
+      <p class="sec-label">Os quatro perfis</p>
+      {% include "matriz-perfis.njk" %}
+    </div>
+  </section>
+
+  {%- set leituras = collections.posts | postsDoPerfil(perfil.chave) %}
+  {%- if leituras.length %}
+  <section class="perfil-leituras">
+    <div class="perfil-leituras-inner">
+      <p class="sec-label r">Leituras sobre este perfil</p>
+      <div class="blog-grid">
+        {%- for post in leituras %}
+        <a href="{{ post.url }}" class="blog-card r {{ ['', 'd1', 'd2'][loop.index0 % 3] }}"
+           onclick="if(window.posthog)posthog.capture('post_click',{post:'{{ post.fileSlug }}',origem:'{{ ctaOrigem }}'})">
+          <div class="blog-card-tag">
+            {%- if post.data.categoria %}{{ post.data.categoria }}<span class="sep">·</span>{% endif -%}
+            <time datetime="{{ post.date | dataISO }}">{{ post.date | dataBR }}</time>
+          </div>
+          <div class="blog-card-title">{{ post.data.titulo | semTags }}</div>
+          <div class="blog-card-excerpt">{{ post.data.resumo }}</div>
+          <div class="blog-card-more">Ler o texto →</div>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+
+  {% include "cta-mapa.njk" %}
+
+</main>

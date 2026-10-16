@@ -303,36 +303,43 @@ h1.hero-headline em { font-style: normal; }
 .perfis-matriz { padding: 2vh 5vw 6vh; }
 .perfis-matriz-inner { max-width: 760px; margin: 0 auto; }
 .matriz { margin: 0; }
-.matriz-quadro { position: relative; padding: 1.9rem 2rem; }
+/* Eixos em cruz, como um diagrama de quadrantes: sem moldura e sem o
+   quadriculado de caderno que havia aqui até 16/10/2026. */
+.matriz-quadro { position: relative; padding: 2.2rem 2.4rem; }
 .matriz-eixo {
-  position: absolute; font-size: .62rem; font-weight: 700;
-  letter-spacing: .12em; color: var(--texto-3);
+  position: absolute; font-size: .74rem; font-weight: 600;
+  letter-spacing: .02em; color: var(--texto-3);
 }
-.matriz-eixo-topo { top: .25rem; left: 50%; transform: translateX(-50%); }
-.matriz-eixo-base { bottom: .25rem; left: 50%; transform: translateX(-50%); }
+.matriz-eixo-topo { top: 0; left: 50%; transform: translateX(-50%); }
+.matriz-eixo-base { bottom: 0; left: 50%; transform: translateX(-50%); }
 .matriz-eixo-esq, .matriz-eixo-dir { top: 50%; writing-mode: vertical-rl; }
-.matriz-eixo-esq { left: .35rem; transform: translateY(-50%) rotate(180deg); }
-.matriz-eixo-dir { right: .35rem; transform: translateY(-50%); }
-.matriz-grade {
-  display: grid; grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--linha);
-  background-image:
-    linear-gradient(var(--linha-fina) 1px, transparent 1px),
-    linear-gradient(90deg, var(--linha-fina) 1px, transparent 1px);
-  background-size: 24px 24px;
+.matriz-eixo-esq { left: 0; transform: translateY(-50%) rotate(180deg); }
+.matriz-eixo-dir { right: 0; transform: translateY(-50%); }
+.matriz-grade { position: relative; display: grid; grid-template-columns: 1fr 1fr; }
+.matriz-grade::before, .matriz-grade::after {
+  content: ""; position: absolute; background: var(--linha); pointer-events: none;
 }
+.matriz-grade::before { left: 50%; top: -.9rem; bottom: -.9rem; width: 1px; }
+.matriz-grade::after { top: 50%; left: -.9rem; right: -.9rem; height: 1px; }
+/* Em cada quadrante, glifo e nome centralizados um sobre o outro e no meio
+   do espaço do quadrante. Todo nome em duas linhas, a primeira palavra em
+   cima, como nas imagens de prévia: os glifos de uma fileira ficam na mesma
+   altura. */
 .matriz-q {
-  display: flex; flex-direction: column; align-items: flex-start; gap: .6rem;
-  padding: 1.5rem 1.3rem; min-height: 10.5rem;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: .7rem; text-align: center;
+  padding: 1.6rem 1.2rem; min-height: 10rem;
   text-decoration: none; color: inherit; transition: background .2s;
 }
-.matriz-q:nth-child(odd) { border-right: 1px solid var(--linha); }
-.matriz-q:nth-child(-n+2) { border-bottom: 1px solid var(--linha); }
+.matriz-nome-resto { display: block; }
 .matriz-q:hover { background: var(--lavado); }
-.matriz-q .drawer-glyph { --caixa: 36; margin-bottom: .2rem; }
+.matriz-q .drawer-glyph { --caixa: 40; margin-bottom: .2rem; }
+/* Na matriz clara o champanhe sai do glifo: sobre branco, só azul e prata. */
+.matriz .drawer-glyph.warm { color: var(--anchor); }
+/* A serifa só nomeia os perfis: Cormorant no peso natural, sem ajuste. */
 .matriz-nome {
-  font-weight: 800; font-size: 1.05rem; line-height: 1.15;
-  letter-spacing: -.01em; color: var(--anchor);
+  font-family: var(--logo); font-weight: 500;
+  font-size: 1.45rem; line-height: 1.15; color: var(--anchor);
 }
 
 /* Espaço de vídeo das páginas internas: só existe no HTML com URL cadastrada. */
@@ -785,6 +792,23 @@ h2.cta-h em { font-style: normal; color: var(--accent); }
 .pf-label:first-child { margin-top: 0; }
 .pf-pergunta { margin-top: 2.4rem; }
 .pf-btn { margin-top: 2rem; }
+.pf-completo { display: table; }
+
+/* Páginas /perfis/{slug}/ (perfil.njk). Reaproveitam o hero interno, os
+   blocos das gavetas, o "decidir sozinho" e os cartões do blog. */
+.perfil-hero-glifo { --caixa: 60; margin-bottom: 1.6rem; }
+.perfil-corpo { padding: 6vh 5vw 10vh; }
+.perfil-corpo-inner { max-width: 760px; }
+.perfil-matriz { padding: 10vh 5vw; }
+.perfil-leituras { padding: 0 5vw 10vh; }
+.perfil-leituras-inner { max-width: 1100px; }
+.perfil-leituras .blog-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 960px) {
+  .perfil-hero-glifo { --caixa: 48; }
+  .perfil-leituras .blog-grid { grid-template-columns: 1fr; }
+}
+/* O perfil da página, marcado na matriz. */
+.matriz-q-atual { background: var(--lavado); }
 
 .autonomia { padding: 12vh 5vw; background: var(--anchor); }
 .autonomia-inner { max-width: 760px; }
@@ -1188,4 +1212,54 @@ body.menu-travado .whats-flutuante { display: none; }
   .nav-links { gap: .9rem; margin: 0 1rem; }
   .nav-links a { letter-spacing: .05em; font-size: .68rem; }
   .nav-cta { letter-spacing: .06em; padding: .8rem 1rem; }
+}
+
+/* ── 24 · TÍTULOS REFINADOS E MATRIZ NO HERO (prévia 16/10/2026) ── */
+/* A DM Sans segue sendo a voz do site, dois graus abaixo do grito: peso 600
+   (escolhido pelo Felipe em 16/10, entre 700 e 600) e espaçamento mais fechado. */
+:root { --peso-titulo: 600; }
+h1.hero-headline, h1.hero-int-headline, h2.secao-titulo, h2.evidencia-h,
+h2.captura-h, h2.cta-h, h2.autonomia-h {
+  font-weight: var(--peso-titulo); letter-spacing: -.02em;
+}
+
+/* Páginas de perfil: o nome do perfil é a assinatura em Cormorant. */
+.perfil-hero h1.hero-int-headline {
+  font-family: var(--logo); font-weight: 500; letter-spacing: 0;
+  font-size: clamp(2.8rem, 6.4vw, 5.6rem); line-height: 1.05;
+}
+
+/* Hero da home em duas colunas: a promessa à esquerda, a matriz à direita.
+   No celular, a matriz desce para depois do botão. */
+.hero-inner.hero-com-matriz {
+  max-width: 1240px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: 4.5rem; align-items: center;
+}
+.hero-com-matriz h1.hero-headline {
+  font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 1.04; max-width: 15ch;
+}
+.hero-com-matriz .hero-sub { font-size: 1.12rem; max-width: 44ch; }
+.hero-matriz { opacity: 0; animation: fadeUp .8s .7s forwards; }
+
+/* Matriz do hero: sem fundo, só os eixos em cruz (escolha do Felipe em 16/10),
+   um pouco maior que a das outras páginas. */
+.hero-matriz .matriz-quadro { padding: 2.6rem 2.8rem; }
+.hero-matriz .matriz-q { min-height: 11.5rem; }
+.hero-matriz .matriz-q .drawer-glyph { --caixa: 48; margin-bottom: .1rem; }
+.hero-matriz .matriz-nome { font-size: 1.5rem; }
+
+@media (max-width: 960px) {
+  .hero-inner.hero-com-matriz { grid-template-columns: 1fr; gap: 3rem; }
+  .hero-com-matriz .hero-social { margin-top: 2rem; }
+  .matriz-quadro { padding: 2rem 1.9rem; }
+  .matriz-q { min-height: 8rem; padding: 1.1rem 1rem; }
+  .matriz-nome { font-size: 1.2rem; }
+  .hero-matriz .matriz-quadro { padding: 2.2rem 1.9rem; }
+  .hero-matriz .matriz-q { min-height: 8.5rem; padding: 1.1rem .8rem; }
+  .hero-matriz .matriz-q .drawer-glyph { --caixa: 40; }
+  .hero-matriz .matriz-nome { font-size: 1.14rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-matriz { animation: none; opacity: 1; }
 }

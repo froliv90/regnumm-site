@@ -12,7 +12,7 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner hero-so-texto">
+    <div class="hero-inner hero-com-matriz">
       <div class="hero-texto">
         <h1 class="hero-headline">Ganhar dinheiro é uma coisa. Construir uma vida com ele é outra.</h1>
         <h2 class="hero-sub">Descubra o padrão invisível que rege suas escolhas financeiras e assuma a direção própria sobre para onde seu dinheiro realmente vai.</h2>
@@ -23,6 +23,11 @@ ogDescricao: "Você ganha bem mas não acumula? O problema nunca foi a renda. Di
         <div class="hero-social">
           {% set tamanho = 16 %}{% include "redes-icones.njk" %}
         </div>
+      </div>
+      {#- A matriz dos quatro perfis é o elemento visual do topo: cada
+          quadrante leva à página do perfil. #}
+      <div class="hero-matriz">
+        {% set matrizPaginas = true %}{% include "matriz-perfis.njk" %}
       </div>
     </div>
   </section>

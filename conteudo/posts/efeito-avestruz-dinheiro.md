@@ -5,6 +5,7 @@ categoria: "Comportamento financeiro"
 seoTitulo: "Efeito avestruz: por que a gente evita olhar o dinheiro | Regnumm"
 date: 2026-09-30T12:07:00Z
 palavrasChave: ["efeito avestruz", "efeito avestruz psicologia", "ansiedade financeira", "comportamento financeiro"]
+perfisRelacionados: ["guardiao", "estrategista"]
 ---
 
 O maior desafio com dinheiro, para a maioria das pessoas, é a vergonha de mostrar como ele está, bem mais do que a conta que não fecha.

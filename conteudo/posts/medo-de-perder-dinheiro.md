@@ -5,6 +5,7 @@ categoria: "Perfis financeiros"
 seoTitulo: "Medo de perder dinheiro com cara de cuidado | Regnumm"
 date: 2026-09-30T12:05:00Z
 palavrasChave: ["medo de perder dinheiro", "perfil financeiro poupador", "Guardião que Aprisiona"]
+perfisRelacionados: ["guardiao", "estrategista"]
 ---
 
 Perder dói mais do que ganhar alegra. Pesquisas sobre comportamento mostram isso há décadas, e quem tem medo de perder sente essa conta antes de qualquer decisão.

@@ -5,6 +5,7 @@ categoria: "Perfis financeiros"
 seoTitulo: "Por que o dinheiro não sobra mesmo trabalhando tanto | Regnumm"
 date: 2026-09-30T12:04:00Z
 palavrasChave: ["por que meu dinheiro não sobra", "dinheiro não sobra", "Executor sem Lastro"]
+perfisRelacionados: ["executor"]
 ---
 
 Tem gente que trabalha sem parar, a agenda está cheia, a renda cresceu, e mesmo assim o dinheiro não acumula.

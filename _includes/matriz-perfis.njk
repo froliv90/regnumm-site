@@ -6,35 +6,38 @@
     na mesma cor dos drawers de /perfis.html: dourado para os de movimento,
     prata para os de contenção.
 
-    Mora em /perfis.html: cada quadrante leva ao drawer do perfil, logo
-    abaixo, e o abre (site.js).
+    Mora em /perfis.html, onde cada quadrante leva ao drawer do perfil, logo
+    abaixo, e o abre (site.js), e nas páginas /perfis/{slug}/, com o perfil
+    da página marcado (matrizDestaque).
 
     É HTML com os glifos em SVG, e não um SVG único, para o nome dos perfis
     quebrar linha no celular em vez de encolher até ficar ilegível. -#}
 {% from "glifos.njk" import glifo %}
 <figure class="matriz" aria-label="Matriz dos quatro perfis financeiros">
   <div class="matriz-quadro">
-    <span class="matriz-eixo matriz-eixo-topo" aria-hidden="true">FUTURO</span>
-    <span class="matriz-eixo matriz-eixo-base" aria-hidden="true">PRESENTE</span>
-    <span class="matriz-eixo matriz-eixo-esq" aria-hidden="true">CONTENÇÃO</span>
-    <span class="matriz-eixo matriz-eixo-dir" aria-hidden="true">MOVIMENTO</span>
+    <span class="matriz-eixo matriz-eixo-topo" aria-hidden="true">Futuro</span>
+    <span class="matriz-eixo matriz-eixo-base" aria-hidden="true">Presente</span>
+    <span class="matriz-eixo matriz-eixo-esq" aria-hidden="true">Contenção</span>
+    <span class="matriz-eixo matriz-eixo-dir" aria-hidden="true">Movimento</span>
     <div class="matriz-grade">
-      <a href="#perfil-estrategista" class="matriz-q" aria-label="Estrategista Imóvel: futuro e contenção">
-        <span class="drawer-glyph cool">{{ glifo("estrategista") }}</span>
-        <span class="matriz-nome">Estrategista Imóvel</span>
+      {#- Ordem da grade: futuro em cima, contenção à esquerda. Sem
+          matrizDestaque (em /perfis.html) cada quadrante abre a gaveta; numa
+          página de perfil ele leva à página do perfil, e o atual fica marcado.
+          Com matrizPaginas (hero da home), leva à página sem marcar nenhum. #}
+      {%- for chave in ["estrategista", "visionario", "guardiao", "executor"] %}
+      {%- for p in perfis %}{% if p.chave == chave %}
+      {%- set eixos = p.eixo | lower | replace(" · ", " e ") %}
+      {%- if matrizDestaque or matrizPaginas %}
+      <a href="/perfis/{{ p.slug }}/" class="matriz-q{% if chave == matrizDestaque %} matriz-q-atual{% endif %}"{% if chave == matrizDestaque %} aria-current="page"{% endif %} aria-label="{{ p.nome }}: {{ eixos }}">
+      {%- else %}
+      <a href="#perfil-{{ chave }}" class="matriz-q" aria-label="{{ p.nome }}: {{ eixos }}">
+      {%- endif %}
+        <span class="drawer-glyph {{ p.tom }}">{{ glifo(chave) }}</span>
+        {%- set partes = p.nome.split(" ") %}
+        <span class="matriz-nome">{{ partes[0] }} <span class="matriz-nome-resto">{{ partes.slice(1).join(" ") }}</span></span>
       </a>
-      <a href="#perfil-visionario" class="matriz-q" aria-label="Visionário sem Estrutura: futuro e movimento">
-        <span class="drawer-glyph warm">{{ glifo("visionario") }}</span>
-        <span class="matriz-nome">Visionário sem Estrutura</span>
-      </a>
-      <a href="#perfil-guardiao" class="matriz-q" aria-label="Guardião que Aprisiona: presente e contenção">
-        <span class="drawer-glyph cool">{{ glifo("guardiao") }}</span>
-        <span class="matriz-nome">Guardião que Aprisiona</span>
-      </a>
-      <a href="#perfil-executor" class="matriz-q" aria-label="Executor sem Lastro: presente e movimento">
-        <span class="drawer-glyph warm">{{ glifo("executor") }}</span>
-        <span class="matriz-nome">Executor sem Lastro</span>
-      </a>
+      {%- endif %}{% endfor %}
+      {%- endfor %}
     </div>
   </div>
 </figure>

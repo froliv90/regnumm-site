@@ -5,6 +5,7 @@ categoria: "Perfis financeiros"
 seoTitulo: "Ideia boa, dinheiro que não fica | Regnumm"
 date: 2026-09-30T12:02:00Z
 palavrasChave: ["dinheiro não fica", "empreendedor e dinheiro", "Visionário sem Estrutura"]
+perfisRelacionados: ["visionario"]
 ---
 
 Tem gente que enxerga oportunidade antes de todo mundo, faz acontecer, e mesmo assim o dinheiro não fica.

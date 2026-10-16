@@ -5,6 +5,7 @@ categoria: "Comportamento financeiro"
 seoTitulo: "Comparação com os outros: por que a de perto dói mais | Regnumm"
 date: 2026-09-30T12:01:00Z
 palavrasChave: ["comparação com os outros", "comparação social", "comportamento financeiro"]
+perfisRelacionados: ["visionario"]
 ---
 
 A comparação que mais machuca é com quem está perto. O milionário da internet quase não incomoda.

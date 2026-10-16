@@ -5,6 +5,7 @@ categoria: "Perfis financeiros"
 seoTitulo: "Perfil financeiro não é rótulo: para que serve saber o seu | Regnumm"
 date: 2026-09-30T12:10:00Z
 palavrasChave: ["perfil financeiro", "perfil financeiro teste", "mapa financeiro", "padrão de comportamento financeiro"]
+perfisRelacionados: ["visionario", "executor", "guardiao", "estrategista"]
 ---
 
 Saber o seu perfil financeiro serve para uma coisa: entender como você funciona.
