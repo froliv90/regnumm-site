@@ -1223,10 +1223,16 @@ h2.captura-h, h2.cta-h, h2.autonomia-h {
   font-weight: var(--peso-titulo); letter-spacing: -.02em;
 }
 
+/* Um tamanho só para o título principal de cada página: home, páginas
+   internas e páginas de perfil (pedido do Felipe em 16/10). É o tamanho do
+   título da home, que divide a largura com a matriz. */
+:root { --titulo-pagina: clamp(2.4rem, 4vw, 4.2rem); }
+h1.hero-headline, h1.hero-int-headline { font-size: var(--titulo-pagina); }
+
 /* Páginas de perfil: o nome do perfil é a assinatura em Cormorant. */
 .perfil-hero h1.hero-int-headline {
   font-family: var(--logo); font-weight: 500; letter-spacing: 0;
-  font-size: clamp(2.8rem, 6.4vw, 5.6rem); line-height: 1.05;
+  font-size: var(--titulo-pagina); line-height: 1.05;
 }
 
 /* Hero da home em duas colunas: a promessa à esquerda, a matriz à direita.
@@ -1237,7 +1243,7 @@ h2.captura-h, h2.cta-h, h2.autonomia-h {
   gap: 4.5rem; align-items: center;
 }
 .hero-com-matriz h1.hero-headline {
-  font-size: clamp(2.4rem, 4vw, 4.2rem); line-height: 1.04; max-width: 15ch;
+  font-size: var(--titulo-pagina); line-height: 1.04; max-width: 15ch;
 }
 .hero-com-matriz .hero-sub { font-size: 1.12rem; max-width: 44ch; }
 .hero-matriz { opacity: 0; animation: fadeUp .8s .7s forwards; }
