@@ -5,7 +5,7 @@ templateEngineOverride: njk,md
 eyebrow: "Termos de uso"
 titulo: "As regras <em>desta mesa.</em>"
 resumo: "O que a Regnumm entrega, o que ela deliberadamente não faz, e em que condições os serviços são oferecidos."
-atualizado: "28 de setembro de 2026"
+atualizado: "2 de novembro de 2026"
 seoTitulo: "Termos de Uso | Regnumm"
 seoDescricao: "Condições de uso da Regnumm: Mapa Financeiro gratuito e sessão paga, com pagamento, direito de arrependimento, cancelamento e reembolso."
 ---

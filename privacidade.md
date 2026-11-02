@@ -5,7 +5,7 @@ templateEngineOverride: njk,md
 eyebrow: "Política de privacidade"
 titulo: "Como os seus dados <em>são tratados.</em>"
 resumo: "O que a Regnumm coleta, para quê, com que base legal, com quem compartilha, por quanto tempo guarda, e como você exerce os seus direitos."
-atualizado: "28 de setembro de 2026"
+atualizado: "2 de novembro de 2026"
 seoTitulo: "Política de Privacidade | Regnumm"
 seoDescricao: "Quais dados a Regnumm coleta, com que base legal, com quem compartilha, por quanto tempo guarda e como exercer os seus direitos pela LGPD."
 ---
